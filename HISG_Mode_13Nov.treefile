@@ -1,0 +1,244 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=142;
+	taxlabels
+	'Acidovorax_sp.'
+	Acinetobacter_baumannii[&!color=#243aff]
+	Acinetobacter_beijerinckii
+	Acinetobacter_gingfengensis
+	Acinetobacter_sedimenti
+	Aestuariirhabdus_haliotis
+	Aestuariirhabdus_litorea
+	Agitococcus_lubricus
+	Alkaliphilus_peptidifermentans
+	Alkanindiges_illinoisensis
+	Alloalcanivorax_venustensis
+	Anoxybacter_fermentans
+	Anoxybacteroides_voinovskiense
+	Aquariibacter_albus
+	Aquisalimonadaceae_bacterium
+	Atopomonas_sediminilitoris
+	Azospira_inquinata
+	Bacteriophage__human
+	Bacterioplanoides_pacificum
+	Balneatrix_alpica
+	Bryobacteraceae_bacterium
+	Brytella_acorum
+	Caldicellulosiruptor_danielii
+	Caldicellulosiruptor_morganii
+	Campylobacterales_bacterium
+	Cellvibrio_polysaccharolyticus
+	Cerasibacillus_quisquiliarum
+	Chitinivorax_tropicu
+	Clostridium_aceticum
+	Comamonas_humi
+	Deferrisoma_camini
+	Deinococcus_aluminii
+	Deinococcus_frigens
+	Denitromonas_iodatirespirans
+	Desulfurella
+	Desulfuromusa_kysingii
+	Dethiobacter_alkaliphilus
+	Dongiaceae_bacterium
+	Enhydrobacter_aerosaccus
+	Enterococcus_rivorum
+	Faucicola_atlantae
+	Faucicola_mancuniensis
+	'Ferrovum_sp.'
+	Fictibacillus_fluitans
+	Filobacillus_milosensis
+	Flagellatimonas_centrodinii
+	Galendromus_occidentalis
+	Gallionella_capsiferriformans
+	Gemmatimonadaceae_bacterium
+	Georgfuchsia_toluolica
+	Geothermobacter_ehrlichii
+	Halanaerobium_congolense
+	Haliangium_ochraceum
+	Halomonadaceae_bacterium
+	Halopseudomonas_yangmingensis
+	Holdemanellis_Biformis[&!color=#243aff]
+	Hydrogenophilaceae_bacterium
+	Jezberella_montanilacus
+	Kangiellaceae_bacterium
+	Kerstersia_gyiorum
+	Ketobacter_alkanivorans
+	Koleobacter_methoxysyntrophicus
+	Larsenimonas_suaedae
+	Leucothrix_sargassi
+	'Litorivivens_sp.'
+	Malonomonas_rubra
+	Mangrovitalea_sediminis
+	Marinithermus_hydrothermalis
+	Marinobacter_salinisoli
+	'Mariprofundus_sp.'
+	Methylococcaceae_bacterium
+	Methylogaea_oryzae
+	Methylomarinum_roseum
+	Methylophaga_sp_
+	Moraxella_marmotael
+	Moraxella_nasibovis
+	Motiliproteus_sediminis
+	Natronocella_acetinitrilica
+	Natronospirillum_operosum
+	Neisseria_elongata
+	Nevskia_soli
+	Nitrospirota_bacterium
+	Niveibacterium_terrae
+	Novibacillus_thermophilus
+	Oceanobacillus_zhaokaii
+	Ornithinibacillus_gellani
+	Oxalobacter_vibrioformis
+	Paenibacillus_lacisoli
+	Pallidibacillus_pasinlerensis
+	Pallidibacillus_thermolactis
+	Paludibacterium_paludis
+	'Pantoea_sp.'
+	Paralysiella_testudinis
+	Parasulfuritortus_cantonensis
+	Pelagibaculum_spongiae
+	Phytohalomonas_tamaricis
+	Piscinibacter_terrae
+	Polaromonas_glacialis
+	Pollutimonas_harenae
+	Polycyclovorans_algicola
+	Porticoccaceae_bacterium
+	Pseudaquabacterium_pictum
+	Pseudomonas_aeruginosa
+	Psychrobacter_arenosus
+	'Psychrobacter_sp.'
+	Pusillimonas_noertemannii
+	Ramlibacter_tataouinensis
+	Rhodocyclaceae_bacterium
+	'Robbsia_sp.'
+	Rubeoparvulum_massiliense
+	Sandarakinorhabdus_rubra
+	Sediminicurvatus_halobius
+	Simiduia_aestruariiviva
+	Simiduia_curdlanivorans
+	'Sinimarinibacterium_sp.'
+	Spartinivicinus_poritis
+	Spiribacter_pallidus
+	Spongiibacter
+	Stenotrophobium_rhamnosiphilum
+	Steroidobacteraceae_bacterium
+	Streptococcus_moroccensis
+	Streptococcus_pneumoniae
+	Stutzerimonas_stutzeri
+	Syntrophotalea_acetylenivorans
+	Tepidimonas_taiwanensis
+	Terasakiispira_papahanaumokuakeensis
+	'Teredinibacter_sp.'
+	'Thalassotalea_sp.'
+	'Thauera_sp.'
+	Thermohahella_caldifontis
+	Thiofilum_flexile
+	Thiohalomonas_denitrificans
+	'Thiolinea_sp.'
+	Thiopsedomonas_dentrificans
+	Trichlorobacter_lovleyi
+	Ventosimonas_gracilis
+	Virgibacillus_alimentarius
+	'Virgibacillus_sp.'
+	Xanthobacteraceae_bacterium
+	Xylophilus_ampelinus
+	Zestomonas_thermotolerans
+	Zymobacter_palmae
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Holdemanellis_Biformis[&!color=#0f16f5]:1.23314,((((((((((((((((((((Phytohalomonas_tamaricis:0.108777,Zymobacter_palmae:0.439295)[&label="26.1/69",!color=#f507d5]:0.08637,Larsenimonas_suaedae:0.166313)[&label="99.1/100"]:0.214837,(Spongiibacter:0.243917,'Litorivivens_sp.':0.432921)[&label="98.6/100"]:0.204153)[&label="84.1/78"]:0.045656,(Balneatrix_alpica:0.381427,Motiliproteus_sediminis:0.204513)[&label="80.6/85"]:0.094589)[&label="39.2/62",!color=#f507d5]:0.054103,(Terasakiispira_papahanaumokuakeensis:0.286383,(Bacterioplanoides_pacificum:0.342875,Natronospirillum_operosum:0.411316)[&label="91.7/99"]:0.092801)[&label="41.2/90"]:0.054222)[&label="43.3/79"]:0.078973,((((Halomonadaceae_bacterium:0.326418,Marinobacter_salinisoli:0.191736)[&label="78.1/90"]:0.039928,Mangrovitalea_sediminis:0.253619)[&label="94.9/100"]:0.145527,Thermohahella_caldifontis:0.486731)[&label="68.4/88"]:0.068411,(((Simiduia_curdlanivorans:0.083254,Simiduia_aestruariiviva:0.055654)[&label="99.8/100"]:0.251945,Cellvibrio_polysaccharolyticus:0.240546)[&label="84/98"]:0.071998,('Teredinibacter_sp.':0.262768,Porticoccaceae_bacterium:0.326328)[&label="85.6/99"]:0.136332)[&label="95.6/99"]:0.147724)[&label="77.9/90"]:0.039757)[&label="97.4/100"]:0.109902,((((((('Pantoea_sp.':0.097953,('Thauera_sp.':0.065116,((Streptococcus_pneumoniae:1.0E-6,Stutzerimonas_stutzeri:0.007319)[&label="0/81"]:1.0E-6,Pseudomonas_aeruginosa:0.094036)[&label="0/56"]:2.0E-6)[&label="81.5/96"]:0.050693)[&label="23/86"]:0.022728,Zestomonas_thermotolerans:0.090527)[&label="86.1/94"]:0.051414,(Atopomonas_sediminilitoris:0.049589,Ventosimonas_gracilis:0.428491)[&label="63/97"]:0.046032)[&label="86.8/98"]:0.052157,Thiopsedomonas_dentrificans:0.222112)[&label="91.5/97"]:0.092837,Halopseudomonas_yangmingensis:0.177065)[&label="88.3/97"]:0.078095,((Aestuariirhabdus_litorea:0.098309,Aestuariirhabdus_haliotis:0.116659)[&label="97.9/100"]:0.176614,('Thalassotalea_sp.':0.348016,Spartinivicinus_poritis:0.291334)[&label="96.6/98"]:0.186214)[&label="26/56"]:0.047243)[&label="86.5/93"]:0.07193,((((Agitococcus_lubricus:0.246117,(((Alkanindiges_illinoisensis:0.135749,(Acinetobacter_beijerinckii:0.068846,Acinetobacter_baumannii[&!color=#0f16f5]:0.056103)[&label="87.9/100"]:0.049456)[&label="65.7/95"]:0.086675,((('Psychrobacter_sp.':0.073923,Psychrobacter_arenosus:0.112417)[&label="98.3/100"]:0.151735,(Faucicola_mancuniensis:0.124471,(Faucicola_atlantae:0.173246,(Moraxella_marmotael:0.106725,Moraxella_nasibovis:0.126471)[&label="100/100"]:0.310373)[&label="81/62",!color=#f507d5]:0.090688)[&label="59.4/59",!color=#f507d5]:0.016252)[&label="90.3/70"]:0.071069,(Leucothrix_sargassi:0.019996,Enhydrobacter_aerosaccus:3.0E-6)[&label="96.5/100"]:0.12436)[&label="100/100"]:0.299102)[&label="42.3/88"]:0.025639,(Acinetobacter_gingfengensis:0.084127,Acinetobacter_sedimenti:0.086809)[&label="86.9/100"]:0.040443)[&label="100/100"]:0.379801)[&label="92.8/97"]:0.12866,((Ketobacter_alkanivorans:0.115461,Dongiaceae_bacterium:0.087502)[&label="94.6/100"]:0.115972,Kangiellaceae_bacterium:0.639937)[&label="63.5/87"]:0.096946)[&label="89.3/84"]:0.104883,Alloalcanivorax_venustensis:0.325517)[&label="88.1/90"]:0.110785,Pelagibaculum_spongiae:0.399395)[&label="77.2/75"]:0.037967)[&label="83.1/83"]:0.036209)[&label="90.1/92"]:0.069512,((Methylogaea_oryzae:0.064248,Methylococcaceae_bacterium:0.165521)[&label="98.1/100"]:0.233518,Methylomarinum_roseum:0.464171)[&label="97.1/100"]:0.180888)[&label="92/87"]:0.093819,((Thiohalomonas_denitrificans:0.256364,Methylophaga_sp_:0.354334)[&label="73.7/95"]:0.070718,('Thiolinea_sp.':0.25625,Thiofilum_flexile:0.150865)[&label="99.4/100"]:0.229722)[&label="83.5/92"]:0.086285)[&label="74.7/80"]:0.046044,(Aquisalimonadaceae_bacterium:0.356717,Natronocella_acetinitrilica:0.094967)[&label="99.6/100"]:0.24986)[&label="27.4/77",!color=#f507d5]:0.042041,(Sediminicurvatus_halobius:0.181324,Spiribacter_pallidus:0.380895)[&label="95.9/100"]:0.160234)[&label="96.3/97"]:0.152905,((((((((((Piscinibacter_terrae:0.208026,((((Polaromonas_glacialis:0.214208,'Acidovorax_sp.':0.147447)[&label="30.8/92"]:0.042511,Comamonas_humi:0.24356)[&label="74.1/96"]:0.012722,Ramlibacter_tataouinensis:0.170762)[&label="83.6/97"]:0.030285,(Xylophilus_ampelinus:0.182669,Tepidimonas_taiwanensis:0.224578)[&label="91.2/98"]:0.077639)[&label="88.1/99"]:0.069773)[&label="59.4/85"]:0.037933,(Pseudaquabacterium_pictum:0.284113,Aquariibacter_albus:0.218755)[&label="88.2/90"]:0.095105)[&label="99.5/100"]:0.213488,('Robbsia_sp.':0.228176,((((Pollutimonas_harenae:0.129209,Pusillimonas_noertemannii:0.098233)[&label="96.6/100"]:0.136459,Jezberella_montanilacus:0.179338)[&label="88.7/100"]:0.09102,Kerstersia_gyiorum:0.250471)[&label="96.3/100"]:0.133521,Oxalobacter_vibrioformis:0.32312)[&label="84.9/90"]:0.052666)[&label="69.2/90"]:0.056388)[&label="91/99"]:0.078132,Gemmatimonadaceae_bacterium:0.382033)[&label="88.2/66",!color=#f507d5]:0.063277,(((Steroidobacteraceae_bacterium:0.128975,Xanthobacteraceae_bacterium:0.495683)[&label="91.6/99"]:0.059841,(Denitromonas_iodatirespirans:0.181647,Niveibacterium_terrae:0.221173)[&label="84.5/77"]:0.050196)[&label="78/78"]:0.022692,Georgfuchsia_toluolica:0.206267)[&label="89/95"]:0.05677)[&label="75.7/46",!color=#f507d5]:0.011416,Azospira_inquinata:0.219861)[&label="89.8/49",!color=#f507d5]:0.044705,(Rhodocyclaceae_bacterium:0.349308,'Ferrovum_sp.':0.520372)[&label="83.4/64",!color=#f507d5]:0.091568)[&label="86.5/92"]:0.063152,((Chitinivorax_tropicu:0.276192,((Hydrogenophilaceae_bacterium:0.027275,Parasulfuritortus_cantonensis:0.090018)[&label="94.8/100"]:0.13878,Campylobacterales_bacterium:0.313478)[&label="92.3/99"]:0.101699)[&label="87.4/91"]:0.0699,Gallionella_capsiferriformans:0.249776)[&label="79/84"]:0.036339)[&label="89.7/98"]:0.100091,Paludibacterium_paludis:0.209938)[&label="93.2/100"]:0.121525,(Neisseria_elongata:0.135085,(Bacteriophage__human:0.2237,Paralysiella_testudinis:0.085804)[&label="83/100"]:0.073292)[&label="93.2/100"]:0.111487)[&label="99.7/100"]:0.284718)[&label="81.3/96"]:0.102578,('Sinimarinibacterium_sp.':0.310224,(((Polycyclovorans_algicola:0.273328,Flagellatimonas_centrodinii:0.178479)[&label="99.5/100"]:0.277056,Stenotrophobium_rhamnosiphilum:0.205923)[&label="97.5/100"]:0.18761,Nevskia_soli:0.42882)[&label="85.8/100"]:0.071875)[&label="99/100"]:0.272376)[&label="95.1/100"]:0.21427,'Mariprofundus_sp.':1.042367)[&label="77.8/99"]:0.110553,(((Galendromus_occidentalis:0.77975,Brytella_acorum:0.123355)[&label="100/100"]:0.846098,Sandarakinorhabdus_rubra:0.468777)[&label="99/100"]:0.49782,(Haliangium_ochraceum:1.039375,(Marinithermus_hydrothermalis:0.871558,(Deinococcus_aluminii:0.107577,Deinococcus_frigens:0.224089)[&label="92/100"]:0.306628)[&label="100/100"]:1.102712)[&label="77.9/95"]:0.270156)[&label="26.8/56"]:0.210944)[&label="96.6/95"]:0.258818,(((Trichlorobacter_lovleyi:0.320609,((Malonomonas_rubra:0.090923,Desulfuromusa_kysingii:0.111786)[&label="76.5/100"]:0.029926,(Syntrophotalea_acetylenivorans:0.11385,Geothermobacter_ehrlichii:0.113943)[&label="84.5/100"]:0.073059)[&label="99.5/100"]:0.282423)[&label="92/100"]:0.198248,Nitrospirota_bacterium:0.713399)[&label="81.8/98"]:0.188365,Deferrisoma_camini:1.185239)[&label="81.6/94"]:0.129471)[&label="84.8/99"]:0.13313,Desulfurella:1.417101)[&label="56.1/89"]:0.155445,((Dethiobacter_alkaliphilus:1.043342,(((Paenibacillus_lacisoli:0.256652,Bryobacteraceae_bacterium:0.205896)[&label="99.6/100"]:0.417988,(Anoxybacteroides_voinovskiense:0.266709,Fictibacillus_fluitans:0.289634)[&label="98.5/100"]:0.253436)[&label="53.1/96"]:0.087341,Novibacillus_thermophilus:0.384134)[&label="96.6/100"]:0.293055)[&label="67.5/98"]:0.121344,Koleobacter_methoxysyntrophicus:0.714188)[&label="73.6/96"]:0.185715)[&label="92.7/97"]:0.259697,(Caldicellulosiruptor_morganii:0.298347,Caldicellulosiruptor_danielii:0.267785)[&label="100/100"]:0.950045)[&label="49.9/80"]:0.156482,(((((Virgibacillus_alimentarius:0.304534,Ornithinibacillus_gellani:0.50075)[&label="17.4/90"]:0.113098,Cerasibacillus_quisquiliarum:0.694487)[&label="51.9/96"]:0.136927,(Oceanobacillus_zhaokaii:0.308472,'Virgibacillus_sp.':0.51359)[&label="85.6/97"]:0.174328)[&label="99.7/100"]:0.406547,(Filobacillus_milosensis:0.96957,(Rubeoparvulum_massiliense:0.5545,(Pallidibacillus_thermolactis:0.123555,Pallidibacillus_pasinlerensis:0.073928)[&label="100/100"]:0.532069)[&label="5.4/81"]:0.122877)[&label="72.5/89"]:0.06931)[&label="95.3/98"]:0.208962,((Clostridium_aceticum:0.32998,Alkaliphilus_peptidifermentans:0.618563)[&label="98.8/100"]:0.475657,(Anoxybacter_fermentans:0.468258,Halanaerobium_congolense:0.567408)[&label="99.6/100"]:0.574964)[&label="86.3/84"]:0.143211)[&label="83.6/82"]:0.078971)[&label="97.4/100"]:0.43652,(Streptococcus_moroccensis:0.651287,Enterococcus_rivorum:0.267679)[&label="97/100"]:0.392784);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="label";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="POLAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=false;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
