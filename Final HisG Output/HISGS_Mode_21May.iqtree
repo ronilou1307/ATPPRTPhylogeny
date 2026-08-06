@@ -1,0 +1,630 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: HisGS_21May.fa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 657426
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 129 sequences with 306 amino-acid sites
+Number of constant sites: 61 (= 19.9346% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 61 (= 19.9346% of all sites)
+Number of parsimony informative sites: 213
+Number of distinct site patterns: 294
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+I+R6
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+FreeRate with 6 categories
+Proportion of invariable sites: 0.0549
+Site proportion and rates:  (0.1272,0.0452) (0.1140,0.1438) (0.1842,0.2733) (0.2264,0.7232) (0.2239,1.7757) (0.0694,5.2767)
+
+ Category  Relative_rate  Proportion
+  0         0              0.0549
+  1         0.0452         0.1272
+  2         0.1438         0.1140
+  3         0.2733         0.1842
+  4         0.7232         0.2264
+  5         1.7757         0.2239
+  6         5.2767         0.0694
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -24515.3468 (s.e. 1432.3769)
+Unconstrained log-likelihood (without tree): -1732.3487
+Number of free parameters (#branches + #model parameters): 266
+Akaike information criterion (AIC) score: 49562.6937
+Corrected Akaike information criterion (AICc) score: 53204.8475
+Bayesian information criterion (BIC) score: 50553.1673
+
+Total tree length (sum of branch lengths): 56.0587
+Sum of internal branch lengths: 23.4653 (41.8584% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Marinithermus_hydrothermalis' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++-------Marinithermus_hydrothermalis
+|
++-------Truepera_sp.
+|
+|     +--Deinococcus_aluminii
+|  +--| (57.3/98)
+|  |  |     +--Deinococcus_frigens
+|  |  |  +--| (93.8/100)
+|  |  |  |  +--Deinococcus_koreensis
+|  |  +--| (55/68)
+|  |     +--Deinococcus_taklimakanensis
++--| (73.8/95)
+   |                        +----------Mariprofundus_sp._EBB-1
+   |                    +---| (90.8/91)
+   |                    |   |                 +--Campylobacterales_bacterium
+   |                    |   |              +--| (72/99)
+   |                    |   |              |  |  +--Parasulfuritortus_cantonensis
+   |                    |   |              |  +--| (94.5/100)
+   |                    |   |              |     +--Hydrogenophilaceae_bacterium
+   |                    |   |           +--| (94.5/99)
+   |                    |   |           |  +--Chitinivorax_tropicu
+   |                    |   |        +--| (91/91)
+   |                    |   |        |  |                 +--Ramlibacter_tataouinensis
+   |                    |   |        |  |              +--| (63.4/97)
+   |                    |   |        |  |              |  |  +--Polaromonas_glacialis
+   |                    |   |        |  |              |  +--| (77.3/99)
+   |                    |   |        |  |              |     +--Comamonas_humi
+   |                    |   |        |  |           +--| (76.5/96)
+   |                    |   |        |  |           |  +--Xylophilus_ampelinus
+   |                    |   |        |  |        +--| (98.5/100)
+   |                    |   |        |  |        |  |  +--Pseudaquabacterium_pictum
+   |                    |   |        |  |        |  +--| (85.6/98)
+   |                    |   |        |  |        |     +--Aquariibacter_albus
+   |                    |   |        |  |     +--| (97.8/100)
+   |                    |   |        |  |     |  |     +---Oxalobacter_vibrioformis
+   |                    |   |        |  |     |  |  +--| (92.2/94)
+   |                    |   |        |  |     |  |  |  |  +--Kerstersia_gyiorum
+   |                    |   |        |  |     |  |  |  +--| (95.4/100)
+   |                    |   |        |  |     |  |  |     |     +--Pollutimonas_harenae
+   |                    |   |        |  |     |  |  |     |  +--| (92.2/100)
+   |                    |   |        |  |     |  |  |     |  |  +--Pusillimonas_noertemannii
+   |                    |   |        |  |     |  |  |     +--| (88.2/100)
+   |                    |   |        |  |     |  |  |        +--Jezberella_montanilacus
+   |                    |   |        |  |     |  +--| (82.6/91)
+   |                    |   |        |  |     |     +--Robbsia_sp._KACC_23696
+   |                    |   |        |  |  +--| (77.1/39)
+   |                    |   |        |  |  |  |  +--Niveibacterium_terrae
+   |                    |   |        |  |  |  +--| (66.7/91)
+   |                    |   |        |  |  |     +--Denitromonas_iodatirespirans
+   |                    |   |        |  +--| (84.1/72)
+   |                    |   |        |     |           +--Xanthobacteraceae_bacterium
+   |                    |   |        |     |        +--| (91.1/100)
+   |                    |   |        |     |        |  +--Betaproteobacteria_bacterium
+   |                    |   |        |     |     +--| (99.8/100)
+   |                    |   |        |     |     |  +--Burkholderiales_bacterium
+   |                    |   |        |     |  +--| (90.3/98)
+   |                    |   |        |     |  |  +--Steroidobacteraceae_bacterium
+   |                    |   |        |     +--| (87.8/50)
+   |                    |   |        |        |  +--Sulfurimicrobium_lacus
+   |                    |   |        |        +--| (95.4/99)
+   |                    |   |        |           +--Sulfurirhabdus_autotrophica
+   |                    |   |     +--| (91.7/99)
+   |                    |   |     |  +--Paludibacterium_paludis
+   |                    |   |  +--| (99/100)
+   |                    |   |  |  |     +--Snodgrassella_gandavensis
+   |                    |   |  |  |  +--| (79.7/100)
+   |                    |   |  |  |  |  +--Paralysiella_testudinis
+   |                    |   |  |  +--| (92.3/100)
+   |                    |   |  |     +--Neisseria_elongata
+   |                    |   +--| (92.8/92)
+   |                    |      |        +--Stenotrophobium_rhamnosiphilum
+   |                    |      |  +-----| (100/100)
+   |                    |      |  |     |  +--Polycyclovorans_algicola
+   |                    |      |  |     +--| (96.8/100)
+   |                    |      |  |        +--Flagellatimonas_centrodinii
+   |                    |      +--| (53.9/69)
+   |                    |         |                    +---Balneatrix_alpica
+   |                    |         |                 +--| (83.3/40)
+   |                    |         |                 |  |     +----Litorivivens_sp.
+   |                    |         |                 |  |  +--| (99.3/100)
+   |                    |         |                 |  |  |  |     +--Spongiibacter_taiwanensis
+   |                    |         |                 |  |  |  |  +--| (49.8/100)
+   |                    |         |                 |  |  |  |  |  +--Spongiibacter_nanhainus
+   |                    |         |                 |  |  |  +--| (93.8/100)
+   |                    |         |                 |  |  |     +--Zhongshania_marina
+   |                    |         |                 |  +--| (74.8/37)
+   |                    |         |                 |     |     +--Saccharospirillum_salsuginis
+   |                    |         |                 |     |  +--| (96.7/100)
+   |                    |         |                 |     |  |  +--Natronospirillum_operosum
+   |                    |         |                 |     +--| (97.3/99)
+   |                    |         |                 |        |  +--Thalassolituus_maritimus
+   |                    |         |                 |        +--| (99.2/100)
+   |                    |         |                 |           +--Bacterioplanoides_pacificum
+   |                    |         |              +--| (76.3/85)
+   |                    |         |              |  |  +--Larsenimonas_suaedae
+   |                    |         |              |  +--| (99.8/100)
+   |                    |         |              |     |     +---Zymobacter_palmae
+   |                    |         |              |     |  +--| (71.6/89)
+   |                    |         |              |     |  |  +--Halotalea_alkalilenta
+   |                    |         |              |     +--| (83.3/89)
+   |                    |         |              |        +--Phytohalomonas_tamaricis
+   |                    |         |           +--| (92.4/92)
+   |                    |         |           |  |           +--Teredinibacter_sp._KSP-S5-2
+   |                    |         |           |  |        +--| (98.1/100)
+   |                    |         |           |  |        |  +--Teredinibacter_waterburyi
+   |                    |         |           |  |     +--| (73.8/91)
+   |                    |         |           |  |     |  |  +--Gilvimarinus_japonicus
+   |                    |         |           |  |     |  +--| (96.9/100)
+   |                    |         |           |  |     |     |  +--Simiduia_curdlanivorans
+   |                    |         |           |  |     |     +--| (99/100)
+   |                    |         |           |  |     |        +--Simiduia_aestruariiviva
+   |                    |         |           |  |  +--| (97.4/100)
+   |                    |         |           |  |  |  +--Porticoccaceae_bacterium
+   |                    |         |           |  +--| (92.3/99)
+   |                    |         |           |     |     +--Hydrocarboniclastica_marina
+   |                    |         |           |     |  +--| (55.3/98)
+   |                    |         |           |     |  |  +--Halomonadaceae_bacterium
+   |                    |         |           |     +--| (97.4/100)
+   |                    |         |           |        +--Marinobacter_salinisoli
+   |                    |         |        +--| (89.3/95)
+   |                    |         |        |  |                       +--Lwoffella_lincolnii
+   |                    |         |        |  |                    +--| (71.3/93)
+   |                    |         |        |  |                    |  |  +--Psychrobacter_arcticus
+   |                    |         |        |  |                    |  +--| (90.7/100)
+   |                    |         |        |  |                    |     +--Psychrobacter_arenosus
+   |                    |         |        |  |                 +--| (84.2/97)
+   |                    |         |        |  |                 |  |  +--Moraxella_nasibovis
+   |                    |         |        |  |                 |  +--| (100/100)
+   |                    |         |        |  |                 |     +--Moraxella_marmotael
+   |                    |         |        |  |              +--| (98.4/100)
+   |                    |         |        |  |              |  |  +**Enhydrobacter_aerosaccus
+   |                    |         |        |  |              |  +--| (99/100)
+   |                    |         |        |  |              |     +--Leucothrix_sargassi
+   |                    |         |        |  |           +--| (100/100)
+   |                    |         |        |  |           |  |        +--Acinetobacter_beijerinckii
+   |                    |         |        |  |           |  |     +--| (78.5/92)
+   |                    |         |        |  |           |  |     |  +--Acinetobacter_baumannii
+   |                    |         |        |  |           |  |  +--| (95.5/98)
+   |                    |         |        |  |           |  |  |  +--Acinetobacter_pavis
+   |                    |         |        |  |           |  +--| (63.4/90)
+   |                    |         |        |  |           |     |  +--Acinetobacter_sedimenti
+   |                    |         |        |  |           |     +--| (90.8/99)
+   |                    |         |        |  |           |        +--Acinetobacter_gingfengensis
+   |                    |         |        |  |        +--| (94.7/93)
+   |                    |         |        |  |        |  +--Agitococcus_lubricus
+   |                    |         |        |  |     +--| (88.2/90)
+   |                    |         |        |  |     |  |  +--Dongiaceae_bacterium
+   |                    |         |        |  |     |  +--| (98.9/100)
+   |                    |         |        |  |     |     +--Ketobacter_alkanivorans
+   |                    |         |        |  |  +--| (88.3/92)
+   |                    |         |        |  |  |  +---Alloalcanivorax_venustensis
+   |                    |         |        |  +--| (91.5/95)
+   |                    |         |        |     |     +--Aestuariirhabdus_litorea
+   |                    |         |        |     |  +--| (99.8/100)
+   |                    |         |        |     |  |  +--Aestuariirhabdus_haliotis
+   |                    |         |        |     +--| (89.4/93)
+   |                    |         |        |        |     +---Thalassotalea_sp._G20_0
+   |                    |         |        |        |  +--| (94.2/94)
+   |                    |         |        |        |  |  +--Spartinivicinus_poritis
+   |                    |         |        |        +--| (82.8/94)
+   |                    |         |        |           |     +--Halopseudomonas_maritima
+   |                    |         |        |           |  +--| (94.3/100)
+   |                    |         |        |           |  |  +--Pseudomonas_saliphila
+   |                    |         |        |           +--| (83.1/95)
+   |                    |         |        |              |        +--Pseudomonas_aeruginosa
+   |                    |         |        |              |     +--| (67/100)
+   |                    |         |        |              |     |  +--Pseudomonas_chlororaphis
+   |                    |         |        |              |  +--| (85.7/99)
+   |                    |         |        |              |  |  |  +--Zestomonas_thermotolerans
+   |                    |         |        |              |  |  +--| (89.1/100)
+   |                    |         |        |              |  |     |  +--Atopomonas_sediminilitoris
+   |                    |         |        |              |  |     +--| (85.9/99)
+   |                    |         |        |              |  |        +----Ventosimonas_gracilis
+   |                    |         |        |              +--| (94.1/99)
+   |                    |         |        |                 +--Thiopsedomonas_dentrificans
+   |                    |         |     +--| (94/90)
+   |                    |         |     |  |     +--Methylococcaceae_bacterium
+   |                    |         |     |  |  +--| (97.7/100)
+   |                    |         |     |  |  |  +--Methylogaea_oryzae
+   |                    |         |     |  +--| (93.4/100)
+   |                    |         |     |     +-----Methylomarinum_roseum
+   |                    |         |  +--| (65.2/74)
+   |                    |         |  |  |     +--Thiolinea_sp.
+   |                    |         |  |  |  +--| (99.1/100)
+   |                    |         |  |  |  |  +--Thiofilum_flexile
+   |                    |         |  |  +--| (88.3/87)
+   |                    |         |  |     |  +---Methylophaga_sp_
+   |                    |         |  |     +--| (77.9/89)
+   |                    |         |  |        +--Thiohalomonas_denitrificans
+   |                    |         +--| (91.9/95)
+   |                    |            |  +--Spiribacter_pallidus
+   |                    |            +--| (97.4/100)
+   |                    |               +--Sediminicurvatus_halobius
+   +--------------------| (100/100)
+                        |        +--Trichlorobacter_lovleyi
+                        |     +--| (86.2/100)
+                        |     |  |     +--Malonomonas_rubra
+                        |     |  |  +--| (64/100)
+                        |     |  |  |  +--Desulfuromusa_kysingii
+                        |     |  +--| (99/100)
+                        |     |     |  +--Syntrophotalea_acetylenivorans
+                        |     |     +--| (80.8/100)
+                        |     |        +--Geothermobacter_ehrlichii
+                        |  +--| (90.5/99)
+                        |  |  +-------Nitrospirota_bacterium
+                        +--| (56.4/92)
+                           |                 +------Streptococcus_moroccensis
+                           |            +----| (98.7/100)
+                           |            |    +--Enterococcus_rivorum
+                           |       +----| (97.3/100)
+                           |       |    |         +---Lactimicrobium_massiliense
+                           |       |    |      +--| (79.8/96)
+                           |       |    |      |  |     +-----Faecalibaculum_rodentium
+                           |       |    |      |  |  +--| (94.1/97)
+                           |       |    |      |  |  |  +--Erysipelotrichaceae_bacterium
+                           |       |    |      |  +--| (62.1/90)
+                           |       |    |      |     |        +---Allobaculum_mucilyticum
+                           |       |    |      |     |     +--| (99.4/100)
+                           |       |    |      |     |     |  +--Ileibacterium_valens
+                           |       |    |      |     |  +--| (69.4/90)
+                           |       |    |      |     |  |  +--Faecalitalea_cylindroids
+                           |       |    |      |     +--| (92.6/94)
+                           |       |    |      |        |     +--Faecalicoccus_acidformans
+                           |       |    |      |        |  +--| (99.2/100)
+                           |       |    |      |        |  |  +--Faecalicoccus_pleomorphus
+                           |       |    |      |        +--| (88.2/97)
+                           |       |    |      |           +--Holdemanellis_Biformis
+                           |       |    +------| (99.7/100)
+                           |       |           |  +-----Hathewaya_proteolytica
+                           |       |           +--| (39.7/90)
+                           |       |              +--Longicatena_caecimuris
+                           |  +----| (97.6/100)
+                           |  |    |     +--------Filobacillus_milosensis
+                           |  |    |  +--| (85/99)
+                           |  |    |  |  |      +--Pallidibacillus_thermolactis
+                           |  |    |  |  +------| (99.7/100)
+                           |  |    |  |         +--Pallidibacillus_pasinlerensis
+                           |  |    +--| (82.1/97)
+                           |  |       |      +---Virgibacillus_alimentarius
+                           |  |       |   +--| (81.9/98)
+                           |  |       |   |  +----Ornithinibacillus_gellani
+                           |  |       +---| (96.2/100)
+                           |  |           +----Cerasibacillus_quisquiliarum
+                           +--| (89.8/96)
+                              |              +--Paenibacillus_lacisoli
+                              |       +------| (99.7/100)
+                              |       |      +--Bryobacteraceae_bacterium
+                              |  +----| (99.2/100)
+                              |  |    |        +--Fictibacillus_fluitans
+                              |  |    |     +--| (96.2/100)
+                              |  |    |     |  +--Exobacillus_caeni
+                              |  |    |  +--| (46.6/95)
+                              |  |    |  |  +--Bacillus_methanolicus
+                              |  |    +--| (92.3/100)
+                              |  |       +--Anoxybacteroides_voinovskiense
+                              +--| (91.3/99)
+                                 +------Koleobacter_methoxysyntrophicus
+
+Tree in newick format:
+
+(Marinithermus_hydrothermalis:0.8320799675,Truepera_sp.:0.8166889303,((Deinococcus_aluminii:0.1031834191,((Deinococcus_frigens:0.1476723798,Deinococcus_koreensis:0.1428667102)93.8/100:0.0708923534,Deinococcus_taklimakanensis:0.1944135095)55/68:0.0530605957)57.3/98:0.1576357342,((Mariprofundus_sp._EBB-1:1.0651405431,((((((Campylobacterales_bacterium:0.3334618516,(Parasulfuritortus_cantonensis:0.0896693103,Hydrogenophilaceae_bacterium:0.0406209218)94.5/100:0.1576875921)72/99:0.0686420246,Chitinivorax_tropicu:0.3519051598)94.5/99:0.1163679140,((((((Ramlibacter_tataouinensis:0.1758033284,(Polaromonas_glacialis:0.2698299415,Comamonas_humi:0.2982087664)77.3/99:0.0292259104)63.4/97:0.0709768589,Xylophilus_ampelinus:0.2747977606)76.5/96:0.0608734715,(Pseudaquabacterium_pictum:0.3338567537,Aquariibacter_albus:0.1828847935)85.6/98:0.1071179320)98.5/100:0.1899889620,((Oxalobacter_vibrioformis:0.3872640752,(Kerstersia_gyiorum:0.2415730187,((Pollutimonas_harenae:0.1567886566,Pusillimonas_noertemannii:0.0968568013)92.2/100:0.1039361218,Jezberella_montanilacus:0.2227494864)88.2/100:0.1010910819)95.4/100:0.1524683050)92.2/94:0.1182862120,Robbsia_sp._KACC_23696:0.2033654237)82.6/91:0.0680610107)97.8/100:0.1646374794,(Niveibacterium_terrae:0.2365450124,Denitromonas_iodatirespirans:0.1783944263)66.7/91:0.0920963847)77.1/39:0.0316647414,((((Xanthobacteraceae_bacterium:0.2275923289,Betaproteobacteria_bacterium:0.1362502243)91.1/100:0.0996054803,Burkholderiales_bacterium:0.2621564002)99.8/100:0.2757350524,Steroidobacteraceae_bacterium:0.1350435074)90.3/98:0.0721740835,(Sulfurimicrobium_lacus:0.1419380825,Sulfurirhabdus_autotrophica:0.1768051681)95.4/99:0.1122352556)87.8/50:0.0531883080)84.1/72:0.0505052320)91/91:0.0828270851,Paludibacterium_paludis:0.2387499141)91.7/99:0.1165340746,((Snodgrassella_gandavensis:0.2640768542,Paralysiella_testudinis:0.0759833401)79.7/100:0.0608863803,Neisseria_elongata:0.1732533313)92.3/100:0.1116670211)99/100:0.3251876196,((Stenotrophobium_rhamnosiphilum:0.2269931934,(Polycyclovorans_algicola:0.2476440145,Flagellatimonas_centrodinii:0.2538445423)96.8/100:0.2495573877)100/100:0.6455879550,(((((((Balneatrix_alpica:0.4481714088,((Litorivivens_sp.:0.4792481097,((Spongiibacter_taiwanensis:0.1862823162,Spongiibacter_nanhainus:0.1269941251)49.8/100:0.0321608617,Zhongshania_marina:0.1185115529)93.8/100:0.1581415911)99.3/100:0.2492692162,((Saccharospirillum_salsuginis:0.3378273695,Natronospirillum_operosum:0.3178326356)96.7/100:0.2122731640,(Thalassolituus_maritimus:0.1070362283,Bacterioplanoides_pacificum:0.1257125343)99.2/100:0.2365334905)97.3/99:0.1497093717)74.8/37:0.0407884127)83.3/40:0.0971497909,(Larsenimonas_suaedae:0.1667513943,((Zymobacter_palmae:0.4631251222,Halotalea_alkalilenta:0.1759625613)71.6/89:0.0707829711,Phytohalomonas_tamaricis:0.1383588020)83.3/89:0.0635784884)99.8/100:0.2914408686)76.3/85:0.0540280280,((((Teredinibacter_sp._KSP-S5-2:0.1313174904,Teredinibacter_waterburyi:0.2033837792)98.1/100:0.1955919244,(Gilvimarinus_japonicus:0.1823851502,(Simiduia_curdlanivorans:0.0966236134,Simiduia_aestruariiviva:0.0701587260)99/100:0.1970848195)96.9/100:0.1834883773)73.8/91:0.0822132402,Porticoccaceae_bacterium:0.3533773195)97.4/100:0.1639651952,((Hydrocarboniclastica_marina:0.2860456523,Halomonadaceae_bacterium:0.2523835128)55.3/98:0.1077086830,Marinobacter_salinisoli:0.2350636934)97.4/100:0.1814817587)92.3/99:0.1119119117)92.4/92:0.0665856637,((((((((Lwoffella_lincolnii:0.1342807614,(Psychrobacter_arcticus:0.1926983873,Psychrobacter_arenosus:0.1101688969)90.7/100:0.1003579465)71.3/93:0.1002830572,(Moraxella_nasibovis:0.1506311151,Moraxella_marmotael:0.1159765942)100/100:0.3688222972)84.2/97:0.0554927583,(Enhydrobacter_aerosaccus:0.0000028725,Leucothrix_sargassi:0.0209749487)99/100:0.1541534518)98.4/100:0.2567582052,(((Acinetobacter_beijerinckii:0.0668273275,Acinetobacter_baumannii:0.0735412475)78.5/92:0.0363447074,Acinetobacter_pavis:0.1029606450)95.5/98:0.1256886669,(Acinetobacter_sedimenti:0.0583223465,Acinetobacter_gingfengensis:0.1271977079)90.8/99:0.0947359417)63.4/90:0.0364501884)100/100:0.3411694631,Agitococcus_lubricus:0.2766145837)94.7/93:0.1585676877,(Dongiaceae_bacterium:0.0788545023,Ketobacter_alkanivorans:0.1169162367)98.9/100:0.2187340354)88.2/90:0.1041663253,Alloalcanivorax_venustensis:0.4009720534)88.3/92:0.1157139813,((Aestuariirhabdus_litorea:0.0964103510,Aestuariirhabdus_haliotis:0.1384155844)99.8/100:0.1960118603,((Thalassotalea_sp._G20_0:0.3962963259,Spartinivicinus_poritis:0.2976035029)94.2/94:0.1816265316,((Halopseudomonas_maritima:0.0841360943,Pseudomonas_saliphila:0.1342187067)94.3/100:0.0805425229,(((Pseudomonas_aeruginosa:0.0926799173,Pseudomonas_chlororaphis:0.1879647354)67/100:0.0259619784,(Zestomonas_thermotolerans:0.1250730465,(Atopomonas_sediminilitoris:0.0480862722,Ventosimonas_gracilis:0.4678708471)85.9/99:0.0698984555)89.1/100:0.0531868411)85.7/99:0.0584979614,Thiopsedomonas_dentrificans:0.2402556811)94.1/99:0.0893315748)83.1/95:0.0513687507)82.8/94:0.0625935370)89.4/93:0.0762378855)91.5/95:0.0782674833)89.3/95:0.0766413164,((Methylococcaceae_bacterium:0.1952322421,Methylogaea_oryzae:0.0788724032)97.7/100:0.2513026684,Methylomarinum_roseum:0.5766598641)93.4/100:0.1763472816)94/90:0.1380084510,((Thiolinea_sp.:0.2766708539,Thiofilum_flexile:0.1509595625)99.1/100:0.2454531829,(Methylophaga_sp_:0.3752924502,Thiohalomonas_denitrificans:0.2831215701)77.9/89:0.0764024792)88.3/87:0.0954707723)65.2/74:0.0256971072,(Spiribacter_pallidus:0.3703435529,Sediminicurvatus_halobius:0.2293262967)97.4/100:0.1884524505)91.9/95:0.1555774312)53.9/69:0.0833578303)92.8/92:0.2769498972)90.8/91:0.3822735373,(((Trichlorobacter_lovleyi:0.3724122137,((Malonomonas_rubra:0.1186040780,Desulfuromusa_kysingii:0.1308741917)64/100:0.0154396160,(Syntrophotalea_acetylenivorans:0.1240073073,Geothermobacter_ehrlichii:0.1279675035)80.8/100:0.0846293554)99/100:0.3184810061)86.2/100:0.1712489216,Nitrospirota_bacterium:0.8389783231)90.5/99:0.2523185900,((((Streptococcus_moroccensis:0.7349805854,Enterococcus_rivorum:0.2925988824)98.7/100:0.5516624541,((Lactimicrobium_massiliense:0.4394961599,((Faecalibaculum_rodentium:0.5773776897,Erysipelotrichaceae_bacterium:0.0857372389)94.1/97:0.1259078376,(((Allobaculum_mucilyticum:0.3861864339,Ileibacterium_valens:0.2591424538)99.4/100:0.2481144714,Faecalitalea_cylindroids:0.2550060048)69.4/90:0.0394558976,((Faecalicoccus_acidformans:0.1899851639,Faecalicoccus_pleomorphus:0.1380335743)99.2/100:0.1927486437,Holdemanellis_Biformis:0.2086384863)88.2/97:0.0460993847)92.6/94:0.0898395935)62.1/90:0.0685323768)79.8/96:0.1118126405,(Hathewaya_proteolytica:0.5850112827,Longicatena_caecimuris:0.2420097885)39.7/90:0.0740321180)99.7/100:0.7209798573)97.3/100:0.5556570847,((Filobacillus_milosensis:0.8745002786,(Pallidibacillus_thermolactis:0.1317612567,Pallidibacillus_pasinlerensis:0.0814592988)99.7/100:0.6864856695)85/99:0.2309527297,((Virgibacillus_alimentarius:0.4587302045,Ornithinibacillus_gellani:0.5060794970)81.9/98:0.2710126655,Cerasibacillus_quisquiliarum:0.5377079403)96.2/100:0.4662721219)82.1/97:0.2365213202)97.6/100:0.4753061093,(((Paenibacillus_lacisoli:0.3240895329,Bryobacteraceae_bacterium:0.1869567057)99.7/100:0.6643561449,(((Fictibacillus_fluitans:0.2080867704,Exobacillus_caeni:0.2802506237)96.2/100:0.1520270769,Bacillus_methanolicus:0.1434112838)46.6/95:0.1175097637,Anoxybacteroides_voinovskiense:0.2020589302)92.3/100:0.2133511603)99.2/100:0.5556557667,Koleobacter_methoxysyntrophicus:0.7393997486)91.3/99:0.2379347128)89.8/96:0.3350075375)56.4/92:0.1628609018)100/100:2.0475413190)73.8/95:0.3663285844);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -24628.288880
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------Marinithermus_hydrothermalis
+|
++--------Truepera_sp.
+|
+|     +--Deinococcus_aluminii
+|  +--| (98)
+|  |  |     +--Deinococcus_frigens
+|  |  |  +--| (100)
+|  |  |  |  +--Deinococcus_koreensis
+|  |  +--| (68)
+|  |     +--Deinococcus_taklimakanensis
++--| (95)
+   |                        +----------Mariprofundus_sp._EBB-1
+   |                    +---| (91)
+   |                    |   |                 +--Campylobacterales_bacterium
+   |                    |   |              +--| (99)
+   |                    |   |              |  |  +--Parasulfuritortus_cantonensis
+   |                    |   |              |  +--| (100)
+   |                    |   |              |     +--Hydrogenophilaceae_bacterium
+   |                    |   |           +--| (99)
+   |                    |   |           |  +--Chitinivorax_tropicu
+   |                    |   |        +--| (91)
+   |                    |   |        |  |              +--Ramlibacter_tataouinensis
+   |                    |   |        |  |           +--| (97)
+   |                    |   |        |  |           |  |  +--Polaromonas_glacialis
+   |                    |   |        |  |           |  +--| (99)
+   |                    |   |        |  |           |     +--Comamonas_humi
+   |                    |   |        |  |        +--| (96)
+   |                    |   |        |  |        |  +--Xylophilus_ampelinus
+   |                    |   |        |  |     +--| (100)
+   |                    |   |        |  |     |  |  +--Pseudaquabacterium_pictum
+   |                    |   |        |  |     |  +--| (98)
+   |                    |   |        |  |     |     +--Aquariibacter_albus
+   |                    |   |        |  |  +--| (100)
+   |                    |   |        |  |  |  |     +---Oxalobacter_vibrioformis
+   |                    |   |        |  |  |  |  +--| (94)
+   |                    |   |        |  |  |  |  |  |  +--Kerstersia_gyiorum
+   |                    |   |        |  |  |  |  |  +--| (100)
+   |                    |   |        |  |  |  |  |     |     +--Pollutimonas_harenae
+   |                    |   |        |  |  |  |  |     |  +--| (100)
+   |                    |   |        |  |  |  |  |     |  |  +--Pusillimonas_noertemannii
+   |                    |   |        |  |  |  |  |     +--| (100)
+   |                    |   |        |  |  |  |  |        +--Jezberella_montanilacus
+   |                    |   |        |  |  |  +--| (91)
+   |                    |   |        |  |  |     +--Robbsia_sp._KACC_23696
+   |                    |   |        |  +--| (72)
+   |                    |   |        |     |              +--Xanthobacteraceae_bacterium
+   |                    |   |        |     |           +--| (100)
+   |                    |   |        |     |           |  +--Betaproteobacteria_bacterium
+   |                    |   |        |     |        +--| (100)
+   |                    |   |        |     |        |  +--Burkholderiales_bacterium
+   |                    |   |        |     |     +--| (98)
+   |                    |   |        |     |     |  +--Steroidobacteraceae_bacterium
+   |                    |   |        |     |  +--| (50)
+   |                    |   |        |     |  |  |  +--Niveibacterium_terrae
+   |                    |   |        |     |  |  +--| (91)
+   |                    |   |        |     |  |     +--Denitromonas_iodatirespirans
+   |                    |   |        |     +--| (48)
+   |                    |   |        |        |  +--Sulfurimicrobium_lacus
+   |                    |   |        |        +--| (99)
+   |                    |   |        |           +--Sulfurirhabdus_autotrophica
+   |                    |   |     +--| (99)
+   |                    |   |     |  +--Paludibacterium_paludis
+   |                    |   |  +--| (100)
+   |                    |   |  |  |     +--Snodgrassella_gandavensis
+   |                    |   |  |  |  +--| (100)
+   |                    |   |  |  |  |  +--Paralysiella_testudinis
+   |                    |   |  |  +--| (100)
+   |                    |   |  |     +--Neisseria_elongata
+   |                    |   +--| (92)
+   |                    |      |         +--Stenotrophobium_rhamnosiphilum
+   |                    |      |  +------| (100)
+   |                    |      |  |      |  +--Polycyclovorans_algicola
+   |                    |      |  |      +--| (100)
+   |                    |      |  |         +--Flagellatimonas_centrodinii
+   |                    |      +--| (69)
+   |                    |         |                    +---Balneatrix_alpica
+   |                    |         |                 +--| (54)
+   |                    |         |                 |  |     +---Litorivivens_sp.
+   |                    |         |                 |  |  +--| (100)
+   |                    |         |                 |  |  |  |     +--Spongiibacter_taiwanensis
+   |                    |         |                 |  |  |  |  +--| (100)
+   |                    |         |                 |  |  |  |  |  +--Spongiibacter_nanhainus
+   |                    |         |                 |  |  |  +--| (100)
+   |                    |         |                 |  |  |     +--Zhongshania_marina
+   |                    |         |                 |  +--| (58)
+   |                    |         |                 |     |  +--Larsenimonas_suaedae
+   |                    |         |                 |     +--| (100)
+   |                    |         |                 |        |     +---Zymobacter_palmae
+   |                    |         |                 |        |  +--| (89)
+   |                    |         |                 |        |  |  +--Halotalea_alkalilenta
+   |                    |         |                 |        +--| (89)
+   |                    |         |                 |           +--Phytohalomonas_tamaricis
+   |                    |         |              +--| (85)
+   |                    |         |              |  |     +--Saccharospirillum_salsuginis
+   |                    |         |              |  |  +--| (100)
+   |                    |         |              |  |  |  +--Natronospirillum_operosum
+   |                    |         |              |  +--| (99)
+   |                    |         |              |     |  +--Thalassolituus_maritimus
+   |                    |         |              |     +--| (100)
+   |                    |         |              |        +--Bacterioplanoides_pacificum
+   |                    |         |           +--| (92)
+   |                    |         |           |  |           +--Teredinibacter_sp._KSP-S5-2
+   |                    |         |           |  |        +--| (100)
+   |                    |         |           |  |        |  +--Teredinibacter_waterburyi
+   |                    |         |           |  |     +--| (91)
+   |                    |         |           |  |     |  |  +--Gilvimarinus_japonicus
+   |                    |         |           |  |     |  +--| (100)
+   |                    |         |           |  |     |     |  +--Simiduia_curdlanivorans
+   |                    |         |           |  |     |     +--| (100)
+   |                    |         |           |  |     |        +--Simiduia_aestruariiviva
+   |                    |         |           |  |  +--| (100)
+   |                    |         |           |  |  |  +--Porticoccaceae_bacterium
+   |                    |         |           |  +--| (99)
+   |                    |         |           |     |     +--Hydrocarboniclastica_marina
+   |                    |         |           |     |  +--| (98)
+   |                    |         |           |     |  |  +--Halomonadaceae_bacterium
+   |                    |         |           |     +--| (100)
+   |                    |         |           |        +--Marinobacter_salinisoli
+   |                    |         |        +--| (95)
+   |                    |         |        |  |                       +--Lwoffella_lincolnii
+   |                    |         |        |  |                    +--| (93)
+   |                    |         |        |  |                    |  |  +--Psychrobacter_arcticus
+   |                    |         |        |  |                    |  +--| (100)
+   |                    |         |        |  |                    |     +--Psychrobacter_arenosus
+   |                    |         |        |  |                 +--| (97)
+   |                    |         |        |  |                 |  |  +--Moraxella_nasibovis
+   |                    |         |        |  |                 |  +--| (100)
+   |                    |         |        |  |                 |     +--Moraxella_marmotael
+   |                    |         |        |  |              +--| (100)
+   |                    |         |        |  |              |  |  +--Enhydrobacter_aerosaccus
+   |                    |         |        |  |              |  +--| (100)
+   |                    |         |        |  |              |     +--Leucothrix_sargassi
+   |                    |         |        |  |           +--| (100)
+   |                    |         |        |  |           |  |        +--Acinetobacter_beijerinckii
+   |                    |         |        |  |           |  |     +--| (92)
+   |                    |         |        |  |           |  |     |  +--Acinetobacter_baumannii
+   |                    |         |        |  |           |  |  +--| (98)
+   |                    |         |        |  |           |  |  |  +--Acinetobacter_pavis
+   |                    |         |        |  |           |  +--| (90)
+   |                    |         |        |  |           |     |  +--Acinetobacter_sedimenti
+   |                    |         |        |  |           |     +--| (99)
+   |                    |         |        |  |           |        +--Acinetobacter_gingfengensis
+   |                    |         |        |  |        +--| (93)
+   |                    |         |        |  |        |  +--Agitococcus_lubricus
+   |                    |         |        |  |     +--| (90)
+   |                    |         |        |  |     |  |  +--Dongiaceae_bacterium
+   |                    |         |        |  |     |  +--| (100)
+   |                    |         |        |  |     |     +--Ketobacter_alkanivorans
+   |                    |         |        |  |  +--| (92)
+   |                    |         |        |  |  |  +---Alloalcanivorax_venustensis
+   |                    |         |        |  +--| (95)
+   |                    |         |        |     |     +--Aestuariirhabdus_litorea
+   |                    |         |        |     |  +--| (100)
+   |                    |         |        |     |  |  +--Aestuariirhabdus_haliotis
+   |                    |         |        |     +--| (93)
+   |                    |         |        |        |     +---Thalassotalea_sp._G20_0
+   |                    |         |        |        |  +--| (94)
+   |                    |         |        |        |  |  +--Spartinivicinus_poritis
+   |                    |         |        |        +--| (94)
+   |                    |         |        |           |     +--Halopseudomonas_maritima
+   |                    |         |        |           |  +--| (100)
+   |                    |         |        |           |  |  +--Pseudomonas_saliphila
+   |                    |         |        |           +--| (95)
+   |                    |         |        |              |        +--Pseudomonas_aeruginosa
+   |                    |         |        |              |     +--| (100)
+   |                    |         |        |              |     |  +--Pseudomonas_chlororaphis
+   |                    |         |        |              |  +--| (99)
+   |                    |         |        |              |  |  |  +--Zestomonas_thermotolerans
+   |                    |         |        |              |  |  +--| (100)
+   |                    |         |        |              |  |     |  +--Atopomonas_sediminilitoris
+   |                    |         |        |              |  |     +--| (99)
+   |                    |         |        |              |  |        +----Ventosimonas_gracilis
+   |                    |         |        |              +--| (99)
+   |                    |         |        |                 +--Thiopsedomonas_dentrificans
+   |                    |         |     +--| (90)
+   |                    |         |     |  |     +--Methylococcaceae_bacterium
+   |                    |         |     |  |  +--| (100)
+   |                    |         |     |  |  |  +--Methylogaea_oryzae
+   |                    |         |     |  +--| (100)
+   |                    |         |     |     +-----Methylomarinum_roseum
+   |                    |         |  +--| (74)
+   |                    |         |  |  |     +--Thiolinea_sp.
+   |                    |         |  |  |  +--| (100)
+   |                    |         |  |  |  |  +--Thiofilum_flexile
+   |                    |         |  |  +--| (87)
+   |                    |         |  |     |  +---Methylophaga_sp_
+   |                    |         |  |     +--| (89)
+   |                    |         |  |        +--Thiohalomonas_denitrificans
+   |                    |         +--| (95)
+   |                    |            |  +---Spiribacter_pallidus
+   |                    |            +--| (100)
+   |                    |               +--Sediminicurvatus_halobius
+   +--------------------| (100)
+                        |        +---Trichlorobacter_lovleyi
+                        |     +--| (100)
+                        |     |  |     +--Malonomonas_rubra
+                        |     |  |  +--| (100)
+                        |     |  |  |  +--Desulfuromusa_kysingii
+                        |     |  +--| (100)
+                        |     |     |  +--Syntrophotalea_acetylenivorans
+                        |     |     +--| (100)
+                        |     |        +--Geothermobacter_ehrlichii
+                        |  +--| (99)
+                        |  |  +-------Nitrospirota_bacterium
+                        +--| (92)
+                           |                 +-------Streptococcus_moroccensis
+                           |            +----| (100)
+                           |            |    +--Enterococcus_rivorum
+                           |       +----| (100)
+                           |       |    |          +---Lactimicrobium_massiliense
+                           |       |    |       +--| (96)
+                           |       |    |       |  |     +-----Faecalibaculum_rodentium
+                           |       |    |       |  |  +--| (97)
+                           |       |    |       |  |  |  +--Erysipelotrichaceae_bacterium
+                           |       |    |       |  +--| (90)
+                           |       |    |       |     |        +---Allobaculum_mucilyticum
+                           |       |    |       |     |     +--| (100)
+                           |       |    |       |     |     |  +--Ileibacterium_valens
+                           |       |    |       |     |  +--| (90)
+                           |       |    |       |     |  |  +--Faecalitalea_cylindroids
+                           |       |    |       |     +--| (94)
+                           |       |    |       |        |     +--Faecalicoccus_acidformans
+                           |       |    |       |        |  +--| (100)
+                           |       |    |       |        |  |  +--Faecalicoccus_pleomorphus
+                           |       |    |       |        +--| (97)
+                           |       |    |       |           +--Holdemanellis_Biformis
+                           |       |    +-------| (100)
+                           |       |            |  +-----Hathewaya_proteolytica
+                           |       |            +--| (90)
+                           |       |               +--Longicatena_caecimuris
+                           |  +----| (100)
+                           |  |    |     +--------Filobacillus_milosensis
+                           |  |    |  +--| (99)
+                           |  |    |  |  |      +--Pallidibacillus_thermolactis
+                           |  |    |  |  +------| (100)
+                           |  |    |  |         +--Pallidibacillus_pasinlerensis
+                           |  |    +--| (97)
+                           |  |       |      +----Virgibacillus_alimentarius
+                           |  |       |   +--| (98)
+                           |  |       |   |  +----Ornithinibacillus_gellani
+                           |  |       +---| (100)
+                           |  |           +-----Cerasibacillus_quisquiliarum
+                           +--| (96)
+                              |              +--Paenibacillus_lacisoli
+                              |       +------| (100)
+                              |       |      +--Bryobacteraceae_bacterium
+                              |  +----| (100)
+                              |  |    |        +--Fictibacillus_fluitans
+                              |  |    |     +--| (100)
+                              |  |    |     |  +--Exobacillus_caeni
+                              |  |    |  +--| (95)
+                              |  |    |  |  +--Bacillus_methanolicus
+                              |  |    +--| (100)
+                              |  |       +--Anoxybacteroides_voinovskiense
+                              +--| (99)
+                                 +-------Koleobacter_methoxysyntrophicus
+
+
+Consensus tree in newick format: 
+
+(Marinithermus_hydrothermalis:0.3854149791,Truepera_sp.:0.3934344788,((Deinococcus_aluminii:0.0580253682,((Deinococcus_frigens:0.0751708137,Deinococcus_koreensis:0.0746151689)100:0.0337168057,Deinococcus_taklimakanensis:0.0946175812)68:0.0240856237)98:0.0737517168,((Mariprofundus_sp._EBB-1:0.5027701015,((((((Campylobacterales_bacterium:0.1667905028,(Parasulfuritortus_cantonensis:0.0440691768,Hydrogenophilaceae_bacterium:0.0178941632)100:0.0644289676)99:0.0416220309,Chitinivorax_tropicu:0.1742493465)99:0.0560205627,(((((Ramlibacter_tataouinensis:0.0829462884,(Polaromonas_glacialis:0.1302183826,Comamonas_humi:0.1413795500)99:0.0121292420)97:0.0356639375,Xylophilus_ampelinus:0.1340510697)96:0.0256718780,(Pseudaquabacterium_pictum:0.1589063011,Aquariibacter_albus:0.0882791435)98:0.0533518625)100:0.0867371697,((Oxalobacter_vibrioformis:0.1894137076,(Kerstersia_gyiorum:0.1215581803,((Pollutimonas_harenae:0.0804389903,Pusillimonas_noertemannii:0.0494008314)100:0.0500236074,Jezberella_montanilacus:0.1113624571)100:0.0455371186)100:0.0711813900)94:0.0555567625,Robbsia_sp._KACC_23696:0.1014040436)91:0.0353225697)100:0.0820537291,(((((Xanthobacteraceae_bacterium:0.1046352010,Betaproteobacteria_bacterium:0.0682616110)100:0.0560680101,Burkholderiales_bacterium:0.1153082662)100:0.1342936598,Steroidobacteraceae_bacterium:0.0643892020)98:0.0345710446,(Niveibacterium_terrae:0.1063995295,Denitromonas_iodatirespirans:0.0928403286)91:0.0382553000)50:0.0339905500,(Sulfurimicrobium_lacus:0.0658548292,Sulfurirhabdus_autotrophica:0.0855976976)99:0.0576921980)48:0.0074586913)72:0.0232196065)91:0.0296184931,Paludibacterium_paludis:0.1238677675)99:0.0502590759,((Snodgrassella_gandavensis:0.1271072965,Paralysiella_testudinis:0.0371089698)100:0.0288022993,Neisseria_elongata:0.0801694990)100:0.0590798877)100:0.1494397962,((Stenotrophobium_rhamnosiphilum:0.1069890504,(Polycyclovorans_algicola:0.1080628800,Flagellatimonas_centrodinii:0.1331997136)100:0.1129228732)100:0.3070259604,(((((((Balneatrix_alpica:0.2177793096,((Litorivivens_sp.:0.2127528745,((Spongiibacter_taiwanensis:0.0880535229,Spongiibacter_nanhainus:0.0615957079)100:0.0141884852,Zhongshania_marina:0.0589113404)100:0.0807195060)100:0.1045286998,(Larsenimonas_suaedae:0.0738689172,((Zymobacter_palmae:0.2094117194,Halotalea_alkalilenta:0.0859546496)89:0.0325782360,Phytohalomonas_tamaricis:0.0750977029)89:0.0300481788)100:0.1323599450)58:0.0388583653)54:0.0192804842,((Saccharospirillum_salsuginis:0.1544154859,Natronospirillum_operosum:0.1500237794)100:0.1138529865,(Thalassolituus_maritimus:0.0442786035,Bacterioplanoides_pacificum:0.0680900772)100:0.1213818860)99:0.0715679643)85:0.0358242022,((((Teredinibacter_sp._KSP-S5-2:0.0587168815,Teredinibacter_waterburyi:0.0970995242)100:0.0970254731,(Gilvimarinus_japonicus:0.0897354788,(Simiduia_curdlanivorans:0.0476143162,Simiduia_aestruariiviva:0.0305254167)100:0.0865535674)100:0.0831386930)91:0.0364187558,Porticoccaceae_bacterium:0.1688513729)100:0.0779930300,((Hydrocarboniclastica_marina:0.1342061190,Halomonadaceae_bacterium:0.1230564732)98:0.0579987294,Marinobacter_salinisoli:0.1033873231)100:0.0731110696)99:0.0578880165)92:0.0339303382,((((((((Lwoffella_lincolnii:0.0657656407,(Psychrobacter_arcticus:0.0983759782,Psychrobacter_arenosus:0.0579358039)100:0.0434911853)93:0.0494939775,(Moraxella_nasibovis:0.0665920446,Moraxella_marmotael:0.0544811636)100:0.1736318102)97:0.0204770171,(Enhydrobacter_aerosaccus:0.0000022093,Leucothrix_sargassi:0.0106493098)100:0.0754626369)100:0.1215408473,(((Acinetobacter_beijerinckii:0.0340064098,Acinetobacter_baumannii:0.0372663248)92:0.0184673807,Acinetobacter_pavis:0.0535936162)98:0.0626480331,(Acinetobacter_sedimenti:0.0315807552,Acinetobacter_gingfengensis:0.0629693185)99:0.0474149406)90:0.0226329968)100:0.1575982576,Agitococcus_lubricus:0.1291871641)93:0.0755611448,(Dongiaceae_bacterium:0.0400196167,Ketobacter_alkanivorans:0.0574754757)100:0.1023539565)90:0.0441382172,Alloalcanivorax_venustensis:0.1950626818)92:0.0612843377,((Aestuariirhabdus_litorea:0.0484485641,Aestuariirhabdus_haliotis:0.0656610553)100:0.1002564483,((Thalassotalea_sp._G20_0:0.1910578691,Spartinivicinus_poritis:0.1437833701)94:0.0843998645,((Halopseudomonas_maritima:0.0406951353,Pseudomonas_saliphila:0.0659362706)100:0.0373369949,(((Pseudomonas_aeruginosa:0.0421098654,Pseudomonas_chlororaphis:0.0875602822)100:0.0084548017,(Zestomonas_thermotolerans:0.0622784020,(Atopomonas_sediminilitoris:0.0211804896,Ventosimonas_gracilis:0.2192281780)99:0.0362361218)100:0.0264668548)99:0.0304409902,Thiopsedomonas_dentrificans:0.1151735404)99:0.0420425774)95:0.0236302335)94:0.0269130838)93:0.0297728025)95:0.0407222014)95:0.0349636918,((Methylococcaceae_bacterium:0.0938666193,Methylogaea_oryzae:0.0347112282)100:0.1231403367,Methylomarinum_roseum:0.2718815245)100:0.0933820385)90:0.0629290013,((Thiolinea_sp.:0.1381324130,Thiofilum_flexile:0.0692571542)100:0.1165803312,(Methylophaga_sp_:0.1811334755,Thiohalomonas_denitrificans:0.1325139121)89:0.0353440916)87:0.0424568452)74:0.0130893630,(Spiribacter_pallidus:0.1882150110,Sediminicurvatus_halobius:0.1074141419)100:0.0887508278)95:0.0686586840)69:0.0360123291)92:0.1311361515)91:0.1844487437,(((Trichlorobacter_lovleyi:0.1825088897,((Malonomonas_rubra:0.0572523662,Desulfuromusa_kysingii:0.0649445533)100:0.0088257434,(Syntrophotalea_acetylenivorans:0.0605089728,Geothermobacter_ehrlichii:0.0626130953)100:0.0394355316)100:0.1529504023)100:0.0915426828,Nitrospirota_bacterium:0.3868526810)99:0.1369033125,((((Streptococcus_moroccensis:0.3905270002,Enterococcus_rivorum:0.1307824384)100:0.2606848622,((Lactimicrobium_massiliense:0.2154988973,((Faecalibaculum_rodentium:0.2795207413,Erysipelotrichaceae_bacterium:0.0384674137)97:0.0606983757,(((Allobaculum_mucilyticum:0.1903988645,Ileibacterium_valens:0.1210734086)100:0.1138197618,Faecalitalea_cylindroids:0.1275831489)90:0.0195455164,((Faecalicoccus_acidformans:0.0941846542,Faecalicoccus_pleomorphus:0.0625665235)100:0.0903376494,Holdemanellis_Biformis:0.0947904337)97:0.0229321934)94:0.0446890580)90:0.0307783252)96:0.0468803531,(Hathewaya_proteolytica:0.2779751717,Longicatena_caecimuris:0.1111971916)90:0.0457127054)100:0.3546648238)100:0.2584764722,((Filobacillus_milosensis:0.4301296977,(Pallidibacillus_thermolactis:0.0658464087,Pallidibacillus_pasinlerensis:0.0417487136)100:0.3308418858)99:0.0998587664,((Virgibacillus_alimentarius:0.2326707849,Ornithinibacillus_gellani:0.2319593646)98:0.1242751919,Cerasibacillus_quisquiliarum:0.2694231001)100:0.2135359000)97:0.1150574459)100:0.2200201852,(((Paenibacillus_lacisoli:0.1518729775,Bryobacteraceae_bacterium:0.0962483534)100:0.3174384977,(((Fictibacillus_fluitans:0.1058851965,Exobacillus_caeni:0.1371459214)100:0.0696636645,Bacillus_methanolicus:0.0732114524)95:0.0510094281,Anoxybacteroides_voinovskiense:0.0991896348)100:0.0984469986)100:0.2498951991,Koleobacter_methoxysyntrophicus:0.3703688152)99:0.1132514776)96:0.1657697768)92:0.0566061861)100:0.9482627854)95:0.1640708608);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t HISG_Mode_21May.treefile -m "LG+I{0.0549442}+R6{0.127193,0.0451933,0.114035,0.143762,0.184159,0.273286,0.226351,0.723222,0.223913,1.77565,0.0694058,5.27674}" --length 306
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s HisGS_21May.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s HisGS_21May.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu May 21 12:16:51 2026
+Total CPU time used: 1396.25302 seconds (0h:23m:16s)
+Total wall-clock time used: 354.2497188 seconds (0h:5m:54s)
+
