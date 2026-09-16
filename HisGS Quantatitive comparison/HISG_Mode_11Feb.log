@@ -1,0 +1,429 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    n24-64-384-faith.hpc.hutton.ac.uk (AVX512, FMA3, 377 GB RAM)
+Command: iqtree -s HisGS_11Feb.fa -m Q.PFAM+I+R7 -bb 1000 -alrt 1000 -nt 4 -pre HISG_Mode_11Feb
+Seed:    546497 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Feb 11 10:49:25 2026
+Kernel:  AVX+FMA - 4 threads (4 CPU cores detected)
+
+Reading alignment file HisGS_11Feb.fa ... Fasta format detected
+Reading fasta file: done in 0.000691548 secs using 49.6% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000610637 secs using 99.73% CPU
+Alignment has 132 sequences with 282 columns, 273 distinct patterns
+215 parsimony-informative, 25 singleton sites, 42 constant sites
+                                  Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.0061e-05 secs using 502.3% CPU
+   1  Holdemanellis_Biformis             23.76%    failed      2.05%
+   2  Faecalitalea_cylindroids           23.76%    passed      9.07%
+   3  Faecalibaculum_rodentium           21.28%    passed     37.77%
+   4  Streptococcus_moroccensis          23.76%    passed     47.27%
+   5  Enterococcus_rivorum               24.47%    passed     13.27%
+   6  Virgibacillus_alimentarius         26.24%    passed      8.23%
+   7  Oceanobacillus_zhaokaii            26.24%    passed     11.63%
+   8  Ornithinibacillus_gellani          25.53%    passed     22.37%
+   9  Cerasibacillus_quisquiliarum       25.89%    passed     22.57%
+  10  Filobacillus_milosensis            24.82%    passed     23.80%
+  11  Pallidibacillus_thermolactis       24.11%    passed     40.46%
+  12  Pallidibacillus_pasinlerensis      24.11%    passed     20.93%
+  13  Paenibacillus_lacisoli             24.82%    passed     38.70%
+  14  Bryobacteraceae_bacterium          24.82%    passed      6.65%
+  15  Novibacillus_thermophilus          21.28%    passed     28.11%
+  16  Anoxybacteroides_voinovskiense     24.82%    passed     33.69%
+  17  Fictibacillus_fluitans             24.11%    passed     20.57%
+  18  Koleobacter_methoxysyntrophicus    24.47%    failed      4.30%
+  19  Trichlorobacter_lovleyi            23.40%    passed     84.26%
+  20  Malonomonas_rubra                  21.63%    failed      3.61%
+  21  Desulfuromusa_kysingii             21.99%    failed      2.34%
+  22  Syntrophotalea_acetylenivorans     21.99%    passed     28.74%
+  23  Geothermobacter_ehrlichii          21.99%    failed      1.82%
+  24  Nitrospirota_bacterium             21.28%    failed      4.66%
+  25  Phytohalomonas_tamaricis           23.76%    passed     98.15%
+  26  Larsenimonas_suaedae               21.99%    passed     98.69%
+  27  Zymobacter_palmae                  21.99%    passed     98.43%
+  28  Spongiibacter                      23.76%    passed     99.89%
+  29  Litorivivens_sp.                   29.79%    passed     91.29%
+  30  Balneatrix_alpica                  23.05%    passed     76.05%
+  31  Motiliproteus_sediminis            22.70%    passed     96.36%
+  32  Bacterioplanoides_pacificum        23.76%    passed     95.28%
+  33  Streptococcus_pneumoniae           25.53%    passed     98.45%
+  34  Pseudomonas_aeruginosa             39.72%    passed     98.74%
+  35  Atopomonas_sediminilitoris         26.24%    passed     99.68%
+  36  Zestomonas_thermotolerans          25.53%    passed     99.86%
+  37  Thiopsedomonas_dentrificans        25.53%    passed     98.23%
+  38  Halopseudomonas_yangmingensis      25.53%    passed     99.98%
+  39  Ventosimonas_gracilis              43.26%    passed     90.85%
+  40  Aestuariirhabdus_litorea           22.70%    passed     99.97%
+  41  Aestuariirhabdus_haliotis          23.05%    passed     99.79%
+  42  Methylogaea_oryzae                 25.18%    passed     96.59%
+  43  Methylococcaceae_bacterium         24.11%    passed     78.11%
+  44  Sediminicurvatus_halobius          24.47%    passed     41.83%
+  45  Spiribacter_pallidus               23.40%    passed     77.78%
+  46  Thalassotalea_sp._G20_0            22.70%    passed     96.36%
+  47  Agitococcus_lubricus               23.40%    passed     94.63%
+  48  Ketobacter_alkanivorans            24.82%    passed     98.56%
+  49  Dongiaceae_bacterium               24.82%    passed     99.43%
+  50  Halomonadaceae_bacterium           21.28%    passed     88.10%
+  51  Marinobacter_salinisoli            23.76%    passed     99.55%
+  52  Simiduia_curdlanivorans            25.89%    passed     80.96%
+  53  Simiduia_aestruariiviva            25.53%    passed     92.39%
+  54  Cellvibrio_polysaccharolyticus     25.89%    passed     88.76%
+  55  Teredinibacter_sp._KSP-S5-2        24.47%    passed     99.98%
+  56  Porticoccaceae_bacterium           25.18%    passed     87.10%
+  57  Alloalcanivorax_venustensis        23.40%    passed     99.53%
+  58  Aquisalimonadaceae_bacterium       24.47%    passed     98.50%
+  59  Natronocella_acetinitrilica        22.70%    passed     93.61%
+  60  Thiohalomonas_denitrificans        24.82%    passed     99.88%
+  61  Thiolinea_sp.                      24.11%    passed     97.27%
+  62  Thiofilum_flexile                  24.82%    passed     98.10%
+  63  Methylophaga_sp                    25.89%    passed    100.00%
+  64  Spartinivicinus_poritis            24.11%    passed     86.41%
+  65  Acinetobacter_beijerinckii         19.15%    passed     74.34%
+  66  Acinetobacter_baumannii            19.50%    passed     95.91%
+  67  Acinetobacter_gingfengensis        18.79%    passed     94.25%
+  68  Acinetobacter_sedimenti            15.60%    passed     81.00%
+  69  Psychrobacter_sp._FDAARGOS_221     20.57%    passed     95.15%
+  70  Psychrobacter_arenosus             20.21%    passed     98.05%
+  71  Leucothrix_sargassi                21.99%    passed     99.16%
+  72  Enhydrobacter_aerosaccus           23.40%    passed     99.57%
+  73  Faucicola_atlantae                 23.76%    passed     98.50%
+  74  Moraxella_marmotael                23.05%    passed     99.89%
+  75  Moraxella_nasibovis                25.89%    passed     99.27%
+  76  Methylomarinum_roseum              26.24%    passed     99.83%
+  77  Natronospirillum_operosum          21.99%    passed     98.91%
+  78  Polaromonas_glacialis              23.05%    passed     93.21%
+  79  Acidovorax_sp._SRB_14              21.99%    passed     96.25%
+  80  Ramlibacter_tataouinensis          20.57%    passed     45.51%
+  81  Xylophilus_ampelinus               20.21%    passed     93.63%
+  82  Pseudaquabacterium_pictum          22.70%    passed     61.40%
+  83  Aquariibacter_albus                22.34%    passed     82.34%
+  84  Comamonas_humi                     23.40%    passed     97.03%
+  85  Chitinivorax_tropicu               23.05%    passed     51.29%
+  86  Steroidobacteraceae_bacterium      23.40%    passed     99.94%
+  87  Denitromonas_iodatirespirans       24.11%    passed     99.74%
+  88  Niveibacterium_terrae              23.05%    passed     99.88%
+  89  Hydrogenophilaceae_bacterium       24.11%    passed     99.92%
+  90  Parasulfuritortus_cantonensis      23.05%    passed     97.62%
+  91  Paludibacterium_paludis            23.05%    passed     53.40%
+  92  Neisseria_elongata                 23.40%    passed     97.95%
+  93  Paralysiella_testudinis            22.70%    passed     94.96%
+  94  Robbsia_sp._KACC_23696             20.21%    passed     91.26%
+  95  Pollutimonas_harenae               20.21%    passed     81.79%
+  96  Pusillimonas_noertemannii          19.15%    passed     74.16%
+  97  Jezberella_montanilacus            18.09%    passed     88.29%
+  98  Kerstersia_gyiorum                 19.50%    passed     82.65%
+  99  Oxalobacter_vibrioformis           16.31%    passed     35.14%
+ 100  Campylobacterales_bacterium        41.49%    passed     94.70%
+ 101  Xanthobacteraceae_bacterium        23.40%    passed     83.47%
+ 102  Ferrovum_sp._JA12                  23.40%    passed     96.11%
+ 103  Sinimarinibacterium_sp._CAU_1509   22.70%    passed     99.78%
+ 104  Polycyclovorans_algicola           25.89%    passed     22.89%
+ 105  Flagellatimonas_centrodinii        25.89%    passed     28.14%
+ 106  Stenotrophobium_rhamnosiphilum     25.53%    passed     86.30%
+ 107  Nevskia_soli                       23.40%    passed     95.59%
+ 108  Galendromus_occidentalis           23.76%    passed     60.61%
+ 109  Brytella_acorum                    18.44%    passed     11.08%
+ 110  Sandarakinorhabdus_rubra           21.99%    passed     21.58%
+ 111  Marinithermus_hydrothermalis       25.89%    failed      0.00%
+ 112  Deinococcus_aluminii               21.99%    passed      9.08%
+ 113  Deinococcus_frigens                23.05%    passed      9.62%
+ 114  Erysipelotrichaceae_bacterium      25.18%    failed      3.59%
+ 115  Stenotrophobium_rhamnosiphilum_1   25.53%    passed     86.30%
+ 116  Snodgrassella_gandavensis          23.05%    passed     38.39%
+ 117  Vagococcus_elongatus               26.60%    failed      0.85%
+ 118  Ileibacterium_valens               23.76%    failed      4.29%
+ 119  Allobaculum_mucilyticum            25.18%    passed     58.56%
+ 120  Hathewaya_proteolytica             26.24%    failed      1.78%
+ 121  Hydrocarboniclastica_marina        24.11%    passed     94.64%
+ 122  Gilvimarinus_japonicus             24.47%    passed     74.41%
+ 123  Maricurvus_nonylphenolicus         25.18%    passed     98.00%
+ 124  Sulfurimicrobium_lacus             24.82%    passed     96.36%
+ 125  Nitrsomonas_cryotolerans           24.11%    passed     98.51%
+ 126  Faucicola_mancuniensis             24.11%    passed     71.73%
+ 127  Lwoffella_lincolnii                24.82%    passed     87.23%
+ 128  Acinetobacter_pavis                18.79%    passed     99.91%
+ 129  Polycyclovorans                    25.89%    passed     22.89%
+ 130  Truepera_sp.                       28.01%    passed     12.07%
+ 131  Teredinibacter_waterburyi          25.18%    passed     98.74%
+ 132  Cellvibrio_polysaccharolyticus_1   25.89%    passed     88.76%
+****  TOTAL                              23.89%  11 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Cellvibrio_polysaccharolyticus_1 is identical to Cellvibrio_polysaccharolyticus but kept for subsequent analysis
+NOTE: Polycyclovorans is identical to Polycyclovorans_algicola but kept for subsequent analysis
+NOTE: Stenotrophobium_rhamnosiphilum_1 is identical to Stenotrophobium_rhamnosiphilum but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000312384 secs using 180.2% CPU
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.018 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 546497)...
+
+NOTE: 43 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -25921.873
+2. Current log-likelihood: -25482.420
+3. Current log-likelihood: -25470.436
+4. Current log-likelihood: -25469.202
+5. Current log-likelihood: -25467.247
+6. Current log-likelihood: -25465.242
+7. Current log-likelihood: -25463.855
+8. Current log-likelihood: -25463.396
+9. Current log-likelihood: -25463.250
+10. Current log-likelihood: -25463.137
+11. Current log-likelihood: -25463.020
+12. Current log-likelihood: -25462.908
+13. Current log-likelihood: -25462.798
+14. Current log-likelihood: -25462.693
+15. Current log-likelihood: -25462.591
+Optimal log-likelihood: -25462.426
+Proportion of invariable sites: 0.060
+Site proportion and rates:  (0.132,0.054) (0.121,0.173) (0.155,0.309) (0.190,0.673) (0.105,1.228) (0.135,2.034) (0.103,3.834)
+Parameters optimization took 15 rounds (13.508 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.958232 secs using 400.3% CPU
+Computing ML distances took 0.958466 sec (of wall-clock time) 3.835711 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000466975 secs using 209% CPU
+Constructing RapidNJ tree: done in 0.0435527 secs using 111.1% CPU
+Computing RapidNJ tree took 0.044087 sec (of wall-clock time) 0.049449 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -25474.076
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.865 second
+Computing log-likelihood of 98 initial trees ... 7.080 seconds
+Current best score: -25462.426
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.99452 secs using 397.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -25412.639
+Optimizing NNI: done in 1.02517 secs using 398.8% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -25315.746
+Optimizing NNI: done in 1.18892 secs using 398.4% CPU
+Optimizing NNI: done in 0.850161 secs using 397.8% CPU
+Optimizing NNI: done in 1.05046 secs using 399.7% CPU
+Optimizing NNI: done in 1.02692 secs using 397.6% CPU
+Optimizing NNI: done in 0.83573 secs using 396.7% CPU
+Optimizing NNI: done in 0.914868 secs using 398.2% CPU
+Optimizing NNI: done in 0.805334 secs using 399% CPU
+Optimizing NNI: done in 0.957183 secs using 397.9% CPU
+Iteration 10 / LogL: -25356.884 / Time: 0h:0m:41s
+Optimizing NNI: done in 0.905658 secs using 398.1% CPU
+Optimizing NNI: done in 0.805121 secs using 396.6% CPU
+Optimizing NNI: done in 0.819084 secs using 397.4% CPU
+Optimizing NNI: done in 1.00866 secs using 398.2% CPU
+Optimizing NNI: done in 1.05976 secs using 397% CPU
+Optimizing NNI: done in 1.00469 secs using 398.6% CPU
+Optimizing NNI: done in 0.930316 secs using 397.1% CPU
+Optimizing NNI: done in 1.62313 secs using 399.4% CPU
+Optimizing NNI: done in 0.922762 secs using 398.6% CPU
+Optimizing NNI: done in 1.2569 secs using 399.1% CPU
+Iteration 20 / LogL: -25320.375 / Time: 0h:0m:52s
+Finish initializing candidate tree set (20)
+Current best tree score: -25315.746 / CPU time: 36.574
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 1.74182 secs using 397.4% CPU
+Optimizing NNI: done in 1.6335 secs using 396.5% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -25308.525
+Optimizing NNI: done in 1.39777 secs using 397.3% CPU
+Optimizing NNI: done in 1.65283 secs using 397.6% CPU
+Optimizing NNI: done in 1.42046 secs using 399.3% CPU
+Optimizing NNI: done in 1.19201 secs using 398.3% CPU
+Optimizing NNI: done in 1.45684 secs using 398.7% CPU
+Optimizing NNI: done in 1.40616 secs using 396.7% CPU
+Optimizing NNI: done in 1.39752 secs using 398.2% CPU
+Optimizing NNI: done in 1.74073 secs using 399.2% CPU
+Iteration 30 / LogL: -25310.386 / Time: 0h:1m:9s (0h:3m:38s left)
+Optimizing NNI: done in 1.23735 secs using 398.7% CPU
+Optimizing NNI: done in 1.2749 secs using 396.8% CPU
+Optimizing NNI: done in 1.8392 secs using 398.4% CPU
+Optimizing NNI: done in 1.29009 secs using 399.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 34: -25305.141
+Optimizing NNI: done in 1.1508 secs using 397.9% CPU
+Optimizing NNI: done in 1.43228 secs using 398% CPU
+Optimizing NNI: done in 1.29887 secs using 398.1% CPU
+Optimizing NNI: done in 1.47164 secs using 399% CPU
+Optimizing NNI: done in 1.11696 secs using 398.3% CPU
+Optimizing NNI: done in 1.50447 secs using 398% CPU
+Iteration 40 / LogL: -25305.998 / Time: 0h:1m:24s (0h:3m:22s left)
+Optimizing NNI: done in 1.25101 secs using 399.3% CPU
+Optimizing NNI: done in 1.42981 secs using 398.8% CPU
+Optimizing NNI: done in 1.39241 secs using 397.9% CPU
+Optimizing NNI: done in 1.43729 secs using 398.6% CPU
+Optimizing NNI: done in 1.16612 secs using 399.1% CPU
+Optimizing NNI: done in 1.44091 secs using 398.1% CPU
+Optimizing NNI: done in 1.29562 secs using 398.2% CPU
+Optimizing NNI: done in 1.21462 secs using 399.3% CPU
+Optimizing NNI: done in 1.46446 secs using 398.5% CPU
+Optimizing NNI: done in 1.21481 secs using 398.3% CPU
+Iteration 50 / LogL: -25312.336 / Time: 0h:1m:37s (0h:2m:47s left)
+Log-likelihood cutoff on original alignment: -25416.137
+Optimizing NNI: done in 1.31851 secs using 397.3% CPU
+Optimizing NNI: done in 1.34121 secs using 398.2% CPU
+Optimizing NNI: done in 1.68435 secs using 398% CPU
+Optimizing NNI: done in 1.40174 secs using 397.6% CPU
+Optimizing NNI: done in 1.6781 secs using 398.4% CPU
+Optimizing NNI: done in 1.16839 secs using 398.5% CPU
+Optimizing NNI: done in 1.31236 secs using 396.9% CPU
+Optimizing NNI: done in 1.74036 secs using 398.5% CPU
+Optimizing NNI: done in 1.63182 secs using 397.3% CPU
+Optimizing NNI: done in 1.34249 secs using 399.4% CPU
+Iteration 60 / LogL: -25309.401 / Time: 0h:1m:52s (0h:2m:21s left)
+Optimizing NNI: done in 1.3516 secs using 398% CPU
+Optimizing NNI: done in 1.35476 secs using 396.4% CPU
+Optimizing NNI: done in 1.37531 secs using 398.7% CPU
+Optimizing NNI: done in 1.58516 secs using 398.3% CPU
+Optimizing NNI: done in 1.3532 secs using 397.9% CPU
+Optimizing NNI: done in 1.27271 secs using 397.9% CPU
+Optimizing NNI: done in 1.33079 secs using 397.8% CPU
+Optimizing NNI: done in 1.60513 secs using 398% CPU
+Optimizing NNI: done in 1.39683 secs using 398.4% CPU
+Optimizing NNI: done in 1.06891 secs using 398.2% CPU
+Iteration 70 / LogL: -25311.039 / Time: 0h:2m:6s (0h:1m:57s left)
+Optimizing NNI: done in 1.43131 secs using 398.4% CPU
+Optimizing NNI: done in 1.14131 secs using 397.2% CPU
+Optimizing NNI: done in 1.2614 secs using 398.7% CPU
+Optimizing NNI: done in 1.47613 secs using 397.5% CPU
+Optimizing NNI: done in 1.20482 secs using 398.4% CPU
+Optimizing NNI: done in 1.66405 secs using 397.8% CPU
+Optimizing NNI: done in 1.28213 secs using 399.5% CPU
+Optimizing NNI: done in 1.17198 secs using 397.3% CPU
+Optimizing NNI: done in 1.65047 secs using 398.3% CPU
+Optimizing NNI: done in 1.39622 secs using 399.4% CPU
+Iteration 80 / LogL: -25308.260 / Time: 0h:2m:20s (0h:1m:35s left)
+Optimizing NNI: done in 1.24227 secs using 398.1% CPU
+Optimizing NNI: done in 1.51992 secs using 397.1% CPU
+Optimizing NNI: done in 1.24025 secs using 397.3% CPU
+Optimizing NNI: done in 1.47151 secs using 397.6% CPU
+Optimizing NNI: done in 1.30104 secs using 398.8% CPU
+Optimizing NNI: done in 1.37989 secs using 399.4% CPU
+Optimizing NNI: done in 1.54105 secs using 397.1% CPU
+Optimizing NNI: done in 1.55033 secs using 397.2% CPU
+Optimizing NNI: done in 1.33157 secs using 397.7% CPU
+Optimizing NNI: done in 1.3684 secs using 397.8% CPU
+Iteration 90 / LogL: -25310.501 / Time: 0h:2m:34s (0h:1m:16s left)
+Optimizing NNI: done in 1.357 secs using 397.7% CPU
+Optimizing NNI: done in 1.38833 secs using 398.5% CPU
+Optimizing NNI: done in 1.44022 secs using 398% CPU
+Optimizing NNI: done in 1.37557 secs using 397.7% CPU
+Optimizing NNI: done in 1.22471 secs using 397.5% CPU
+Optimizing NNI: done in 1.34402 secs using 398.8% CPU
+Optimizing NNI: done in 1.31475 secs using 396.9% CPU
+Optimizing NNI: done in 1.22172 secs using 396.6% CPU
+Optimizing NNI: done in 1.56939 secs using 397.7% CPU
+Optimizing NNI: done in 1.31685 secs using 399.2% CPU
+Iteration 100 / LogL: -25307.057 / Time: 0h:2m:48s (0h:0m:57s left)
+Log-likelihood cutoff on original alignment: -25385.001
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Optimizing NNI: done in 1.30377 secs using 398.8% CPU
+Optimizing NNI: done in 1.24717 secs using 398.2% CPU
+Optimizing NNI: done in 1.48751 secs using 398.2% CPU
+Optimizing NNI: done in 1.36743 secs using 398.1% CPU
+Optimizing NNI: done in 1.28886 secs using 397.3% CPU
+Optimizing NNI: done in 1.70332 secs using 396.8% CPU
+Optimizing NNI: done in 1.35817 secs using 396.6% CPU
+Optimizing NNI: done in 1.30481 secs using 398.5% CPU
+Optimizing NNI: done in 1.09307 secs using 396.7% CPU
+Optimizing NNI: done in 1.33216 secs using 399.3% CPU
+Iteration 110 / LogL: -25305.364 / Time: 0h:3m:2s (0h:2m:30s left)
+Optimizing NNI: done in 1.42628 secs using 397.8% CPU
+Optimizing NNI: done in 1.23317 secs using 400.3% CPU
+Optimizing NNI: done in 1.62697 secs using 398.4% CPU
+Optimizing NNI: done in 1.67042 secs using 398.3% CPU
+Optimizing NNI: done in 1.49364 secs using 398% CPU
+Optimizing NNI: done in 1.1418 secs using 397.4% CPU
+Optimizing NNI: done in 1.51192 secs using 397.9% CPU
+Optimizing NNI: done in 1.61446 secs using 396.5% CPU
+Optimizing NNI: done in 1.62541 secs using 397.3% CPU
+Optimizing NNI: done in 1.34153 secs using 399% CPU
+Iteration 120 / LogL: -25305.290 / Time: 0h:3m:16s (0h:2m:12s left)
+Optimizing NNI: done in 1.65127 secs using 398.9% CPU
+Optimizing NNI: done in 1.18739 secs using 397.8% CPU
+Optimizing NNI: done in 1.19668 secs using 397.8% CPU
+Optimizing NNI: done in 1.3021 secs using 398% CPU
+Optimizing NNI: done in 1.21746 secs using 398.6% CPU
+Optimizing NNI: done in 1.50126 secs using 399.2% CPU
+Optimizing NNI: done in 1.40051 secs using 398.7% CPU
+Optimizing NNI: done in 1.25112 secs using 397.6% CPU
+Optimizing NNI: done in 1.32886 secs using 399.2% CPU
+Optimizing NNI: done in 1.53841 secs using 398.7% CPU
+Iteration 130 / LogL: -25308.509 / Time: 0h:3m:30s (0h:1m:54s left)
+Optimizing NNI: done in 1.57908 secs using 397.6% CPU
+Optimizing NNI: done in 1.54487 secs using 398.5% CPU
+Optimizing NNI: done in 1.56475 secs using 397.8% CPU
+Optimizing NNI: done in 1.5586 secs using 397.7% CPU
+Optimizing NNI: done in 1.57916 secs using 397.9% CPU
+TREE SEARCH COMPLETED AFTER 135 ITERATIONS / Time: 0h:3m:38s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -25305.141
+2. Current log-likelihood: -25305.124
+3. Current log-likelihood: -25305.098
+4. Current log-likelihood: -25305.083
+5. Current log-likelihood: -25305.058
+6. Current log-likelihood: -25305.043
+7. Current log-likelihood: -25305.028
+8. Current log-likelihood: -25305.013
+9. Current log-likelihood: -25304.998
+10. Current log-likelihood: -25304.984
+11. Current log-likelihood: -25304.969
+12. Current log-likelihood: -25304.955
+13. Current log-likelihood: -25304.941
+14. Current log-likelihood: -25304.928
+15. Current log-likelihood: -25304.914
+16. Current log-likelihood: -25304.901
+17. Current log-likelihood: -25304.888
+18. Current log-likelihood: -25304.876
+19. Current log-likelihood: -25304.865
+20. Current log-likelihood: -25304.853
+21. Current log-likelihood: -25304.842
+22. Current log-likelihood: -25304.831
+23. Current log-likelihood: -25304.820
+24. Current log-likelihood: -25304.809
+Optimal log-likelihood: -25304.794
+Proportion of invariable sites: 0.054
+Site proportion and rates:  (0.125,0.042) (0.103,0.141) (0.185,0.287) (0.192,0.672) (0.111,1.267) (0.127,2.062) (0.102,3.883)
+Parameters optimization took 24 rounds (17.822 sec)
+BEST SCORE FOUND : -25304.794
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.449 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file HISG_Mode_11Feb.splits.nex
+Total tree length: 53.956
+
+Total number of iterations: 135
+CPU time used for tree search: 802.104 sec (0h:13m:22s)
+Wall-clock time used for tree search: 203.233 sec (0h:3m:23s)
+Total CPU time used: 936.849 sec (0h:15m:36s)
+Total wall-clock time used: 237.151 sec (0h:3m:57s)
+
+Computing bootstrap consensus tree...
+Reading input file HISG_Mode_11Feb.splits.nex...
+132 taxa and 511 splits.
+Consensus tree written to HISG_Mode_11Feb.contree
+Reading input trees file HISG_Mode_11Feb.contree
+Log-likelihood of consensus tree: -25304.793
+
+Analysis results written to: 
+  IQ-TREE report:                HISG_Mode_11Feb.iqtree
+  Maximum-likelihood tree:       HISG_Mode_11Feb.treefile
+  Likelihood distances:          HISG_Mode_11Feb.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          HISG_Mode_11Feb.splits.nex
+  Consensus tree:                HISG_Mode_11Feb.contree
+  Screen log file:               HISG_Mode_11Feb.log
+
+Date and Time: Wed Feb 11 10:53:23 2026

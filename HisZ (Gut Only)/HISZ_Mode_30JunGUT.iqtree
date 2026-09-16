@@ -1,0 +1,233 @@
+IQ-TREE 3.0.1 built Jul  9 2025
+
+Input file name: HisZ_30JunGUT.fa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 209290
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 30 sequences with 388 amino-acid sites
+Number of constant sites: 55 (= 14.1753% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 55 (= 14.1753% of all sites)
+Number of parsimony informative sites: 304
+Number of distinct site patterns: 355
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+I+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.1029
+Gamma shape alpha: 1.2119
+
+ Category  Relative_rate  Proportion
+  0         0              0.1029
+  1         0.1975         0.2243
+  2         0.5934         0.2243
+  3         1.1457         0.2243
+  4         2.5221         0.2243
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -13717.1734 (s.e. 420.8912)
+Unconstrained log-likelihood (without tree): -2246.1174
+Number of free parameters (#branches + #model parameters): 59
+Akaike information criterion (AIC) score: 27552.3469
+Corrected Akaike information criterion (AICc) score: 27573.9323
+Bayesian information criterion (BIC) score: 27786.0462
+
+Total tree length (sum of branch lengths): 15.7039
+Sum of internal branch lengths: 4.7599 (30.3106% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Faecalibaculum_rodentium' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++---------------------------Faecalibaculum_rodentium
+|
+|     +--------------Ileibacterium_valens
++-----| (88.5/89)
+|     +--------------------------Allobaculum_mucilyticum
+|
+|                               +------Clostridium_vincentii
+|                            +--| (32/82)
+|                            |  +---Clostridium_zhoujianii
+|                   +--------| (99.9/100)
+|                   |        |      +--------Clostridium_ulignosum
+|                   |        |  +---| (95.3/90)
+|                   |        |  |   +---------------------Clostrodium_thermobutyricum
+|                   |        +--| (89.4/83)
+|                   |           +--------Clostridium_paraputrificum
+|               +---| (70.5/80)
+|               |   +-------------------Breznakia_blatticola
+|            +--| (90.5/86)
+|            |  +------------------Hathewaya_proteolytica
+|         +--| (97.5/99)
+|         |  |     +---------------Dielma_fastidiosa
+|         |  |  +--| (59.1/69)
+|         |  |  |  +-----------------Amedibacillus_dolichus
+|         |  +--| (91.2/82)
+|         |     |     +-----Longicatena_caecimuris
+|         |     |  +--| (98.6/98)
+|         |     |  |  +-----Clostridium_innocuum
+|         |     +--| (55.1/69)
+|         |        |        +**Hoskinsella_mucinilytica
+|         |        |  +-----| (100/100)
+|         |        |  |     +**Hoskinsella_mucinilytica_dupelabel1
+|         |        +--| (97.7/100)
+|         |           |  +**Absiella_spAM2720
+|         |           +--| (98.3/100)
+|         |              +**Hoskinsella_hominis
+|      +--| (92.2/93)
+|      |  |  +------------Floccifec_porci
+|      |  +--| (59.4/84)
+|      |     |         +--Holdemanella_biformis
+|      |     +---------| (100/100)
+|      |               |  +--Holdemanella_porci1
+|      |               +--| (85.2/99)
+|      |                  +--Holdemanella_porci2
+|   +--| (95.6/74)
+|   |  |                          +--Grylomicrobium_aquisgranense
+|   |  |     +--------------------| (100/100)
+|   |  |     |                    +**Lactimicrobium_massiliense
+|   |  |  +--| (83.2/63)
+|   |  |  |  |        +**Absicoccus_porci
+|   |  |  |  +--------| (100/100)
+|   |  |  |           +--Absicoccus_sp
+|   |  +--| (85.5/65)
+|   |     |    +-----Faecalicoccus_pleomorphus
+|   |     +----| (99.9/100)
+|   |          +--------Faecalicoccus_acidiformans
++---| (81.8/69)
+    |      +-------Dubosiella_newyorkensis
+    +------| (99.9/100)
+           +-------Dubosiella_muris
+
+Tree in newick format:
+
+(Faecalibaculum_rodentium:1.1364028905,(Ileibacterium_valens:0.6085910263,Allobaculum_mucilyticum:1.1195587636)88.5/89:0.2481036896,((((((((Clostridium_vincentii:0.2944010357,Clostridium_zhoujianii:0.1905402246)32/82:0.0440545606,((Clostridium_ulignosum:0.3801614999,Clostrodium_thermobutyricum:0.8868552810)95.3/90:0.1856933210,Clostridium_paraputrificum:0.3970214873)89.4/83:0.0889189815)99.9/100:0.3794163811,Breznakia_blatticola:0.8423249635)70.5/80:0.1978922747,Hathewaya_proteolytica:0.7795630562)90.5/86:0.1554448641,((Dielma_fastidiosa:0.6656890097,Amedibacillus_dolichus:0.7575894832)59.1/69:0.0836633246,((Longicatena_caecimuris:0.2626551305,Clostridium_innocuum:0.2755487192)98.6/98:0.1344462109,((Hoskinsella_mucinilytica:0.0000010008,Hoskinsella_mucinilytica_dupelabel1:0.0000010008)100/100:0.2531180447,(Absiella_spAM2720:0.0000010008,Hoskinsella_hominis:0.0000010008)98.3/100:0.1300930254)97.7/100:0.1274774904)55.1/69:0.0616419310)91.2/82:0.1257507451)97.5/99:0.1175590673,(Floccifec_porci:0.5289676184,(Holdemanella_biformis:0.0476594130,(Holdemanella_porci1:0.0030129918,Holdemanella_porci2:0.0201248556)85.2/99:0.0288363572)100/100:0.4236679484)59.4/84:0.0727440045)92.2/93:0.0718094735,(((Grylomicrobium_aquisgranense:0.0059654229,Lactimicrobium_massiliense:0.0000010008)100/100:0.8439171956,(Absicoccus_porci:0.0000026989,Absicoccus_sp:0.0526130446)100/100:0.3826910137)83.2/63:0.0784546814,(Faecalicoccus_pleomorphus:0.2556987694,Faecalicoccus_acidiformans:0.3873863121)99.9/100:0.2290314403)85.5/65:0.0497437458)95.6/74:0.1473093408,(Dubosiella_newyorkensis:0.3290874940,Dubosiella_muris:0.3332906806)99.9/100:0.3051378159)81.8/69:0.1765289596);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -13717.174798
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------------------------Faecalibaculum_rodentium
+|
+|     +--------------Ileibacterium_valens
++-----| (89)
+|     +--------------------------Allobaculum_mucilyticum
+|
+|                               +------Clostridium_vincentii
+|                            +--| (82)
+|                            |  +---Clostridium_zhoujianii
+|                   +--------| (100)
+|                   |        |      +--------Clostridium_ulignosum
+|                   |        |  +---| (90)
+|                   |        |  |   +---------------------Clostrodium_thermobutyricum
+|                   |        +--| (83)
+|                   |           +--------Clostridium_paraputrificum
+|               +---| (80)
+|               |   +-------------------Breznakia_blatticola
+|            +--| (86)
+|            |  +------------------Hathewaya_proteolytica
+|         +--| (99)
+|         |  |     +---------------Dielma_fastidiosa
+|         |  |  +--| (69)
+|         |  |  |  +-----------------Amedibacillus_dolichus
+|         |  +--| (82)
+|         |     |     +-----Longicatena_caecimuris
+|         |     |  +--| (98)
+|         |     |  |  +-----Clostridium_innocuum
+|         |     +--| (69)
+|         |        |        +--Hoskinsella_mucinilytica
+|         |        |  +-----| (100)
+|         |        |  |     +--Hoskinsella_mucinilytica_dupelabel1
+|         |        +--| (100)
+|         |           |  +--Absiella_spAM2720
+|         |           +--| (100)
+|         |              +--Hoskinsella_hominis
+|      +--| (93)
+|      |  |  +------------Floccifec_porci
+|      |  +--| (84)
+|      |     |         +--Holdemanella_biformis
+|      |     +---------| (100)
+|      |               |  +--Holdemanella_porci1
+|      |               +--| (99)
+|      |                  +--Holdemanella_porci2
+|   +--| (74)
+|   |  |                          +--Grylomicrobium_aquisgranense
+|   |  |     +--------------------| (100)
+|   |  |     |                    +--Lactimicrobium_massiliense
+|   |  |  +--| (63)
+|   |  |  |  |        +--Absicoccus_porci
+|   |  |  |  +--------| (100)
+|   |  |  |           +--Absicoccus_sp
+|   |  +--| (65)
+|   |     |    +-----Faecalicoccus_pleomorphus
+|   |     +----| (100)
+|   |          +--------Faecalicoccus_acidiformans
++---| (69)
+    |      +-------Dubosiella_newyorkensis
+    +------| (100)
+           +-------Dubosiella_muris
+
+
+Consensus tree in newick format: 
+
+(Faecalibaculum_rodentium:1.1372361757,(Ileibacterium_valens:0.6089445800,Allobaculum_mucilyticum:1.1203464455)89:0.2482504220,((((((((Clostridium_vincentii:0.2946466968,Clostridium_zhoujianii:0.1906995549)82:0.0440557472,((Clostridium_ulignosum:0.3804309809,Clostrodium_thermobutyricum:0.8877408871)90:0.1858944215,Clostridium_paraputrificum:0.3973743374)83:0.0890034790)100:0.3797117632,Breznakia_blatticola:0.8431425216)80:0.1980884167,Hathewaya_proteolytica:0.7802830431)86:0.1555718120,((Dielma_fastidiosa:0.6663724137,Amedibacillus_dolichus:0.7583389775)69:0.0835896146,((Longicatena_caecimuris:0.2627924884,Clostridium_innocuum:0.2758225168)98:0.1345344279,((Hoskinsella_mucinilytica:0.0000022611,Hoskinsella_mucinilytica_dupelabel1:0.0000022611)100:0.2532403974,(Absiella_spAM2720:0.0000022611,Hoskinsella_hominis:0.0000022611)100:0.1302641038)100:0.1275568098)69:0.0616731278)82:0.1258458846)99:0.1176666576,(Floccifec_porci:0.5293999566,(Holdemanella_biformis:0.0476914230,(Holdemanella_porci1:0.0030148954,Holdemanella_porci2:0.0201375199)99:0.0288504294)100:0.4240427668)84:0.0727358832)93:0.0718694013,(((Grylomicrobium_aquisgranense:0.0059680796,Lactimicrobium_massiliense:0.0000022611)100:0.8445837562,(Absicoccus_porci:0.0000029461,Absicoccus_sp:0.0526445250)100:0.3829861484)63:0.0784194607,(Faecalicoccus_pleomorphus:0.2558545328,Faecalicoccus_acidiformans:0.3876699569)100:0.2291743908)65:0.0497592303)74:0.1473311992,(Dubosiella_newyorkensis:0.3291168619,Dubosiella_muris:0.3336520178)100:0.3053931479)69:0.1765500365);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t HISZ_Mode_30JunGUT.treefile -m "LG+I{0.102868}+G4{1.21192}" --length 388
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s HisZ_30JunGUT.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s HisZ_30JunGUT.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Jun 30 14:20:05 2026
+Total CPU time used: 94.581109 seconds (0h:1m:34s)
+Total wall-clock time used: 24.18139221 seconds (0h:0m:24s)
+

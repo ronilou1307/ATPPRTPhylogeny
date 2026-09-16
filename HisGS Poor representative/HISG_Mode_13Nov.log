@@ -1,0 +1,899 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    n24-64-384-fred.hpc.hutton.ac.uk (AVX512, FMA3, 377 GB RAM)
+Command: iqtree -s HisG13Nov.fasta -m MFP -bb 1000 -alrt 1000 -nt 4 -pre HISG_Mode_13Nov
+Seed:    954647 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Nov 13 15:32:02 2025
+Kernel:  AVX+FMA - 4 threads (4 CPU cores detected)
+
+Reading alignment file HisG13Nov.fasta ... Fasta format detected
+Reading fasta file: done in 0.000980639 secs
+NOTE: Change sequence name 'Holdemanellis Biformis' -> Holdemanellis_Biformis
+NOTE: Change sequence name 'Phytohalomonas tamaricis' -> Phytohalomonas_tamaricis
+NOTE: Change sequence name 'Larsenimonas suaedae' -> Larsenimonas_suaedae
+NOTE: Change sequence name 'Zymobacter palmae' -> Zymobacter_palmae
+NOTE: Change sequence name 'Terasakiispira papahanaumokuakeensis' -> Terasakiispira_papahanaumokuakeensis
+NOTE: Change sequence name 'Litorivivens sp.' -> Litorivivens_sp.
+NOTE: Change sequence name 'Balneatrix alpica' -> Balneatrix_alpica
+NOTE: Change sequence name 'Motiliproteus sediminis' -> Motiliproteus_sediminis
+NOTE: Change sequence name 'Bacterioplanoides pacificum' -> Bacterioplanoides_pacificum
+NOTE: Change sequence name 'Pantoea sp. Cy-639' -> Pantoea_sp.
+NOTE: Change sequence name 'Thauera sp.' -> Thauera_sp.
+NOTE: Change sequence name 'Streptococcus pneumoniae' -> Streptococcus_pneumoniae
+NOTE: Change sequence name 'Stutzerimonas stutzeri A1501' -> Stutzerimonas_stutzeri
+NOTE: Change sequence name 'Pseudomonas aeruginosa' -> Pseudomonas_aeruginosa
+NOTE: Change sequence name 'Atopomonas sediminilitoris' -> Atopomonas_sediminilitoris
+NOTE: Change sequence name 'Zestomonas thermotolerans' -> Zestomonas_thermotolerans
+NOTE: Change sequence name 'Thiopsedomonas dentrificans' -> Thiopsedomonas_dentrificans
+NOTE: Change sequence name 'Halopseudomonas yangmingensis' -> Halopseudomonas_yangmingensis
+NOTE: Change sequence name 'Ventosimonas gracilis' -> Ventosimonas_gracilis
+NOTE: Change sequence name 'Aestuariirhabdus litorea' -> Aestuariirhabdus_litorea
+NOTE: Change sequence name 'Aestuariirhabdus haliotis' -> Aestuariirhabdus_haliotis
+NOTE: Change sequence name 'Methylogaea oryzae' -> Methylogaea_oryzae
+NOTE: Change sequence name 'Methylococcaceae bacterium' -> Methylococcaceae_bacterium
+NOTE: Change sequence name 'Sediminicurvatus halobius' -> Sediminicurvatus_halobius
+NOTE: Change sequence name 'Spiribacter pallidus' -> Spiribacter_pallidus
+NOTE: Change sequence name 'Thalassotalea sp. G20_0' -> Thalassotalea_sp.
+NOTE: Change sequence name 'Agitococcus lubricus' -> Agitococcus_lubricus
+NOTE: Change sequence name 'Ketobacter alkanivorans' -> Ketobacter_alkanivorans
+NOTE: Change sequence name 'Dongiaceae bacterium' -> Dongiaceae_bacterium
+NOTE: Change sequence name 'Halomonadaceae bacterium' -> Halomonadaceae_bacterium
+NOTE: Change sequence name 'Mangrovitalea sediminis' -> Mangrovitalea_sediminis
+NOTE: Change sequence name 'Marinobacter salinisoli' -> Marinobacter_salinisoli
+NOTE: Change sequence name 'Simiduia curdlanivorans' -> Simiduia_curdlanivorans
+NOTE: Change sequence name 'Simiduia aestruariiviva' -> Simiduia_aestruariiviva
+NOTE: Change sequence name 'Cellvibrio polysaccharolyticus' -> Cellvibrio_polysaccharolyticus
+NOTE: Change sequence name 'Teredinibacter sp. KSP-S5-2' -> Teredinibacter_sp.
+NOTE: Change sequence name 'Porticoccaceae bacterium' -> Porticoccaceae_bacterium
+NOTE: Change sequence name 'Alloalcanivorax venustensis' -> Alloalcanivorax_venustensis
+NOTE: Change sequence name 'Aquisalimonadaceae bacterium' -> Aquisalimonadaceae_bacterium
+NOTE: Change sequence name 'Natronocella acetinitrilica' -> Natronocella_acetinitrilica
+NOTE: Change sequence name 'Thiohalomonas denitrificans' -> Thiohalomonas_denitrificans
+NOTE: Change sequence name 'Thiolinea sp.' -> Thiolinea_sp.
+NOTE: Change sequence name 'Thiofilum flexile' -> Thiofilum_flexile
+NOTE: Change sequence name 'Methylophaga sp,' -> Methylophaga_sp,
+NOTE: Change sequence name 'Spartinivicinus poritis' -> Spartinivicinus_poritis
+NOTE: Change sequence name 'Thermohahella caldifontis' -> Thermohahella_caldifontis
+NOTE: Change sequence name 'Pelagibaculum spongiae' -> Pelagibaculum_spongiae
+NOTE: Change sequence name 'Alkanindiges illinoisensis' -> Alkanindiges_illinoisensis
+NOTE: Change sequence name 'Acinetobacter beijerinckii' -> Acinetobacter_beijerinckii
+NOTE: Change sequence name 'Acinetobacter baumannii' -> Acinetobacter_baumannii
+NOTE: Change sequence name 'Acinetobacter gingfengensis' -> Acinetobacter_gingfengensis
+NOTE: Change sequence name 'Acinetobacter sedimenti' -> Acinetobacter_sedimenti
+NOTE: Change sequence name 'Psychrobacter sp. FDAARGOS_221' -> Psychrobacter_sp.
+NOTE: Change sequence name 'Psychrobacter arenosus' -> Psychrobacter_arenosus
+NOTE: Change sequence name 'Leucothrix sargassi' -> Leucothrix_sargassi
+NOTE: Change sequence name 'Enhydrobacter aerosaccus' -> Enhydrobacter_aerosaccus
+NOTE: Change sequence name 'Faucicola mancuniensis' -> Faucicola_mancuniensis
+NOTE: Change sequence name 'Faucicola atlantae' -> Faucicola_atlantae
+NOTE: Change sequence name 'Moraxella marmotael' -> Moraxella_marmotael
+NOTE: Change sequence name 'Moraxella nasibovis' -> Moraxella_nasibovis
+NOTE: Change sequence name 'Methylomarinum roseum' -> Methylomarinum_roseum
+NOTE: Change sequence name 'Natronospirillum operosum' -> Natronospirillum_operosum
+NOTE: Change sequence name 'Kangiellaceae bacterium' -> Kangiellaceae_bacterium
+NOTE: Change sequence name 'Piscinibacter terrae' -> Piscinibacter_terrae
+NOTE: Change sequence name 'Polaromonas glacialis' -> Polaromonas_glacialis
+NOTE: Change sequence name 'Acidovorax sp. SRB_14' -> Acidovorax_sp.
+NOTE: Change sequence name 'Ramlibacter tataouinensis' -> Ramlibacter_tataouinensis
+NOTE: Change sequence name 'Xylophilus ampelinus' -> Xylophilus_ampelinus
+NOTE: Change sequence name 'Pseudaquabacterium pictum' -> Pseudaquabacterium_pictum
+NOTE: Change sequence name 'Aquariibacter albus' -> Aquariibacter_albus
+NOTE: Change sequence name 'Comamonas humi' -> Comamonas_humi
+NOTE: Change sequence name 'Tepidimonas taiwanensis' -> Tepidimonas_taiwanensis
+NOTE: Change sequence name 'Chitinivorax tropicu' -> Chitinivorax_tropicu
+NOTE: Change sequence name 'Steroidobacteraceae bacterium' -> Steroidobacteraceae_bacterium
+NOTE: Change sequence name 'Azospira inquinata' -> Azospira_inquinata
+NOTE: Change sequence name 'Denitromonas iodatirespirans' -> Denitromonas_iodatirespirans
+NOTE: Change sequence name 'Niveibacterium terrae' -> Niveibacterium_terrae
+NOTE: Change sequence name 'Georgfuchsia toluolica' -> Georgfuchsia_toluolica
+NOTE: Change sequence name 'Hydrogenophilaceae bacterium' -> Hydrogenophilaceae_bacterium
+NOTE: Change sequence name 'Parasulfuritortus cantonensis' -> Parasulfuritortus_cantonensis
+NOTE: Change sequence name 'Gallionella capsiferriformans' -> Gallionella_capsiferriformans
+NOTE: Change sequence name 'Paludibacterium paludis' -> Paludibacterium_paludis
+NOTE: Change sequence name 'Neisseria elongata' -> Neisseria_elongata
+NOTE: Change sequence name 'Bacteriophage (human Metagenome)' -> Bacteriophage_(human
+NOTE: Change sequence name 'Paralysiella testudinis' -> Paralysiella_testudinis
+NOTE: Change sequence name 'Gemmatimonadaceae bacterium' -> Gemmatimonadaceae_bacterium
+NOTE: Change sequence name 'Robbsia sp. KACC 23696' -> Robbsia_sp.
+NOTE: Change sequence name 'Rhodocyclaceae bacterium' -> Rhodocyclaceae_bacterium
+NOTE: Change sequence name 'Pollutimonas harenae' -> Pollutimonas_harenae
+NOTE: Change sequence name 'Pusillimonas noertemannii' -> Pusillimonas_noertemannii
+NOTE: Change sequence name 'Jezberella montanilacus' -> Jezberella_montanilacus
+NOTE: Change sequence name 'Kerstersia gyiorum' -> Kerstersia_gyiorum
+NOTE: Change sequence name 'Oxalobacter vibrioformis' -> Oxalobacter_vibrioformis
+NOTE: Change sequence name 'Campylobacterales bacterium' -> Campylobacterales_bacterium
+NOTE: Change sequence name 'Xanthobacteraceae bacterium' -> Xanthobacteraceae_bacterium
+NOTE: Change sequence name 'Ferrovum sp. JA12' -> Ferrovum_sp.
+NOTE: Change sequence name 'Sinimarinibacterium sp. CAU 1509' -> Sinimarinibacterium_sp.
+NOTE: Change sequence name 'Polycyclovorans algicola' -> Polycyclovorans_algicola
+NOTE: Change sequence name 'Flagellatimonas centrodinii' -> Flagellatimonas_centrodinii
+NOTE: Change sequence name 'Stenotrophobium rhamnosiphilum' -> Stenotrophobium_rhamnosiphilum
+NOTE: Change sequence name 'Nevskia soli' -> Nevskia_soli
+NOTE: Change sequence name 'Mariprofundus sp. EBB-1' -> Mariprofundus_sp.
+NOTE: Change sequence name 'Virgibacillus alimentarius' -> Virgibacillus_alimentarius
+NOTE: Change sequence name 'Oceanobacillus zhaokaii' -> Oceanobacillus_zhaokaii
+NOTE: Change sequence name 'Virgibacillus sp. YIM 98842' -> Virgibacillus_sp.
+NOTE: Change sequence name 'Ornithinibacillus gellani' -> Ornithinibacillus_gellani
+NOTE: Change sequence name 'Cerasibacillus quisquiliarum' -> Cerasibacillus_quisquiliarum
+NOTE: Change sequence name 'Filobacillus milosensis' -> Filobacillus_milosensis
+NOTE: Change sequence name 'Rubeoparvulum massiliense' -> Rubeoparvulum_massiliense
+NOTE: Change sequence name 'Pallidibacillus thermolactis' -> Pallidibacillus_thermolactis
+NOTE: Change sequence name 'Pallidibacillus pasinlerensis' -> Pallidibacillus_pasinlerensis
+NOTE: Change sequence name 'Clostridium aceticum' -> Clostridium_aceticum
+NOTE: Change sequence name 'Alkaliphilus peptidifermentans' -> Alkaliphilus_peptidifermentans
+NOTE: Change sequence name 'Anoxybacter fermentans' -> Anoxybacter_fermentans
+NOTE: Change sequence name 'Halanaerobium congolense' -> Halanaerobium_congolense
+NOTE: Change sequence name 'Dethiobacter alkaliphilus' -> Dethiobacter_alkaliphilus
+NOTE: Change sequence name 'Paenibacillus lacisoli' -> Paenibacillus_lacisoli
+NOTE: Change sequence name 'Bryobacteraceae bacterium' -> Bryobacteraceae_bacterium
+NOTE: Change sequence name 'Novibacillus thermophilus' -> Novibacillus_thermophilus
+NOTE: Change sequence name 'Anoxybacteroides voinovskiense' -> Anoxybacteroides_voinovskiense
+NOTE: Change sequence name 'Fictibacillus fluitans' -> Fictibacillus_fluitans
+NOTE: Change sequence name 'Koleobacter methoxysyntrophicus' -> Koleobacter_methoxysyntrophicus
+NOTE: Change sequence name 'Trichlorobacter lovleyi' -> Trichlorobacter_lovleyi
+NOTE: Change sequence name 'Malonomonas rubra' -> Malonomonas_rubra
+NOTE: Change sequence name 'Desulfuromusa kysingii' -> Desulfuromusa_kysingii
+NOTE: Change sequence name 'Syntrophotalea acetylenivorans' -> Syntrophotalea_acetylenivorans
+NOTE: Change sequence name 'Geothermobacter ehrlichii' -> Geothermobacter_ehrlichii
+NOTE: Change sequence name 'Nitrospirota bacterium' -> Nitrospirota_bacterium
+NOTE: Change sequence name 'Deferrisoma camini' -> Deferrisoma_camini
+NOTE: Change sequence name 'Streptococcus moroccensis' -> Streptococcus_moroccensis
+NOTE: Change sequence name 'Enterococcus rivorum' -> Enterococcus_rivorum
+NOTE: Change sequence name 'Caldicellulosiruptor morganii' -> Caldicellulosiruptor_morganii
+NOTE: Change sequence name 'Caldicellulosiruptor danielii' -> Caldicellulosiruptor_danielii
+NOTE: Change sequence name 'Galendromus occidentalis' -> Galendromus_occidentalis
+NOTE: Change sequence name 'Brytella acorum' -> Brytella_acorum
+NOTE: Change sequence name 'Sandarakinorhabdus rubra' -> Sandarakinorhabdus_rubra
+NOTE: Change sequence name 'Haliangium ochraceum' -> Haliangium_ochraceum
+NOTE: Change sequence name 'Marinithermus hydrothermalis' -> Marinithermus_hydrothermalis
+NOTE: Change sequence name 'Deinococcus aluminii' -> Deinococcus_aluminii
+NOTE: Change sequence name 'Deinococcus frigens' -> Deinococcus_frigens
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000735906 secs
+Alignment has 142 sequences with 309 columns, 295 distinct patterns
+214 parsimony-informative, 34 singleton sites, 60 constant sites
+WARNING: Some sequence names are changed as follows:
+Methylophaga_sp, -> Methylophaga_sp_
+Bacteriophage_(human -> Bacteriophage__human
+
+                                      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.658e-05 secs
+   1  Holdemanellis_Biformis                 30.42%    failed      1.51%
+   2  Phytohalomonas_tamaricis               30.42%    passed     98.10%
+   3  Larsenimonas_suaedae                   28.80%    passed     98.92%
+   4  Zymobacter_palmae                      28.80%    passed     97.95%
+   5  Terasakiispira_papahanaumokuakeensis   26.86%    passed      8.95%
+   6  Spongiibacter                          30.42%    passed     99.89%
+   7  Litorivivens_sp.                       35.92%    passed     90.08%
+   8  Balneatrix_alpica                      29.77%    passed     74.66%
+   9  Motiliproteus_sediminis                29.45%    passed     96.47%
+  10  Bacterioplanoides_pacificum            30.42%    passed     93.12%
+  11  Pantoea_sp.                            31.72%    passed     98.89%
+  12  Thauera_sp.                            57.93%    passed     92.84%
+  13  Streptococcus_pneumoniae               32.04%    passed     97.79%
+  14  Stutzerimonas_stutzeri                 19.74%    passed     77.08%
+  15  Pseudomonas_aeruginosa                 44.98%    passed     98.59%
+  16  Atopomonas_sediminilitoris             32.69%    passed     99.69%
+  17  Zestomonas_thermotolerans              32.04%    passed     99.87%
+  18  Thiopsedomonas_dentrificans            32.04%    passed     98.23%
+  19  Halopseudomonas_yangmingensis          32.04%    passed     99.97%
+  20  Ventosimonas_gracilis                  48.22%    passed     90.75%
+  21  Aestuariirhabdus_litorea               29.45%    passed     99.98%
+  22  Aestuariirhabdus_haliotis              29.77%    passed     99.80%
+  23  Methylogaea_oryzae                     31.72%    passed     96.29%
+  24  Methylococcaceae_bacterium             30.74%    passed     77.64%
+  25  Sediminicurvatus_halobius              31.07%    passed     45.59%
+  26  Spiribacter_pallidus                   30.10%    passed     77.96%
+  27  Thalassotalea_sp.                      29.45%    passed     95.76%
+  28  Agitococcus_lubricus                   30.10%    passed     93.81%
+  29  Ketobacter_alkanivorans                31.39%    passed     98.52%
+  30  Dongiaceae_bacterium                   31.39%    passed     99.55%
+  31  Halomonadaceae_bacterium               28.16%    passed     88.61%
+  32  Mangrovitalea_sediminis                30.42%    passed     67.02%
+  33  Marinobacter_salinisoli                30.42%    passed     99.53%
+  34  Simiduia_curdlanivorans                32.36%    passed     77.01%
+  35  Simiduia_aestruariiviva                32.04%    passed     90.35%
+  36  Cellvibrio_polysaccharolyticus         32.36%    passed     85.88%
+  37  Teredinibacter_sp.                     31.07%    passed     99.98%
+  38  Porticoccaceae_bacterium               31.72%    passed     87.31%
+  39  Alloalcanivorax_venustensis            30.10%    passed     99.69%
+  40  Aquisalimonadaceae_bacterium           31.07%    passed     98.41%
+  41  Natronocella_acetinitrilica            29.45%    passed     93.21%
+  42  Thiohalomonas_denitrificans            31.39%    passed     99.84%
+  43  Thiolinea_sp.                          30.74%    passed     95.39%
+  44  Thiofilum_flexile                      31.39%    passed     96.43%
+  45  Methylophaga_sp_                       32.36%    passed    100.00%
+  46  Spartinivicinus_poritis                30.74%    passed     83.15%
+  47  Thermohahella_caldifontis              30.42%    passed     97.70%
+  48  Pelagibaculum_spongiae                 31.07%    passed     83.62%
+  49  Alkanindiges_illinoisensis             28.80%    passed     99.40%
+  50  Acinetobacter_beijerinckii             26.21%    passed     68.85%
+  51  Acinetobacter_baumannii                26.54%    passed     94.35%
+  52  Acinetobacter_gingfengensis            25.89%    passed     93.06%
+  53  Acinetobacter_sedimenti                22.98%    passed     80.75%
+  54  Psychrobacter_sp.                      27.51%    passed     94.56%
+  55  Psychrobacter_arenosus                 27.18%    passed     98.23%
+  56  Leucothrix_sargassi                    28.80%    passed     99.22%
+  57  Enhydrobacter_aerosaccus               30.10%    passed     99.60%
+  58  Faucicola_mancuniensis                 30.74%    passed     72.17%
+  59  Faucicola_atlantae                     30.42%    passed     98.44%
+  60  Moraxella_marmotael                    29.77%    passed     99.82%
+  61  Moraxella_nasibovis                    32.36%    passed     99.16%
+  62  Methylomarinum_roseum                  32.69%    passed     99.76%
+  63  Natronospirillum_operosum              28.80%    passed     98.69%
+  64  Kangiellaceae_bacterium                31.39%    passed     99.97%
+  65  Piscinibacter_terrae                   31.39%    passed     99.89%
+  66  Polaromonas_glacialis                  29.77%    passed     93.61%
+  67  Acidovorax_sp.                         28.80%    passed     96.87%
+  68  Ramlibacter_tataouinensis              27.51%    passed     51.00%
+  69  Xylophilus_ampelinus                   27.18%    passed     95.25%
+  70  Pseudaquabacterium_pictum              29.45%    passed     62.09%
+  71  Aquariibacter_albus                    29.13%    passed     85.26%
+  72  Comamonas_humi                         30.10%    passed     97.21%
+  73  Tepidimonas_taiwanensis                26.86%    passed     30.96%
+  74  Chitinivorax_tropicu                   29.77%    passed     47.71%
+  75  Steroidobacteraceae_bacterium          30.10%    passed     99.96%
+  76  Azospira_inquinata                     30.10%    passed     99.93%
+  77  Denitromonas_iodatirespirans           30.74%    passed     99.83%
+  78  Niveibacterium_terrae                  29.77%    passed     99.88%
+  79  Georgfuchsia_toluolica                 31.39%    passed     94.41%
+  80  Hydrogenophilaceae_bacterium           30.74%    passed     99.93%
+  81  Parasulfuritortus_cantonensis          29.77%    passed     97.76%
+  82  Gallionella_capsiferriformans          31.39%    passed     98.35%
+  83  Paludibacterium_paludis                29.77%    passed     54.81%
+  84  Neisseria_elongata                     30.10%    passed     97.91%
+  85  Bacteriophage__human                   29.77%    passed     94.61%
+  86  Paralysiella_testudinis                29.45%    passed     94.79%
+  87  Gemmatimonadaceae_bacterium            30.10%    passed     39.19%
+  88  Robbsia_sp.                            27.18%    passed     93.62%
+  89  Rhodocyclaceae_bacterium               28.48%    passed     99.76%
+  90  Pollutimonas_harenae                   27.18%    passed     86.23%
+  91  Pusillimonas_noertemannii              26.21%    passed     77.93%
+  92  Jezberella_montanilacus                25.24%    passed     89.92%
+  93  Kerstersia_gyiorum                     26.54%    passed     84.41%
+  94  Oxalobacter_vibrioformis               23.62%    passed     36.73%
+  95  Campylobacterales_bacterium            46.60%    passed     93.82%
+  96  Xanthobacteraceae_bacterium            30.10%    passed     85.39%
+  97  Ferrovum_sp.                           30.10%    passed     96.01%
+  98  Sinimarinibacterium_sp.                29.45%    passed     99.77%
+  99  Polycyclovorans_algicola               32.36%    passed     21.17%
+ 100  Flagellatimonas_centrodinii            32.36%    passed     27.51%
+ 101  Stenotrophobium_rhamnosiphilum         32.04%    passed     83.75%
+ 102  Nevskia_soli                           30.10%    passed     95.63%
+ 103  Mariprofundus_sp.                      27.83%    passed     37.61%
+ 104  Virgibacillus_alimentarius             32.69%    passed      7.24%
+ 105  Oceanobacillus_zhaokaii                32.69%    passed     11.01%
+ 106  Virgibacillus_sp.                      32.69%    passed      5.30%
+ 107  Ornithinibacillus_gellani              32.04%    passed     22.91%
+ 108  Cerasibacillus_quisquiliarum           32.36%    passed     23.05%
+ 109  Filobacillus_milosensis                31.39%    passed     25.75%
+ 110  Rubeoparvulum_massiliense              33.01%    passed     47.81%
+ 111  Pallidibacillus_thermolactis           30.74%    passed     38.80%
+ 112  Pallidibacillus_pasinlerensis          30.74%    passed     19.30%
+ 113  Clostridium_aceticum                   32.04%    passed      5.62%
+ 114  Alkaliphilus_peptidifermentans         30.74%    passed      7.69%
+ 115  Anoxybacter_fermentans                 31.39%    passed     34.87%
+ 116  Halanaerobium_congolense               31.07%    passed     49.50%
+ 117  Dethiobacter_alkaliphilus              29.77%    passed     71.39%
+ 118  Paenibacillus_lacisoli                 31.39%    passed     39.73%
+ 119  Bryobacteraceae_bacterium              31.39%    passed      7.13%
+ 120  Novibacillus_thermophilus              28.16%    passed     32.13%
+ 121  Anoxybacteroides_voinovskiense         31.39%    passed     39.25%
+ 122  Fictibacillus_fluitans                 30.74%    passed     24.87%
+ 123  Koleobacter_methoxysyntrophicus        31.07%    failed      4.22%
+ 124  Trichlorobacter_lovleyi                30.10%    passed     84.43%
+ 125  Malonomonas_rubra                      28.48%    failed      3.58%
+ 126  Desulfuromusa_kysingii                 28.80%    failed      2.35%
+ 127  Syntrophotalea_acetylenivorans         28.80%    passed     30.69%
+ 128  Geothermobacter_ehrlichii              28.80%    failed      2.08%
+ 129  Nitrospirota_bacterium                 28.16%    failed      4.14%
+ 130  Deferrisoma_camini                     30.74%    passed     13.08%
+ 131  Streptococcus_moroccensis              30.42%    passed     47.09%
+ 132  Enterococcus_rivorum                   31.07%    passed     13.04%
+ 133  Caldicellulosiruptor_morganii          32.36%    passed     20.02%
+ 134  Caldicellulosiruptor_danielii          32.36%    passed      8.29%
+ 135  Desulfurella                           34.30%    passed      6.99%
+ 136  Galendromus_occidentalis               30.42%    passed     64.72%
+ 137  Brytella_acorum                        25.57%    passed     13.36%
+ 138  Sandarakinorhabdus_rubra               28.80%    passed     28.09%
+ 139  Haliangium_ochraceum                   25.24%    passed     19.46%
+ 140  Marinithermus_hydrothermalis           32.36%    failed      0.00%
+ 141  Deinococcus_aluminii                   28.80%    passed     11.76%
+ 142  Deinococcus_frigens                    29.77%    passed     13.23%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                  30.56%  7 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 0.000354513 secs using 772.9% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.018 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.771475 secs using 397.1% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -28931.338
+Optimal log-likelihood: -28931.193
+Proportion of invariable sites: 0.060
+Gamma shape alpha: 0.751
+Parameters optimization took 1 rounds (0.148 sec)
+Time for fast ML tree search: 1.537 seconds
+
+NOTE: ModelFinder requires 70 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 309 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            31763.432    281 64088.865    69958.643    65137.934
+  2  LG+I          31336.171    282 63236.342    69375.265    64289.144
+  3  LG+G4         28950.932    282 58465.863    64604.786    59518.666
+  4  LG+I+G4       28931.192    283 58428.385    64858.145    59484.920
+  5  LG+R2         29613.700    283 59793.400    66223.160    60849.936
+  6  LG+R3         29160.232    285 58890.464    65978.290    59954.466
+  7  LG+R4         28994.739    287 58563.478    66435.478    59634.947
+  8  LG+R5         28894.432    289 58366.864    67188.970    59445.800
+  9  LG+R6         28876.743    291 58335.486    68332.192    59421.889
+ 10  LG+R7         28852.136    293 58290.272    69775.872    59384.141
+ 11  LG+R8         28848.524    295 58287.048    71720.894    59388.383
+ 14  LG+I+R2       29483.282    284 59534.563    66279.563    60594.832
+ 15  LG+I+R3       29064.125    286 58700.249    66162.249    59767.985
+ 16  LG+I+R4       28933.165    288 58442.330    66765.530    59517.533
+ 17  LG+I+R5       28877.732    290 58335.465    67712.131    59418.134
+ 18  LG+I+R6       28860.828    292 58305.656    69000.156    59395.792
+ 19  LG+I+R7       28848.092    294 58284.185    70674.185    59381.787
+ 20  LG+I+R8       28845.059    296 58282.117    72934.117    59387.186
+ 32  LG+F+R7       28930.818    312 58485.637    253797.637   59650.439
+ 33  LG+F+R8       28927.030    314 58482.060    256302.060   59654.330
+ 41  LG+F+I+R7     28928.235    313 58482.469    255046.469   59651.005
+ 42  LG+F+I+R8     28924.909    315 58479.818    257559.818   59655.821
+ 54  WAG+R7        29043.239    293 58672.478    70158.078    59766.347
+ 55  WAG+R8        29038.366    295 58666.731    72100.577    59768.067
+ 63  WAG+I+R7      29040.163    294 58668.326    71058.326    59765.929
+ 64  WAG+I+R8      29035.957    296 58663.914    73315.914    59768.983
+ 76  WAG+F+R7      29065.763    312 58755.527    254067.527   59920.329
+ 77  WAG+F+R8      29063.117    314 58754.234    256574.234   59926.503
+ 85  WAG+F+I+R7    29063.324    313 58752.649    255316.649   59921.185
+ 86  WAG+F+I+R8    29060.453    315 58750.906    257830.906   59926.908
+ 98  JTT+R7        29259.015    293 59104.030    70589.630    60197.899
+ 99  JTT+R8        29255.994    295 59101.989    72535.835    60203.324
+107  JTT+I+R7      29257.518    294 59103.037    71493.037    60200.639
+108  JTT+I+R8      29254.627    296 59101.254    73753.254    60206.323
+120  JTT+F+R7      29336.263    312 59296.526    254608.526   60461.328
+121  JTT+F+R8      29334.848    314 59297.696    257117.696   60469.965
+129  JTT+F+I+R7    29333.566    313 59293.131    255857.131   60461.667
+130  JTT+F+I+R8    29332.279    315 59294.558    258374.558   60470.560
+142  Q.PFAM+R7     28854.550    293 58295.100    69780.700    59388.969
+143  Q.PFAM+R8     28851.681    295 58293.361    71727.208    59394.697
+151  Q.PFAM+I+R7   28851.221    294 58290.443    70680.443    59388.045
+152  Q.PFAM+I+R8   28849.005    296 58290.011    72942.011    59395.080
+164  Q.PFAM+F+R7   28959.348    312 58542.697    253854.697   59707.499
+165  Q.PFAM+F+R8   28957.109    314 58542.219    256362.219   59714.488
+173  Q.PFAM+F+I+R7 28958.023    313 58542.047    255106.047   59710.582
+174  Q.PFAM+F+I+R8 28955.883    315 58541.767    257621.767   59717.769
+186  Q.BIRD+R7     29994.025    293 60574.050    72059.650    61667.919
+187  Q.BIRD+R8     29988.064    295 60566.128    73999.975    61667.464
+195  Q.BIRD+I+R7   29995.254    294 60578.508    72968.508    61676.111
+196  Q.BIRD+I+R8   29985.753    296 60563.506    75215.506    61668.575
+208  Q.BIRD+F+R7   30100.891    312 60825.782    256137.782   61990.584
+209  Q.BIRD+F+R8   30096.710    314 60821.420    258641.420   61993.690
+217  Q.BIRD+F+I+R7 30100.432    313 60826.865    257390.865   61995.401
+218  Q.BIRD+F+I+R8 30095.603    315 60821.205    259901.205   61997.208
+230  Q.MAMMAL+R7   29737.966    293 60061.932    71547.532    61155.801
+231  Q.MAMMAL+R8   29731.124    295 60052.247    73486.094    61153.583
+239  Q.MAMMAL+I+R7 29735.057    294 60058.115    72448.115    61155.717
+240  Q.MAMMAL+I+R8 29729.428    296 60050.857    74702.857    61155.926
+252  Q.MAMMAL+F+R7 29836.426    312 60296.852    255608.852   61461.654
+253  Q.MAMMAL+F+R8 29832.946    314 60293.892    258113.892   61466.161
+261  Q.MAMMAL+F+I+R7 29834.193    313 60294.386    256858.386   61462.922
+262  Q.MAMMAL+F+I+R8 29830.883    315 60291.766    259371.766   61467.768
+274  Q.INSECT+R7   29078.234    293 58742.468    70228.068    59836.337
+275  Q.INSECT+R8   29074.220    295 58738.439    72172.285    59839.775
+283  Q.INSECT+I+R7 29074.629    294 58737.258    71127.258    59834.861
+284  Q.INSECT+I+R8 29073.215    296 58738.430    73390.430    59843.499
+296  Q.INSECT+F+R7 29125.452    312 58874.904    254186.904   60039.707
+297  Q.INSECT+F+R8 29123.121    314 58874.243    256694.243   60046.512
+305  Q.INSECT+F+I+R7 29122.002    313 58870.005    255434.005   60038.540
+306  Q.INSECT+F+I+R8 29121.439    315 58872.879    257952.879   60048.881
+318  Q.PLANT+R7    29306.530    293 59199.061    70684.661    60292.930
+319  Q.PLANT+R8    29298.353    295 59186.707    72620.553    60288.042
+327  Q.PLANT+I+R7  29300.587    294 59189.174    71579.174    60286.776
+328  Q.PLANT+I+R8  29298.579    296 59189.157    73841.157    60294.226
+340  Q.PLANT+F+R7  29358.286    312 59340.571    254652.571   60505.374
+341  Q.PLANT+F+R8  29354.605    314 59337.210    257157.210   60509.479
+349  Q.PLANT+F+I+R7 29353.895    313 59333.791    255897.791   60502.326
+350  Q.PLANT+F+I+R8 29351.591    315 59333.182    258413.182   60509.185
+362  Q.YEAST+R7    29068.222    293 58722.443    70208.043    59816.312
+363  Q.YEAST+R8    29062.099    295 58714.197    72148.044    59815.533
+371  Q.YEAST+I+R7  29064.787    294 58717.573    71107.573    59815.176
+372  Q.YEAST+I+R8  29061.339    296 58714.679    73366.679    59819.748
+384  Q.YEAST+F+R7  29024.356    312 58672.712    253984.712   59837.514
+385  Q.YEAST+F+R8  29020.474    314 58668.948    256488.948   59841.217
+393  Q.YEAST+F+I+R7 29021.415    313 58668.830    255232.830   59837.366
+394  Q.YEAST+F+I+R8 29019.823    315 58669.647    257749.647   59845.649
+406  JTTDCMUT+R7   29254.090    293 59094.180    70579.780    60188.049
+407  JTTDCMUT+R8   29250.367    295 59090.734    72524.581    60192.070
+415  JTTDCMUT+I+R7 29252.777    294 59093.554    71483.554    60191.156
+416  JTTDCMUT+I+R8 29249.802    296 59091.604    73743.604    60196.673
+428  JTTDCMUT+F+R7 29329.996    312 59283.992    254595.992   60448.795
+429  JTTDCMUT+F+R8 29325.808    314 59279.615    257099.615   60451.884
+437  JTTDCMUT+F+I+R7 29327.894    313 59281.787    255845.787   60450.323
+438  JTTDCMUT+F+I+R8 29327.108    315 59284.215    258364.215   60460.218
+450  DCMUT+R7      29446.701    293 59479.402    70965.002    60573.271
+451  DCMUT+R8      29443.490    295 59476.979    72910.825    60578.315
+459  DCMUT+I+R7    29444.749    294 59477.497    71867.497    60575.100
+460  DCMUT+I+R8    29441.937    296 59475.874    74127.874    60580.943
+472  DCMUT+F+R7    29436.764    312 59497.527    254809.527   60662.330
+473  DCMUT+F+R8    29432.894    314 59493.789    257313.789   60666.058
+481  DCMUT+F+I+R7  29434.894    313 59495.789    256059.789   60664.325
+482  DCMUT+F+I+R8  29433.912    315 59497.825    258577.825   60673.827
+494  VT+R7         29137.166    293 58860.331    70345.931    59954.200
+495  VT+R8         29133.323    295 58856.646    72290.492    59957.982
+503  VT+I+R7       29136.263    294 58860.526    71250.526    59958.128
+504  VT+I+R8       29134.395    296 58860.791    73512.791    59965.860
+516  VT+F+R7       29199.303    312 59022.605    254334.605   60187.408
+517  VT+F+R8       29195.601    314 59019.201    256839.201   60191.470
+525  VT+F+I+R7     29198.705    313 59023.409    255587.409   60191.945
+526  VT+F+I+R8     29197.466    315 59024.932    258104.932   60200.934
+538  PMB+R7        29381.004    293 59348.007    70833.607    60441.876
+539  PMB+R8        29377.301    295 59344.601    72778.447    60445.937
+547  PMB+I+R7      29380.597    294 59349.194    71739.194    60446.796
+548  PMB+I+R8      29379.449    296 59350.897    74002.897    60455.966
+560  PMB+F+R7      29392.429    312 59408.859    254720.859   60573.661
+561  PMB+F+R8      29388.451    314 59404.901    257224.901   60577.170
+569  PMB+F+I+R7    29392.145    313 59410.291    255974.291   60578.826
+570  PMB+F+I+R8    29391.031    315 59412.061    258492.061   60588.064
+582  BLOSUM62+R7   29316.920    293 59219.839    70705.439    60313.708
+583  BLOSUM62+R8   29313.217    295 59216.434    72650.280    60317.770
+591  BLOSUM62+I+R7 29316.447    294 59220.894    71610.894    60318.497
+592  BLOSUM62+I+R8 29314.959    296 59221.918    73873.918    60326.987
+604  BLOSUM62+F+R7 29354.625    312 59333.250    254645.250   60498.053
+605  BLOSUM62+F+R8 29350.579    314 59329.157    257149.157   60501.427
+613  BLOSUM62+F+I+R7 29354.132    313 59334.264    255898.264   60502.800
+614  BLOSUM62+F+I+R8 29352.155    315 59334.310    258414.310   60510.312
+626  DAYHOFF+R7    29443.532    293 59473.064    70958.664    60566.933
+627  DAYHOFF+R8    29440.838    295 59471.676    72905.522    60573.012
+635  DAYHOFF+I+R7  29442.382    294 59472.764    71862.764    60570.366
+636  DAYHOFF+I+R8  29439.530    296 59471.060    74123.060    60576.129
+648  DAYHOFF+F+R7  29434.606    312 59493.212    254805.212   60658.014
+649  DAYHOFF+F+R8  29430.851    314 59489.703    257309.703   60661.972
+657  DAYHOFF+F+I+R7 29433.350    313 59492.699    256056.699   60661.235
+658  DAYHOFF+F+I+R8 29432.389    315 59494.778    258574.778   60670.781
+670  MTREV+R7      31060.229    293 62706.458    74192.058    63800.327
+671  MTREV+R8      31052.301    295 62694.602    76128.448    63795.937
+679  MTREV+I+R7    31052.696    294 62693.392    75083.392    63790.994
+680  MTREV+I+R8    31052.450    296 62696.899    77348.899    63801.968
+692  MTREV+F+R7    29733.105    312 60090.209    255402.209   61255.012
+693  MTREV+F+R8    29727.717    314 60083.435    257903.435   61255.704
+701  MTREV+F+I+R7  29729.519    313 60085.039    256649.039   61253.575
+702  MTREV+F+I+R8  29729.220    315 60088.441    259168.441   61264.443
+714  MTART+R7      31555.656    293 63697.311    75182.911    64791.180
+715  MTART+R8      31541.578    295 63673.156    77107.002    64774.492
+723  MTART+I+R7    31554.476    294 63696.952    76086.952    64794.555
+724  MTART+I+R8    31553.220    296 63698.440    78350.440    64803.509
+736  MTART+F+R7    30165.754    312 60955.507    256267.507   62120.310
+737  MTART+F+R8    30157.846    314 60943.693    258763.693   62115.962
+745  MTART+F+I+R7  30166.283    313 60958.567    257522.567   62127.103
+746  MTART+F+I+R8  30158.229    315 60946.459    260026.459   62122.461
+758  MTZOA+R7      30607.552    293 61801.104    73286.704    62894.973
+759  MTZOA+R8      30599.167    295 61788.334    75222.180    62889.669
+767  MTZOA+I+R7    30609.201    294 61806.403    74196.403    62904.005
+768  MTZOA+I+R8    30599.043    296 61790.085    76442.085    62895.154
+780  MTZOA+F+R7    29718.860    312 60061.719    255373.719   61226.522
+781  MTZOA+F+R8    29713.763    314 60055.525    257875.525   61227.794
+789  MTZOA+F+I+R7  29716.133    313 60058.267    256622.267   61226.803
+790  MTZOA+F+I+R8  29710.439    315 60050.878    259130.878   61226.880
+802  MTMET+R7      31272.078    293 63130.156    74615.756    64224.025
+803  MTMET+R8      31264.320    295 63118.641    76552.487    64219.977
+811  MTMET+I+R7    31270.341    294 63128.683    75518.683    64226.285
+812  MTMET+I+R8    31263.303    296 63118.606    77770.606    64223.675
+824  MTMET+F+R7    29858.797    312 60341.594    255653.594   61506.397
+825  MTMET+F+R8    29854.326    314 60336.653    258156.653   61508.922
+833  MTMET+F+I+R7  29855.016    313 60336.032    256900.032   61504.568
+834  MTMET+F+I+R8  29850.725    315 60331.451    259411.451   61507.453
+846  MTVER+R7      31470.002    293 63526.004    75011.604    64619.873
+847  MTVER+R8      31460.186    295 63510.372    76944.218    64611.707
+855  MTVER+I+R7    31469.969    294 63527.937    75917.937    64625.540
+856  MTVER+I+R8    31459.768    296 63511.536    78163.536    64616.605
+868  MTVER+F+R7    30275.161    312 61174.321    256486.321   62339.124
+869  MTVER+F+R8    30267.787    314 61163.573    258983.573   62335.843
+877  MTVER+F+I+R7  30270.980    313 61167.960    257731.960   62336.496
+878  MTVER+F+I+R8  30263.826    315 61157.653    260237.653   62333.655
+890  MTINV+R7      31364.500    293 63315.001    74800.601    64408.870
+891  MTINV+R8      31358.369    295 63306.738    76740.584    64408.074
+899  MTINV+I+R7    31359.974    294 63307.947    75697.947    64405.550
+900  MTINV+I+R8    31356.515    296 63305.030    77957.030    64410.099
+912  MTINV+F+R7    29568.694    312 59761.387    255073.387   60926.190
+913  MTINV+F+R8    29563.614    314 59755.227    257575.227   60927.496
+921  MTINV+F+I+R7  29563.831    313 59753.662    256317.662   60922.198
+922  MTINV+F+I+R8  29560.722    315 59751.444    258831.444   60927.447
+934  MTMAM+R7      31820.262    293 64226.523    75712.123    65320.392
+935  MTMAM+R8      31808.904    295 64207.808    77641.654    65309.144
+943  MTMAM+I+R7    31828.073    294 64244.146    76634.146    65341.748
+944  MTMAM+I+R8    31814.385    296 64220.771    78872.771    65325.840
+956  MTMAM+F+R7    30529.465    312 61682.929    256994.929   62847.731
+957  MTMAM+F+R8    30522.285    314 61672.570    259492.570   62844.840
+965  MTMAM+F+I+R7  30536.179    313 61698.359    258262.359   62866.895
+966  MTMAM+F+I+R8  30520.297    315 61670.594    260750.594   62846.596
+978  FLAVI+R7      30841.604    293 62269.208    73754.808    63363.077
+979  FLAVI+R8      30832.249    295 62254.498    75688.344    63355.833
+987  FLAVI+I+R7    30836.432    294 62260.865    74650.865    63358.467
+988  FLAVI+I+R8    30830.662    296 62253.325    76905.325    63358.394
+1000  FLAVI+F+R7    30755.962    312 62135.924    257447.924   63300.726
+1001  FLAVI+F+R8    30747.878    314 62123.756    259943.756   63296.025
+1009  FLAVI+F+I+R7  30750.927    313 62127.853    258691.853   63296.389
+1010  FLAVI+F+I+R8  30746.087    315 62122.173    261202.173   63298.176
+1022  HIVB+R7       30021.284    293 60628.568    72114.168    61722.437
+1023  HIVB+R8       30006.528    295 60603.057    74036.903    61704.392
+1031  HIVB+I+R7     30012.033    294 60612.066    73002.066    61709.668
+1032  HIVB+I+R8     30005.952    296 60603.904    75255.904    61708.973
+1044  HIVB+F+R7     30077.299    312 60778.598    256090.598   61943.400
+1045  HIVB+F+R8     30065.243    314 60758.486    258578.486   61930.755
+1053  HIVB+F+I+R7   30068.934    313 60763.868    257327.868   61932.404
+1054  HIVB+F+I+R8   30064.828    315 60759.656    259839.656   61935.659
+1066  HIVW+R7       31391.313    293 63368.626    74854.226    64462.495
+1067  HIVW+R8       31381.947    295 63353.893    76787.739    64455.229
+1075  HIVW+I+R7     31390.147    294 63368.295    75758.295    64465.897
+1076  HIVW+I+R8     31381.949    296 63355.898    78007.898    64460.967
+1088  HIVW+F+R7     31043.278    312 62710.555    258022.555   63875.358
+1089  HIVW+F+R8     31036.452    314 62700.904    260520.904   63873.174
+1097  HIVW+F+I+R7   31042.804    313 62711.608    259275.608   63880.144
+1098  HIVW+F+I+R8   31036.599    315 62703.199    261783.199   63879.201
+1110  FLU+R7        29902.855    293 60391.711    71877.311    61485.580
+1111  FLU+R8        29894.144    295 60378.289    73812.135    61479.624
+1119  FLU+I+R7      29899.524    294 60387.048    72777.048    61484.650
+1120  FLU+I+R8      29894.775    296 60381.550    75033.550    61486.619
+1132  FLU+F+R7      29795.172    312 60214.344    255526.344   61379.147
+1133  FLU+F+R8      29784.642    314 60197.284    258017.284   61369.553
+1141  FLU+F+I+R7    29791.713    313 60209.425    256773.425   61377.961
+1142  FLU+F+I+R8    29787.550    315 60205.100    259285.100   61381.102
+1154  RTREV+R7      29201.457    293 58988.914    70474.514    60082.783
+1155  RTREV+R8      29193.297    295 58976.594    72410.440    60077.930
+1163  RTREV+I+R7    29199.485    294 58986.969    71376.969    60084.572
+1164  RTREV+I+R8    29196.923    296 58985.845    73637.845    60090.914
+1176  RTREV+F+R7    29105.021    312 58834.042    254146.042   59998.845
+1177  RTREV+F+R8    29098.433    314 58824.867    256644.867   59997.136
+1185  RTREV+F+I+R7  29104.588    313 58835.177    255399.177   60003.712
+1186  RTREV+F+I+R8  29102.568    315 58835.135    257915.135   60011.138
+1198  CPREV+R7      29283.209    293 59152.417    70638.017    60246.286
+1199  CPREV+R8      29275.758    295 59141.517    72575.363    60242.852
+1207  CPREV+I+R7    29281.441    294 59150.882    71540.882    60248.485
+1208  CPREV+I+R8    29277.067    296 59146.133    73798.133    60251.202
+1220  CPREV+F+R7    29292.090    312 59208.179    254520.179   60372.982
+1221  CPREV+F+R8    29285.820    314 59199.640    257019.640   60371.909
+1229  CPREV+F+I+R7  29291.904    313 59209.807    255773.807   60378.343
+1230  CPREV+F+I+R8  29287.508    315 59205.017    258285.017   60381.019
+Akaike Information Criterion:           LG+I+R8
+Corrected Akaike Information Criterion: LG+G4
+Bayesian Information Criterion:         LG+I+R7
+Best-fit model: LG+I+R7 chosen according to BIC
+
+All model information printed to HISG_Mode_13Nov.model.gz
+CPU time for ModelFinder: 5438.809 seconds (1h:30m:38s)
+Wall-clock time for ModelFinder: 1361.503 seconds (0h:22m:41s)
+Generating 1000 samples for ultrafast bootstrap (seed: 954647)...
+
+NOTE: 49 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -28864.209
+2. Current log-likelihood: -28846.928
+3. Current log-likelihood: -28846.355
+Optimal log-likelihood: -28846.307
+Proportion of invariable sites: 0.057
+Site proportion and rates:  (0.138,0.052) (0.118,0.164) (0.182,0.349) (0.187,0.732) (0.100,1.390) (0.141,2.173) (0.078,4.218)
+Parameters optimization took 3 rounds (3.283 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 1.1425 secs using 399.9% CPU
+Computing ML distances took 1.142665 sec (of wall-clock time) 4.569467 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00834244 secs using 151% CPU
+Constructing RapidNJ tree: done in 0.177378 secs using 98.75% CPU
+Computing RapidNJ tree took 0.185818 sec (of wall-clock time) 0.187874 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -28881.576
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 2.070 second
+Computing log-likelihood of 98 initial trees ... 8.151 seconds
+Current best score: -28846.307
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 1.00532 secs using 398.7% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -28832.276
+Optimizing NNI: done in 1.25259 secs using 398.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -28786.701
+Optimizing NNI: done in 2.63113 secs using 399% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -28724.986
+Optimizing NNI: done in 2.63392 secs using 398.4% CPU
+Optimizing NNI: done in 2.41159 secs using 398.9% CPU
+Optimizing NNI: done in 2.70089 secs using 399% CPU
+Optimizing NNI: done in 2.75344 secs using 398.5% CPU
+Optimizing NNI: done in 2.752 secs using 398.8% CPU
+Optimizing NNI: done in 2.81061 secs using 399% CPU
+Optimizing NNI: done in 2.07916 secs using 398.3% CPU
+Iteration 10 / LogL: -28741.341 / Time: 0h:23m:25s
+Optimizing NNI: done in 1.97071 secs using 398.3% CPU
+Optimizing NNI: done in 2.25686 secs using 399.3% CPU
+Optimizing NNI: done in 2.45128 secs using 398.6% CPU
+Optimizing NNI: done in 2.46103 secs using 397.9% CPU
+Optimizing NNI: done in 2.44749 secs using 398.2% CPU
+Optimizing NNI: done in 2.92575 secs using 398.8% CPU
+Optimizing NNI: done in 2.39976 secs using 398.8% CPU
+Optimizing NNI: done in 2.88596 secs using 398.7% CPU
+Optimizing NNI: done in 2.48115 secs using 398.9% CPU
+Optimizing NNI: done in 2.78061 secs using 399.2% CPU
+Iteration 20 / LogL: -28773.699 / Time: 0h:23m:50s
+Finish initializing candidate tree set (20)
+Current best tree score: -28724.986 / CPU time: 63.418
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 1.95471 secs using 399.8% CPU
+Optimizing NNI: done in 1.9807 secs using 398.1% CPU
+Optimizing NNI: done in 1.52279 secs using 398.9% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -28714.384
+Optimizing NNI: done in 2.03035 secs using 398.8% CPU
+Optimizing NNI: done in 1.90895 secs using 398.6% CPU
+Optimizing NNI: done in 1.74432 secs using 397.9% CPU
+Optimizing NNI: done in 2.02407 secs using 399% CPU
+Optimizing NNI: done in 1.55365 secs using 398.4% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -28713.375
+Optimizing NNI: done in 1.67969 secs using 399.3% CPU
+Optimizing NNI: done in 1.7031 secs using 398.7% CPU
+Iteration 30 / LogL: -28714.457 / Time: 0h:24m:12s (0h:5m:8s left)
+Optimizing NNI: done in 2.28115 secs using 398.2% CPU
+Optimizing NNI: done in 1.46019 secs using 399.1% CPU
+Optimizing NNI: done in 1.79032 secs using 398.2% CPU
+Optimizing NNI: done in 2.00296 secs using 398.1% CPU
+Optimizing NNI: done in 1.86235 secs using 398.1% CPU
+Optimizing NNI: done in 1.79001 secs using 398.1% CPU
+Optimizing NNI: done in 1.82189 secs using 397.8% CPU
+Optimizing NNI: done in 1.83665 secs using 397.9% CPU
+Optimizing NNI: done in 1.85177 secs using 398.7% CPU
+Optimizing NNI: done in 1.86672 secs using 397.8% CPU
+UPDATE BEST LOG-LIKELIHOOD: -28713.368
+Iteration 40 / LogL: -28713.368 / Time: 0h:24m:31s (0h:4m:8s left)
+Optimizing NNI: done in 1.80582 secs using 399% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 41: -28712.363
+Optimizing NNI: done in 1.86696 secs using 399.5% CPU
+Optimizing NNI: done in 1.77613 secs using 398.4% CPU
+Optimizing NNI: done in 1.68409 secs using 399% CPU
+Optimizing NNI: done in 1.53763 secs using 398.9% CPU
+Optimizing NNI: done in 1.62437 secs using 398.9% CPU
+Optimizing NNI: done in 1.57819 secs using 397.3% CPU
+Optimizing NNI: done in 1.81198 secs using 399.3% CPU
+Optimizing NNI: done in 2.04369 secs using 397.9% CPU
+Optimizing NNI: done in 1.96785 secs using 398.6% CPU
+Iteration 50 / LogL: -28712.726 / Time: 0h:24m:50s (0h:3m:59s left)
+Log-likelihood cutoff on original alignment: -28814.876
+Optimizing NNI: done in 1.7857 secs using 399.2% CPU
+Optimizing NNI: done in 1.52012 secs using 398.6% CPU
+Optimizing NNI: done in 1.62627 secs using 398.8% CPU
+Optimizing NNI: done in 1.88814 secs using 399.7% CPU
+Optimizing NNI: done in 1.91465 secs using 399.5% CPU
+Optimizing NNI: done in 1.85575 secs using 397.9% CPU
+Optimizing NNI: done in 1.66343 secs using 399.3% CPU
+Optimizing NNI: done in 1.51722 secs using 398.9% CPU
+Optimizing NNI: done in 1.88444 secs using 399.1% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 59: -28708.091
+Optimizing NNI: done in 1.84851 secs using 398.6% CPU
+Iteration 60 / LogL: -28711.133 / Time: 0h:25m:10s (0h:4m:9s left)
+Optimizing NNI: done in 1.74448 secs using 399.4% CPU
+Optimizing NNI: done in 1.98712 secs using 398.7% CPU
+Optimizing NNI: done in 1.42507 secs using 399.2% CPU
+Optimizing NNI: done in 1.54113 secs using 399% CPU
+Optimizing NNI: done in 1.77841 secs using 398.4% CPU
+UPDATE BEST LOG-LIKELIHOOD: -28708.085
+Optimizing NNI: done in 1.86219 secs using 397.9% CPU
+Optimizing NNI: done in 1.83382 secs using 398.6% CPU
+Optimizing NNI: done in 1.52537 secs using 398.9% CPU
+Optimizing NNI: done in 1.70398 secs using 396.9% CPU
+Optimizing NNI: done in 1.72455 secs using 398.6% CPU
+Iteration 70 / LogL: -28715.596 / Time: 0h:25m:27s (0h:3m:34s left)
+Optimizing NNI: done in 1.80296 secs using 399% CPU
+Optimizing NNI: done in 1.65614 secs using 398% CPU
+Optimizing NNI: done in 2.07968 secs using 399.4% CPU
+Optimizing NNI: done in 1.89275 secs using 398.8% CPU
+Optimizing NNI: done in 2.22363 secs using 398.6% CPU
+Optimizing NNI: done in 1.92758 secs using 399.2% CPU
+Optimizing NNI: done in 1.56326 secs using 399.3% CPU
+Optimizing NNI: done in 2.01722 secs using 398.6% CPU
+Optimizing NNI: done in 1.90119 secs using 398.5% CPU
+Optimizing NNI: done in 1.64694 secs using 398.7% CPU
+Iteration 80 / LogL: -28710.214 / Time: 0h:25m:46s (0h:3m:4s left)
+Optimizing NNI: done in 1.63311 secs using 398.6% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 81: -28707.866
+Optimizing NNI: done in 2.03431 secs using 398.7% CPU
+Optimizing NNI: done in 1.92243 secs using 399.4% CPU
+Optimizing NNI: done in 2.20354 secs using 398.2% CPU
+Optimizing NNI: done in 1.89445 secs using 399.6% CPU
+UPDATE BEST LOG-LIKELIHOOD: -28707.863
+Optimizing NNI: done in 1.50769 secs using 398.7% CPU
+Optimizing NNI: done in 2.08502 secs using 399.8% CPU
+Optimizing NNI: done in 2.04976 secs using 399.1% CPU
+Optimizing NNI: done in 1.63642 secs using 397.7% CPU
+Optimizing NNI: done in 1.82834 secs using 398.6% CPU
+Iteration 90 / LogL: -28723.504 / Time: 0h:26m:6s (0h:3m:29s left)
+Optimizing NNI: done in 1.45851 secs using 398.9% CPU
+Optimizing NNI: done in 1.90012 secs using 398.9% CPU
+Optimizing NNI: done in 1.95114 secs using 399.3% CPU
+Optimizing NNI: done in 1.90329 secs using 398% CPU
+Optimizing NNI: done in 2.00871 secs using 399.7% CPU
+Optimizing NNI: done in 1.82574 secs using 398.4% CPU
+Optimizing NNI: done in 2.05903 secs using 398.8% CPU
+Optimizing NNI: done in 1.66165 secs using 397% CPU
+Optimizing NNI: done in 1.95876 secs using 398.3% CPU
+Optimizing NNI: done in 1.7024 secs using 398.8% CPU
+Iteration 100 / LogL: -28715.155 / Time: 0h:26m:25s (0h:3m:2s left)
+Log-likelihood cutoff on original alignment: -28799.987
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.988
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 1.72583 secs using 399% CPU
+Optimizing NNI: done in 1.80207 secs using 396.5% CPU
+Optimizing NNI: done in 1.61992 secs using 398.7% CPU
+Optimizing NNI: done in 1.92149 secs using 398.5% CPU
+Optimizing NNI: done in 2.13403 secs using 398.2% CPU
+Optimizing NNI: done in 1.63501 secs using 397.5% CPU
+Optimizing NNI: done in 1.86943 secs using 398.5% CPU
+Optimizing NNI: done in 1.58661 secs using 397.2% CPU
+Optimizing NNI: done in 1.50213 secs using 397.7% CPU
+Optimizing NNI: done in 1.83187 secs using 399.1% CPU
+Iteration 110 / LogL: -28711.246 / Time: 0h:26m:43s (0h:3m:19s left)
+Optimizing NNI: done in 1.65413 secs using 399.8% CPU
+Optimizing NNI: done in 2.06759 secs using 398.1% CPU
+Optimizing NNI: done in 1.64225 secs using 396.6% CPU
+Optimizing NNI: done in 1.95088 secs using 398.5% CPU
+Optimizing NNI: done in 1.62123 secs using 398% CPU
+Optimizing NNI: done in 1.92157 secs using 398.9% CPU
+Optimizing NNI: done in 1.80245 secs using 397.8% CPU
+Optimizing NNI: done in 1.51469 secs using 398.9% CPU
+Optimizing NNI: done in 1.85953 secs using 398.5% CPU
+Optimizing NNI: done in 1.53193 secs using 399.5% CPU
+Iteration 120 / LogL: -28732.407 / Time: 0h:27m:0s (0h:2m:54s left)
+Optimizing NNI: done in 2.1485 secs using 398% CPU
+Optimizing NNI: done in 1.57396 secs using 398.8% CPU
+Optimizing NNI: done in 1.83003 secs using 399.4% CPU
+Optimizing NNI: done in 1.96445 secs using 398.3% CPU
+Optimizing NNI: done in 1.91555 secs using 399% CPU
+Optimizing NNI: done in 1.81973 secs using 399.4% CPU
+Optimizing NNI: done in 2.27239 secs using 398.2% CPU
+Optimizing NNI: done in 1.60072 secs using 398.8% CPU
+Optimizing NNI: done in 1.99661 secs using 398.5% CPU
+UPDATE BEST LOG-LIKELIHOOD: -28707.862
+Optimizing NNI: done in 2.34408 secs using 399.3% CPU
+Iteration 130 / LogL: -28708.635 / Time: 0h:27m:20s (0h:2m:31s left)
+Optimizing NNI: done in 1.80116 secs using 397.3% CPU
+Optimizing NNI: done in 1.75563 secs using 399.8% CPU
+Optimizing NNI: done in 2.15206 secs using 399.2% CPU
+Optimizing NNI: done in 1.73254 secs using 398.3% CPU
+Optimizing NNI: done in 1.87396 secs using 398.8% CPU
+Optimizing NNI: done in 1.67646 secs using 399.2% CPU
+Optimizing NNI: done in 1.79258 secs using 399.2% CPU
+Optimizing NNI: done in 1.80548 secs using 398.2% CPU
+Optimizing NNI: done in 1.48161 secs using 399.4% CPU
+Optimizing NNI: done in 1.45922 secs using 397.7% CPU
+Iteration 140 / LogL: -28715.624 / Time: 0h:27m:38s (0h:2m:8s left)
+Optimizing NNI: done in 1.66223 secs using 398.6% CPU
+Optimizing NNI: done in 1.72681 secs using 398.1% CPU
+Optimizing NNI: done in 1.73349 secs using 397.9% CPU
+Optimizing NNI: done in 1.92652 secs using 397.9% CPU
+Optimizing NNI: done in 1.88891 secs using 397.7% CPU
+Optimizing NNI: done in 1.87345 secs using 398.9% CPU
+Optimizing NNI: done in 1.71088 secs using 399.2% CPU
+Optimizing NNI: done in 1.63982 secs using 398.8% CPU
+Optimizing NNI: done in 1.89339 secs using 398.5% CPU
+Optimizing NNI: done in 2.10491 secs using 398.7% CPU
+Iteration 150 / LogL: -28707.885 / Time: 0h:27m:56s (0h:1m:45s left)
+Log-likelihood cutoff on original alignment: -28799.987
+Optimizing NNI: done in 1.79911 secs using 398.6% CPU
+Optimizing NNI: done in 1.75237 secs using 397.8% CPU
+Optimizing NNI: done in 1.70111 secs using 400.3% CPU
+Optimizing NNI: done in 2.05599 secs using 398.2% CPU
+Optimizing NNI: done in 2.35459 secs using 398.6% CPU
+Optimizing NNI: done in 1.56343 secs using 398.6% CPU
+Optimizing NNI: done in 1.9438 secs using 397.3% CPU
+Optimizing NNI: done in 1.94494 secs using 396.7% CPU
+Optimizing NNI: done in 1.77219 secs using 399.5% CPU
+Optimizing NNI: done in 1.83602 secs using 399.1% CPU
+Iteration 160 / LogL: -28711.025 / Time: 0h:28m:16s (0h:1m:24s left)
+Optimizing NNI: done in 1.78024 secs using 399.3% CPU
+Optimizing NNI: done in 1.93237 secs using 399.9% CPU
+Optimizing NNI: done in 1.75632 secs using 399% CPU
+Optimizing NNI: done in 1.75921 secs using 399.4% CPU
+Optimizing NNI: done in 1.81369 secs using 399.2% CPU
+Optimizing NNI: done in 2.02102 secs using 399% CPU
+Optimizing NNI: done in 1.83009 secs using 398.8% CPU
+Optimizing NNI: done in 1.56515 secs using 399.2% CPU
+Optimizing NNI: done in 1.73386 secs using 398.5% CPU
+Optimizing NNI: done in 1.69505 secs using 397.5% CPU
+Iteration 170 / LogL: -28711.148 / Time: 0h:28m:34s (0h:1m:2s left)
+Optimizing NNI: done in 2.11345 secs using 399.6% CPU
+Optimizing NNI: done in 1.8304 secs using 399.1% CPU
+Optimizing NNI: done in 1.79169 secs using 397.8% CPU
+Optimizing NNI: done in 2.04138 secs using 398.4% CPU
+Optimizing NNI: done in 1.92332 secs using 398.4% CPU
+Optimizing NNI: done in 2.00682 secs using 398.6% CPU
+Optimizing NNI: done in 1.95551 secs using 399% CPU
+Optimizing NNI: done in 1.81684 secs using 398.5% CPU
+Optimizing NNI: done in 1.70698 secs using 399% CPU
+Optimizing NNI: done in 1.83563 secs using 399.2% CPU
+Iteration 180 / LogL: -28726.463 / Time: 0h:28m:53s (0h:0m:41s left)
+Optimizing NNI: done in 1.84493 secs using 398.7% CPU
+Optimizing NNI: done in 1.4912 secs using 398.8% CPU
+Optimizing NNI: done in 1.98184 secs using 398.1% CPU
+Optimizing NNI: done in 1.73774 secs using 398.2% CPU
+Optimizing NNI: done in 1.69872 secs using 397.1% CPU
+Optimizing NNI: done in 1.71794 secs using 398.5% CPU
+Optimizing NNI: done in 1.63962 secs using 399.1% CPU
+Optimizing NNI: done in 1.72834 secs using 398.8% CPU
+Optimizing NNI: done in 1.77731 secs using 397.5% CPU
+Optimizing NNI: done in 1.90703 secs using 398.9% CPU
+Iteration 190 / LogL: -28709.232 / Time: 0h:29m:11s (0h:0m:20s left)
+Optimizing NNI: done in 1.96231 secs using 397.8% CPU
+Optimizing NNI: done in 1.68945 secs using 397.4% CPU
+Optimizing NNI: done in 1.70729 secs using 399.4% CPU
+Optimizing NNI: done in 1.7961 secs using 398.8% CPU
+Optimizing NNI: done in 1.99451 secs using 399.4% CPU
+Optimizing NNI: done in 1.74109 secs using 399.1% CPU
+Optimizing NNI: done in 1.95631 secs using 398.9% CPU
+Optimizing NNI: done in 1.9232 secs using 398.6% CPU
+Optimizing NNI: done in 2.05174 secs using 398.6% CPU
+Optimizing NNI: done in 1.99361 secs using 398% CPU
+Iteration 200 / LogL: -28708.567 / Time: 0h:29m:30s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -28799.987
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 200 ITERATIONS / Time: 0h:29m:30s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -28707.862
+2. Current log-likelihood: -28707.846
+3. Current log-likelihood: -28707.835
+4. Current log-likelihood: -28707.824
+Optimal log-likelihood: -28707.810
+Proportion of invariable sites: 0.054
+Site proportion and rates:  (0.137,0.047) (0.117,0.166) (0.186,0.343) (0.183,0.733) (0.084,1.352) (0.145,2.069) (0.094,3.867)
+Parameters optimization took 4 rounds (2.979 sec)
+BEST SCORE FOUND : -28707.810
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.520 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file HISG_Mode_13Nov.splits.nex
+Total tree length: 64.332
+
+Total number of iterations: 200
+CPU time used for tree search: 1597.612 sec (0h:26m:37s)
+Wall-clock time used for tree search: 403.393 sec (0h:6m:43s)
+Total CPU time used: 7072.382 sec (1h:57m:52s)
+Total wall-clock time used: 1774.203 sec (0h:29m:34s)
+
+Computing bootstrap consensus tree...
+Reading input file HISG_Mode_13Nov.splits.nex...
+142 taxa and 730 splits.
+Consensus tree written to HISG_Mode_13Nov.contree
+Reading input trees file HISG_Mode_13Nov.contree
+Log-likelihood of consensus tree: -28707.808
+
+Analysis results written to: 
+  IQ-TREE report:                HISG_Mode_13Nov.iqtree
+  Maximum-likelihood tree:       HISG_Mode_13Nov.treefile
+  Likelihood distances:          HISG_Mode_13Nov.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          HISG_Mode_13Nov.splits.nex
+  Consensus tree:                HISG_Mode_13Nov.contree
+  Screen log file:               HISG_Mode_13Nov.log
+
+Date and Time: Thu Nov 13 16:01:38 2025
