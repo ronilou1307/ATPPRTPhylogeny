@@ -1,0 +1,23 @@
+{
+  "burnin": 15548,
+  "subsample": 1,
+  "until": null,
+  "prune": null,
+  "input_files": [
+    "input.txt"
+  ],
+  "alignment_file_names": [
+    [
+      "input-1/C1.P1.fastas"
+    ],
+    [
+      "input-2/C1.P1.fastas"
+    ],
+    [
+      "input-3/C1.P1.fastas"
+    ],
+    [
+      "input-4/C1.P1.fastas"
+    ]
+  ]
+}

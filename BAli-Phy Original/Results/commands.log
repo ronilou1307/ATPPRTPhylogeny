@@ -1,0 +1,43 @@
+-----------------------------------------------------------
+'statreport' 'input-1/C1.log' 'input-2/C1.log' 'input-3/C1.log' 'input-4/C1.log' '--skip=15548' > 'Results/Report'
+'trees-consensus' '--map-tree=Results/MAP.PP.tree' '--greedy-consensus=Results/greedy.PP.tree' '--report=Results/consensus' 'input-1/C1.trees' 'input-2/C1.trees' 'input-3/C1.trees' 'input-4/C1.trees' '--support-levels=Results/c-levels.plot' '--skip=15548' '--consensus=0.5:Results/c50.PP.tree,0.66:Results/c66.PP.tree,0.8:Results/c80.PP.tree,0.9:Results/c90.PP.tree,0.95:Results/c95.PP.tree,0.99:Results/c99.PP.tree,1.0:Results/c100.PP.tree'
+'tree-tool' 'Results/greedy.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/greedy.tree'
+'tree-tool' 'Results/MAP.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/MAP.tree'
+'tree-tool' 'Results/c50.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c50.tree'
+'tree-tool' 'Results/c66.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c66.tree'
+'tree-tool' 'Results/c80.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c80.tree'
+'tree-tool' 'Results/c90.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c90.tree'
+'tree-tool' 'Results/c95.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c95.tree'
+'tree-tool' 'Results/c99.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c99.tree'
+'tree-tool' 'Results/c100.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c100.tree'
+'pickout' '--no-header' '--large' 'pi' < 'Results/consensus' > 'Results/partitions'
+'trees-bootstrap' '--pred=Results/partitions.pred' '--LOD-table=Results/LOD-table' '--pseudocount=1' 'input-1/C1.trees' 'input-2/C1.trees' 'input-3/C1.trees' 'input-4/C1.trees' '--skip=15548' > 'Results/partitions.bs'
+'/usr/bin/R' '--slave' '--vanilla' '--args' 'Results/LOD-table' 'Results/convergence-PP.pdf' < '/home/rwl2/Applications/bali-phy-3.6.1/lib/bali-phy/libexec/compare-runs.R'
+'/usr/bin/R' '--slave' '--vanilla' '--args' 'Results/LOD-table' 'Results/convergence1-PP.svg' 'Results/convergence2-PP.svg' < '/home/rwl2/Applications/bali-phy-3.6.1/lib/bali-phy/libexec/compare-runs2.R'
+  err: Warning messages:
+1: In grSoftVersion() :
+  unable to load shared object '/usr/lib/R/modules//R_X11.dll':
+  No such file or directory
+2: In cairoVersion() :
+  unable to load shared object '/usr/lib/R/library/grDevices/libs//cairo.dll':
+  No such file or directory
+3: In svg(file = outfile1, height = 3, width = 7) :
+  failed to load cairo DLL
+Error in xtfrm.data.frame(x) : cannot xtfrm data frames
+Calls: sort ... lapply -> FUN -> as.vector -> xtfrm -> xtfrm.data.frame
+Execution halted
+
+ exit: 1
+  err: Warning messages:
+1: In grSoftVersion() :
+  unable to load shared object '/usr/lib/R/modules//R_X11.dll':
+  No such file or directory
+2: In cairoVersion() :
+  unable to load shared object '/usr/lib/R/library/grDevices/libs//cairo.dll':
+  No such file or directory
+3: In svg(file = outfile1, height = 3, width = 7) :
+  failed to load cairo DLL
+Error in xtfrm.data.frame(x) : cannot xtfrm data frames
+Calls: sort ... lapply -> FUN -> as.vector -> xtfrm -> xtfrm.data.frame
+Execution halted
+
