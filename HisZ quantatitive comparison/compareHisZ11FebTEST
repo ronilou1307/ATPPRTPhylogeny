@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=Compare
+#SBATCH --partition=medium
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --mem=16G
+#SBATCH --time=08:00:00
+#SBATCH --mail-user=rwl2@st-andrews.ac.uk
+#SBATCH --mail-type=END,FAIL
+#SBATCH --output=compareHisZ11FebTEST.out
+#SBATCH --error=compareHisZ11FebTEST.err
+
+# -------------------------------
+# Proper conda initialization
+# -------------------------------
+# Remove 'module load' (not available on this node)
+# and source your real conda path
+source /mnt/apps/users/rlouden/conda/etc/profile.d/conda.sh
+conda activate iqtree_env
+
+# Debug prints (optional but helpful)
+echo "Running on $(hostname)"
+echo "Conda environment: $CONDA_DEFAULT_ENV"
+which iqtree
+iqtree --version
+
+# -------------------------------
+# Run IQ-TREE
+# -------------------------------
+iqtree\
+ -rf \
+ HISZ_Mode_11Feb.treefile HISZ_Mode_11Feb.treefile
+

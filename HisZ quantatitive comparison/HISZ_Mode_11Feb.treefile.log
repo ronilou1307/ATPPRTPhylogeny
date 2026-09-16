@@ -1,0 +1,21 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    n24-64-384-doyle.hpc.hutton.ac.uk (AVX512, FMA3, 377 GB RAM)
+Command: iqtree -rf HISZ_Mode_11Feb.treefile HISZ_Mode_11Feb.treefile
+Seed:    586073 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Feb 11 14:59:41 2026
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading tree(s) file HISZ_Mode_11Feb.treefile ...
+1 tree(s) loaded (0 rooted and 1 unrooted)
+Reading tree(s) file HISZ_Mode_11Feb.treefile ...
+1 tree(s) loaded (0 rooted and 1 unrooted)
+Computing Robinson-Foulds distances between two sets of trees
+Robinson-Foulds distances printed to HISZ_Mode_11Feb.treefile.rfdist
+Date and Time: Wed Feb 11 14:59:41 2026
