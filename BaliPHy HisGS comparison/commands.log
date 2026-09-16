@@ -1,0 +1,562 @@
+-----------------------------------------------------------
+'statreport' 'HisGS_21May-1/C1.log' 'HisGS_21May-2/C1.log' '--skip=7508' > 'Results/Report'
+'trees-consensus' '--map-tree=Results/MAP.PP.tree' '--greedy-consensus=Results/greedy.PP.tree' '--report' 'Results/consensus' 'HisGS_21May-1/C1.trees' 'HisGS_21May-2/C1.trees' '--support-levels=Results/c-levels.plot' '--skip=7508' '--consensus=0.5:Results/c50.PP.tree,0.66:Results/c66.PP.tree,0.8:Results/c80.PP.tree,0.9:Results/c90.PP.tree,0.95:Results/c95.PP.tree,0.99:Results/c99.PP.tree,1.0:Results/c100.PP.tree'
+'tree-tool' 'Results/greedy.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/greedy.tree'
+'tree-tool' 'Results/MAP.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/MAP.tree'
+'tree-tool' 'Results/c50.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c50.tree'
+'tree-tool' 'Results/c66.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c66.tree'
+'tree-tool' 'Results/c80.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c80.tree'
+'tree-tool' 'Results/c90.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c90.tree'
+'tree-tool' 'Results/c95.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c95.tree'
+'tree-tool' 'Results/c99.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c99.tree'
+'tree-tool' 'Results/c100.PP.tree' '--strip-internal-names' '--name-all-nodes' > 'Results/c100.tree'
+'draw-tree' 'c50.tree' '--layout=equal-daylight'
+'draw-tree' 'c50.tree' '--layout=equal-daylight' '--output=svg'
+'draw-tree' 'c66.tree' '--layout=equal-daylight'
+'draw-tree' 'c66.tree' '--layout=equal-daylight' '--output=svg'
+'draw-tree' 'c80.tree' '--layout=equal-daylight'
+'draw-tree' 'c80.tree' '--layout=equal-daylight' '--output=svg'
+'draw-tree' 'c90.tree' '--layout=equal-daylight'
+'draw-tree' 'c90.tree' '--layout=equal-daylight' '--output=svg'
+'draw-tree' 'c95.tree' '--layout=equal-daylight'
+'draw-tree' 'c95.tree' '--layout=equal-daylight' '--output=svg'
+'draw-tree' 'c99.tree' '--layout=equal-daylight'
+'draw-tree' 'c99.tree' '--layout=equal-daylight' '--output=svg'
+'draw-tree' 'c100.tree' '--layout=equal-daylight'
+'draw-tree' 'c100.tree' '--layout=equal-daylight' '--output=svg'
+'draw-tree' 'greedy.tree' '--layout=equal-daylight'
+'draw-tree' 'greedy.tree' '--layout=equal-daylight' '--output=svg'
+'draw-tree' 'MAP.tree' '--layout=equal-daylight'
+'draw-tree' 'MAP.tree' '--layout=equal-daylight' '--output=svg'
+'pickout' '--no-header' '--large' 'pi' < 'Results/consensus' > 'Results/partitions'
+'trees-bootstrap' '--pred' 'Results/partitions.pred' '--LOD-table' 'Results/LOD-table' '--pseudocount=1' 'HisGS_21May-1/C1.trees' 'HisGS_21May-2/C1.trees' '--skip=7508' > 'Results/partitions.bs'
+'/mnt/apps/users/rlouden/conda/bin/R' '--slave' '--vanilla' '--args' 'Results/LOD-table' 'Results/convergence-PP.pdf' < '/mnt/apps/users/rlouden/conda/lib/bali-phy/libexec/compare-runs.R'
+'/mnt/apps/users/rlouden/conda/bin/R' '--slave' '--vanilla' '--args' 'Results/LOD-table' 'Results/convergence1-PP.svg' 'Results/convergence2-PP.svg' < '/mnt/apps/users/rlouden/conda/lib/bali-phy/libexec/compare-runs2.R'
+'trees-to-SRQ' 'Results/partitions.pred' '--max-points=1000' '--skip=7508' 'HisGS_21May-1/C1.trees' 'HisGS_21May-2/C1.trees' > 'Results/partitions.SRQ'
+'trees-to-SRQ' 'Results/c50.tree' '--max-points=1000' '--skip=7508' 'HisGS_21May-1/C1.trees' 'HisGS_21May-2/C1.trees' > 'Results/c50.SRQ'
+'trees-distances' 'matrix' '--max=400' '--jitter=0.3' '-V' '--skip=7508' 'HisGS_21May-1/C1.trees' 'HisGS_21May-2/C1.trees' > 'Results/tree-MDS.M' 2> 'Results/tree-MDS.count'
+'/mnt/apps/users/rlouden/conda/bin/R' '--slave' '--vanilla' '--args' 'Results/tree-MDS.M' 'Results/tree-MDS.svg' '400' '400' < '/mnt/apps/users/rlouden/conda/lib/bali-phy/libexec/tree-plot.R'
+'/mnt/apps/users/rlouden/conda/bin/R' '--slave' '--vanilla' '--args' 'Results/tree-MDS.M' '400' '400' < '/mnt/apps/users/rlouden/conda/lib/bali-phy/libexec/tree-plot-3D.R'
+'alignment-cat' '-p' '-e' 'HisGS_21May-1/C1.P1.initial.fasta' > 'Results/Work/P1.initial-unordered.fasta'
+'alignment-cat' 'Results/Work/P1.initial-unordered.fasta' '--reorder-by-tree=Results/c50.tree' > 'Results/P1.initial.fasta'
+'alignment-max' > 'Results/Work/P1.max-unordered.fasta'
+  err: bare!
+
+'alignment-cat' 'Results/Work/P1.max-unordered.fasta' '--reorder-by-tree=Results/c50.tree' > 'Results/P1.max.fasta'
+'summarize-ancestors' 'Results/P1.max.fasta' '-n' 'Results/c50.tree' '-g' 'Results/c50.tree' '-A' 'HisGS_21May-1/C1.P1.fastas' '-T' 'HisGS_21May-1/C1.trees' '-A' 'HisGS_21May-2/C1.P1.fastas' '-T' 'HisGS_21May-2/C1.trees' > 'Results/P1.ancestors.fasta'
+  err: Node 'node_21': present in 499/500 = 99.8% of samples.
+Node 'node_35': present in 499/500 = 99.8% of samples.
+Node 'node_41': present in 499/500 = 99.8% of samples.
+Node 'node_8': present in 490/500 = 98% of samples.
+Node 'node_3': present in 499/500 = 99.8% of samples.
+Node 'node_17': present in 499/500 = 99.8% of samples.
+Node 'node_20': present in 464/500 = 92.8% of samples.
+Node 'node_34': present in 499/500 = 99.8% of samples.
+Node 'node_13': present in 422/500 = 84.4% of samples.
+Node 'node_40': present in 430/500 = 86% of samples.
+Node 'node_1': present in 483/500 = 96.6% of samples.
+Node 'node_23': present in 496/500 = 99.2% of samples.
+Node 'node_39': present in 357/500 = 71.4% of samples.
+Node 'node_18': present in 499/500 = 99.8% of samples.
+Node 'node_27': present in 499/500 = 99.8% of samples.
+Node 'node_10': present in 499/500 = 99.8% of samples.
+Node 'node_28': present in 464/500 = 92.8% of samples.
+Node 'node_24': present in 499/500 = 99.8% of samples.
+Node 'node_44': present in 429/500 = 85.8% of samples.
+Node 'node_16': present in 498/500 = 99.6% of samples.
+Node 'node_42': present in 499/500 = 99.8% of samples.
+Node 'node_2': present in 499/500 = 99.8% of samples.
+Node 'node_22': present in 498/500 = 99.6% of samples.
+Node 'node_33': present in 497/500 = 99.4% of samples.
+Node 'node_12': present in 339/500 = 67.8% of samples.
+Node 'node_15': present in 499/500 = 99.8% of samples.
+Node 'node_43': present in 444/500 = 88.8% of samples.
+Node 'node_37': present in 451/500 = 90.2% of samples.
+Node 'node_25': present in 499/500 = 99.8% of samples.
+Node 'node_5': present in 499/500 = 99.8% of samples.
+Node 'node_11': present in 499/500 = 99.8% of samples.
+Node 'node_29': present in 499/500 = 99.8% of samples.
+Node 'node_32': present in 499/500 = 99.8% of samples.
+Node 'node_4': present in 498/500 = 99.6% of samples.
+Node 'node_14': present in 499/500 = 99.8% of samples.
+Node 'node_9': present in 499/500 = 99.8% of samples.
+Node 'node_19': present in 497/500 = 99.4% of samples.
+Node 'node_31': present in 499/500 = 99.8% of samples.
+Node 'node_7': present in 499/500 = 99.8% of samples.
+Node 'node_38': present in 499/500 = 99.8% of samples.
+Node 'node_26': present in 499/500 = 99.8% of samples.
+Node 'node_36': present in 498/500 = 99.6% of samples.
+Node 'node_30': present in 346/500 = 69.2% of samples.
+Node 'node_6': present in 322/500 = 64.4% of samples.
+Node 'node_55': present in 499/500 = 99.8% of samples.
+Node 'node_66': present in 499/500 = 99.8% of samples.
+Node 'node_49': present in 490/500 = 98% of samples.
+Node 'node_54': present in 461/500 = 92.2% of samples.
+Node 'node_62': present in 494/500 = 98.8% of samples.
+Node 'node_65': present in 430/500 = 86% of samples.
+Node 'node_45': present in 483/500 = 96.6% of samples.
+Node 'node_52': present in 479/500 = 95.8% of samples.
+Node 'node_58': present in 498/500 = 99.6% of samples.
+Node 'node_59': present in 463/500 = 92.6% of samples.
+Node 'node_56': present in 384/500 = 76.8% of samples.
+Node 'node_68': present in 423/500 = 84.6% of samples.
+Node 'node_67': present in 499/500 = 99.8% of samples.
+Node 'node_61': present in 420/500 = 84% of samples.
+Node 'node_57': present in 499/500 = 99.8% of samples.
+Node 'node_46': present in 486/500 = 97.2% of samples.
+Node 'node_51': present in 499/500 = 99.8% of samples.
+Node 'node_50': present in 454/500 = 90.8% of samples.
+Node 'node_53': present in 339/500 = 67.8% of samples.
+Node 'node_48': present in 446/500 = 89.2% of samples.
+Node 'node_64': present in 436/500 = 87.2% of samples.
+Node 'node_63': present in 499/500 = 99.8% of samples.
+Node 'node_60': present in 346/500 = 69.2% of samples.
+Node 'node_47': present in 291/500 = 58.2% of samples.
+Node 'node_74': present in 325/500 = 65% of samples.
+Node 'node_80': present in 411/500 = 82.2% of samples.
+Node 'node_69': present in 371/500 = 74.2% of samples.
+Node 'node_81': present in 474/500 = 94.8% of samples.
+Node 'node_79': present in 493/500 = 98.6% of samples.
+Node 'node_75': present in 355/500 = 71% of samples.
+Node 'node_83': present in 482/500 = 96.4% of samples.
+Node 'node_82': present in 486/500 = 97.2% of samples.
+Node 'node_78': present in 448/500 = 89.6% of samples.
+Node 'node_76': present in 499/500 = 99.8% of samples.
+Node 'node_70': present in 473/500 = 94.6% of samples.
+Node 'node_73': present in 341/500 = 68.2% of samples.
+Node 'node_71': present in 444/500 = 88.8% of samples.
+Node 'node_77': present in 499/500 = 99.8% of samples.
+Node 'node_72': present in 272/500 = 54.4% of samples.
+Node 'node_87': present in 328/500 = 65.6% of samples.
+Node 'node_92': present in 464/500 = 92.8% of samples.
+Node 'node_91': present in 495/500 = 99% of samples.
+Node 'node_88': present in 470/500 = 94% of samples.
+Node 'node_93': present in 447/500 = 89.4% of samples.
+Node 'node_90': present in 446/500 = 89.2% of samples.
+Node 'node_89': present in 492/500 = 98.4% of samples.
+Node 'node_84': present in 340/500 = 68% of samples.
+Node 'node_85': present in 497/500 = 99.4% of samples.
+Node 'node_94': present in 493/500 = 98.6% of samples.
+Node 'node_86': present in 273/500 = 54.6% of samples.
+Node 'node_99': present in 448/500 = 89.6% of samples.
+Node 'node_97': present in 371/500 = 74.2% of samples.
+Node 'node_100': present in 284/500 = 56.8% of samples.
+Node 'node_98': present in 481/500 = 96.2% of samples.
+Node 'node_95': present in 485/500 = 97% of samples.
+Node 'node_101': present in 444/500 = 88.8% of samples.
+Node 'node_96': present in 250/500 = 50% of samples.
+Node 'node_105': present in 438/500 = 87.6% of samples.
+Node 'node_103': present in 499/500 = 99.8% of samples.
+Node 'node_106': present in 237/500 = 47.4% of samples.
+Node 'node_104': present in 486/500 = 97.2% of samples.
+Node 'node_107': present in 0/500 = 0% of samples.
+Node 'node_102': present in 113/500 = 22.6% of samples.
+Node 'node_110': present in 482/500 = 96.4% of samples.
+Node 'node_109': present in 495/500 = 99% of samples.
+Node 'node_111': present in 176/500 = 35.2% of samples.
+Node 'node_108': present in 499/500 = 99.8% of samples.
+Node 'node_113': present in 429/500 = 85.8% of samples.
+Node 'node_114': present in 381/500 = 76.2% of samples.
+Node 'node_112': present in 494/500 = 98.8% of samples.
+Node 'node_116': present in 403/500 = 80.6% of samples.
+Node 'node_117': present in 455/500 = 91% of samples.
+Node 'node_115': present in 481/500 = 96.2% of samples.
+Node 'node_119': present in 392/500 = 78.4% of samples.
+Node 'node_120': present in 250/500 = 50% of samples.
+Node 'node_118': present in 266/500 = 53.2% of samples.
+Node 'node_122': present in 386/500 = 77.2% of samples.
+Node 'node_121': present in 270/500 = 54% of samples.
+Node 'node_124': present in 0/500 = 0% of samples.
+Node 'node_123': present in 499/500 = 99.8% of samples.
+Node 'node_125': present in 183/500 = 36.6% of samples.
+Group 'node_21<=node_55': present in 499/500 = 99.8% of samples.
+Group 'node_21<=Polycyclovorans_algicola': present in 500/500 = 100% of samples.
+Group 'node_21<=Flagellatimonas_centrodinii': present in 500/500 = 100% of samples.
+Group 'node_35<=node_63': present in 499/500 = 99.8% of samples.
+Group 'node_35<=Thalassolituus_maritimus': present in 500/500 = 100% of samples.
+Group 'node_35<=Bacterioplanoides_pacificum': present in 500/500 = 100% of samples.
+Group 'node_41<=node_66': present in 499/500 = 99.8% of samples.
+Group 'node_41<=Virgibacillus_alimentarius': present in 500/500 = 100% of samples.
+Group 'node_41<=Ornithinibacillus_gellani': present in 500/500 = 100% of samples.
+Group 'node_8<=node_49': present in 490/500 = 98% of samples.
+Group 'node_8<=Hydrocarboniclastica_marina': present in 500/500 = 100% of samples.
+Group 'node_8<=Halomonadaceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_3<=node_110': present in 499/500 = 99.8% of samples.
+Group 'node_3<=Aestuariirhabdus_litorea': present in 500/500 = 100% of samples.
+Group 'node_3<=Aestuariirhabdus_haliotis': present in 500/500 = 100% of samples.
+Group 'node_17<=node_85': present in 499/500 = 99.8% of samples.
+Group 'node_17<=Paenibacillus_lacisoli': present in 500/500 = 100% of samples.
+Group 'node_17<=Bryobacteraceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_20<=node_54': present in 464/500 = 92.8% of samples.
+Group 'node_20<=Polaromonas_glacialis': present in 500/500 = 100% of samples.
+Group 'node_20<=Comamonas_humi': present in 500/500 = 100% of samples.
+Group 'node_34<=node_62': present in 499/500 = 99.8% of samples.
+Group 'node_34<=Teredinibacter_waterburyi': present in 500/500 = 100% of samples.
+Group 'node_34<=Teredinibacter_sp._KSP-S5-2': present in 500/500 = 100% of samples.
+Group 'node_13<=node_61': present in 422/500 = 84.4% of samples.
+Group 'node_13<=Malonomonas_rubra': present in 500/500 = 100% of samples.
+Group 'node_13<=Desulfuromusa_kysingii': present in 500/500 = 100% of samples.
+Group 'node_40<=node_65': present in 430/500 = 86% of samples.
+Group 'node_40<=Ventosimonas_gracilis': present in 500/500 = 100% of samples.
+Group 'node_40<=Pseudomonas_chlororaphis': present in 500/500 = 100% of samples.
+Group 'node_1<=Acinetobacter_baumannii': present in 500/500 = 100% of samples.
+Group 'node_1<=node_45': present in 483/500 = 96.6% of samples.
+Group 'node_1<=Acinetobacter_beijerinckii': present in 500/500 = 100% of samples.
+Group 'node_23<=node_99': present in 496/500 = 99.2% of samples.
+Group 'node_23<=Pseudomonas_saliphila': present in 500/500 = 100% of samples.
+Group 'node_23<=Halopseudomonas_maritima': present in 500/500 = 100% of samples.
+Group 'node_39<=node_84': present in 357/500 = 71.4% of samples.
+Group 'node_39<=Truepera_sp.': present in 500/500 = 100% of samples.
+Group 'node_39<=Marinithermus_hydrothermalis': present in 500/500 = 100% of samples.
+Group 'node_18<=node_52': present in 499/500 = 99.8% of samples.
+Group 'node_18<=Pallidibacillus_thermolactis': present in 500/500 = 100% of samples.
+Group 'node_18<=Pallidibacillus_pasinlerensis': present in 500/500 = 100% of samples.
+Group 'node_27<=node_58': present in 499/500 = 99.8% of samples.
+Group 'node_27<=Simiduia_curdlanivorans': present in 500/500 = 100% of samples.
+Group 'node_27<=Simiduia_aestruariiviva': present in 500/500 = 100% of samples.
+Group 'node_10<=node_109': present in 499/500 = 99.8% of samples.
+Group 'node_10<=Ketobacter_alkanivorans': present in 500/500 = 100% of samples.
+Group 'node_10<=Dongiaceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_28<=node_59': present in 464/500 = 92.8% of samples.
+Group 'node_28<=Snodgrassella_gandavensis': present in 500/500 = 100% of samples.
+Group 'node_28<=Paralysiella_testudinis': present in 500/500 = 100% of samples.
+Group 'node_24<=node_56': present in 499/500 = 99.8% of samples.
+Group 'node_24<=Psychrobacter_arenosus': present in 500/500 = 100% of samples.
+Group 'node_24<=Psychrobacter_arcticus': present in 500/500 = 100% of samples.
+Group 'node_44<=node_68': present in 429/500 = 85.8% of samples.
+Group 'node_44<=Zymobacter_palmae': present in 500/500 = 100% of samples.
+Group 'node_44<=Halotalea_alkalilenta': present in 500/500 = 100% of samples.
+Group 'node_16<=node_93': present in 498/500 = 99.6% of samples.
+Group 'node_16<=Niveibacterium_terrae': present in 500/500 = 100% of samples.
+Group 'node_16<=Denitromonas_iodatirespirans': present in 500/500 = 100% of samples.
+Group 'node_42<=node_67': present in 499/500 = 99.8% of samples.
+Group 'node_42<=Xanthobacteraceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_42<=Betaproteobacteria_bacterium': present in 500/500 = 100% of samples.
+Group 'node_2<=node_69': present in 499/500 = 99.8% of samples.
+Group 'node_2<=Acinetobacter_sedimenti': present in 500/500 = 100% of samples.
+Group 'node_2<=Acinetobacter_gingfengensis': present in 500/500 = 100% of samples.
+Group 'node_22<=node_74': present in 498/500 = 99.6% of samples.
+Group 'node_22<=Pseudaquabacterium_pictum': present in 500/500 = 100% of samples.
+Group 'node_22<=Aquariibacter_albus': present in 500/500 = 100% of samples.
+Group 'node_33<=node_61': present in 497/500 = 99.4% of samples.
+Group 'node_33<=Syntrophotalea_acetylenivorans': present in 500/500 = 100% of samples.
+Group 'node_33<=Geothermobacter_ehrlichii': present in 500/500 = 100% of samples.
+Group 'node_12<=node_102': present in 339/500 = 67.8% of samples.
+Group 'node_12<=Longicatena_caecimuris': present in 500/500 = 100% of samples.
+Group 'node_12<=Hathewaya_proteolytica': present in 500/500 = 100% of samples.
+Group 'node_15<=node_75': present in 499/500 = 99.8% of samples.
+Group 'node_15<=Moraxella_nasibovis': present in 500/500 = 100% of samples.
+Group 'node_15<=Moraxella_marmotael': present in 500/500 = 100% of samples.
+Group 'node_43<=node_80': present in 444/500 = 88.8% of samples.
+Group 'node_43<=Zestomonas_thermotolerans': present in 500/500 = 100% of samples.
+Group 'node_43<=Atopomonas_sediminilitoris': present in 500/500 = 100% of samples.
+Group 'node_37<=node_64': present in 451/500 = 90.2% of samples.
+Group 'node_37<=Thiohalomonas_denitrificans': present in 500/500 = 100% of samples.
+Group 'node_37<=Methylophaga_sp,': present in 500/500 = 100% of samples.
+Group 'node_25<=node_57': present in 499/500 = 99.8% of samples.
+Group 'node_25<=Pusillimonas_noertemannii': present in 500/500 = 100% of samples.
+Group 'node_25<=Pollutimonas_harenae': present in 500/500 = 100% of samples.
+Group 'node_5<=node_86': present in 499/500 = 99.8% of samples.
+Group 'node_5<=Faecalibaculum_rodentium': present in 500/500 = 100% of samples.
+Group 'node_5<=Erysipelotrichaceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_11<=node_88': present in 499/500 = 99.8% of samples.
+Group 'node_11<=Leucothrix_sargassi': present in 500/500 = 100% of samples.
+Group 'node_11<=Enhydrobacter_aerosaccus': present in 500/500 = 100% of samples.
+Group 'node_29<=node_124': present in 499/500 = 99.8% of samples.
+Group 'node_29<=Spiribacter_pallidus': present in 500/500 = 100% of samples.
+Group 'node_29<=Sediminicurvatus_halobius': present in 500/500 = 100% of samples.
+Group 'node_32<=node_100': present in 499/500 = 99.8% of samples.
+Group 'node_32<=Sulfurirhabdus_autotrophica': present in 500/500 = 100% of samples.
+Group 'node_32<=Sulfurimicrobium_lacus': present in 500/500 = 100% of samples.
+Group 'node_4<=node_46': present in 498/500 = 99.6% of samples.
+Group 'node_4<=Deinococcus_koreensis': present in 500/500 = 100% of samples.
+Group 'node_4<=Deinococcus_frigens': present in 500/500 = 100% of samples.
+Group 'node_14<=node_51': present in 499/500 = 99.8% of samples.
+Group 'node_14<=Methylogaea_oryzae': present in 500/500 = 100% of samples.
+Group 'node_14<=Methylococcaceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_9<=node_50': present in 499/500 = 99.8% of samples.
+Group 'node_9<=Ileibacterium_valens': present in 500/500 = 100% of samples.
+Group 'node_9<=Allobaculum_mucilyticum': present in 500/500 = 100% of samples.
+Group 'node_19<=node_53': present in 497/500 = 99.4% of samples.
+Group 'node_19<=Parasulfuritortus_cantonensis': present in 500/500 = 100% of samples.
+Group 'node_19<=Hydrogenophilaceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_31<=node_108': present in 499/500 = 99.8% of samples.
+Group 'node_31<=Streptococcus_moroccensis': present in 500/500 = 100% of samples.
+Group 'node_31<=Enterococcus_rivorum': present in 500/500 = 100% of samples.
+Group 'node_7<=node_48': present in 499/500 = 99.8% of samples.
+Group 'node_7<=Fictibacillus_fluitans': present in 500/500 = 100% of samples.
+Group 'node_7<=Exobacillus_caeni': present in 500/500 = 100% of samples.
+Group 'node_38<=node_64': present in 499/500 = 99.8% of samples.
+Group 'node_38<=Thiolinea_sp.': present in 500/500 = 100% of samples.
+Group 'node_38<=Thiofilum_flexile': present in 500/500 = 100% of samples.
+Group 'node_26<=node_63': present in 499/500 = 99.8% of samples.
+Group 'node_26<=Saccharospirillum_salsuginis': present in 500/500 = 100% of samples.
+Group 'node_26<=Natronospirillum_operosum': present in 500/500 = 100% of samples.
+Group 'node_36<=node_105': present in 498/500 = 99.6% of samples.
+Group 'node_36<=Thalassotalea_sp._G20_0': present in 500/500 = 100% of samples.
+Group 'node_36<=Spartinivicinus_poritis': present in 500/500 = 100% of samples.
+Group 'node_30<=node_60': present in 346/500 = 69.2% of samples.
+Group 'node_30<=Spongiibacter_taiwanensis': present in 500/500 = 100% of samples.
+Group 'node_30<=Spongiibacter_nanhainus': present in 500/500 = 100% of samples.
+Group 'node_6<=node_47': present in 322/500 = 64.4% of samples.
+Group 'node_6<=Faecalicoccus_pleomorphus': present in 500/500 = 100% of samples.
+Group 'node_6<=Faecalicoccus_acidformans': present in 500/500 = 100% of samples.
+Group 'node_55<=node_120': present in 499/500 = 99.8% of samples.
+Group 'node_55<=node_21': present in 499/500 = 99.8% of samples.
+Group 'node_55<=Stenotrophobium_rhamnosiphilum': present in 500/500 = 100% of samples.
+Group 'node_66<=node_81': present in 499/500 = 99.8% of samples.
+Group 'node_66<=node_41': present in 499/500 = 99.8% of samples.
+Group 'node_66<=Cerasibacillus_quisquiliarum': present in 500/500 = 100% of samples.
+Group 'node_49<=node_91': present in 499/500 = 99.8% of samples.
+Group 'node_49<=node_8': present in 490/500 = 98% of samples.
+Group 'node_49<=Marinobacter_salinisoli': present in 500/500 = 100% of samples.
+Group 'node_54<=node_74': present in 496/500 = 99.2% of samples.
+Group 'node_54<=node_20': present in 464/500 = 92.8% of samples.
+Group 'node_54<=Ramlibacter_tataouinensis': present in 500/500 = 100% of samples.
+Group 'node_62<=node_79': present in 494/500 = 98.8% of samples.
+Group 'node_62<=node_34': present in 499/500 = 99.8% of samples.
+Group 'node_62<=Porticoccaceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_65<=node_80': present in 440/500 = 88% of samples.
+Group 'node_65<=node_40': present in 430/500 = 86% of samples.
+Group 'node_65<=Pseudomonas_aeruginosa': present in 500/500 = 100% of samples.
+Group 'node_45<=node_1': present in 483/500 = 96.6% of samples.
+Group 'node_45<=node_69': present in 499/500 = 99.8% of samples.
+Group 'node_45<=Acinetobacter_pavis': present in 500/500 = 100% of samples.
+Group 'node_52<=node_81': present in 479/500 = 95.8% of samples.
+Group 'node_52<=node_18': present in 499/500 = 99.8% of samples.
+Group 'node_52<=Filobacillus_milosensis': present in 500/500 = 100% of samples.
+Group 'node_58<=node_79': present in 498/500 = 99.6% of samples.
+Group 'node_58<=node_27': present in 499/500 = 99.8% of samples.
+Group 'node_58<=Gilvimarinus_japonicus': present in 500/500 = 100% of samples.
+Group 'node_59<=node_117': present in 498/500 = 99.6% of samples.
+Group 'node_59<=node_28': present in 464/500 = 92.8% of samples.
+Group 'node_59<=Neisseria_elongata': present in 500/500 = 100% of samples.
+Group 'node_56<=node_75': present in 384/500 = 76.8% of samples.
+Group 'node_56<=node_24': present in 499/500 = 99.8% of samples.
+Group 'node_56<=Lwoffella_lincolnii': present in 500/500 = 100% of samples.
+Group 'node_68<=node_83': present in 482/500 = 96.4% of samples.
+Group 'node_68<=node_44': present in 429/500 = 85.8% of samples.
+Group 'node_68<=Phytohalomonas_tamaricis': present in 500/500 = 100% of samples.
+Group 'node_67<=node_82': present in 499/500 = 99.8% of samples.
+Group 'node_67<=node_42': present in 499/500 = 99.8% of samples.
+Group 'node_67<=Burkholderiales_bacterium': present in 500/500 = 100% of samples.
+Group 'node_61<=node_78': present in 499/500 = 99.8% of samples.
+Group 'node_61<=node_33': present in 497/500 = 99.4% of samples.
+Group 'node_61<=node_13': present in 422/500 = 84.4% of samples.
+Group 'node_57<=node_76': present in 499/500 = 99.8% of samples.
+Group 'node_57<=node_25': present in 499/500 = 99.8% of samples.
+Group 'node_57<=Jezberella_montanilacus': present in 500/500 = 100% of samples.
+Group 'node_46<=node_70': present in 487/500 = 97.4% of samples.
+Group 'node_46<=node_4': present in 498/500 = 99.6% of samples.
+Group 'node_46<=Deinococcus_aluminii': present in 500/500 = 100% of samples.
+Group 'node_51<=node_122': present in 499/500 = 99.8% of samples.
+Group 'node_51<=node_14': present in 499/500 = 99.8% of samples.
+Group 'node_51<=Methylomarinum_roseum': present in 500/500 = 100% of samples.
+Group 'node_50<=node_72': present in 454/500 = 90.8% of samples.
+Group 'node_50<=node_9': present in 499/500 = 99.8% of samples.
+Group 'node_50<=Faecalitalea_cylindroids': present in 500/500 = 100% of samples.
+Group 'node_53<=node_73': present in 341/500 = 68.2% of samples.
+Group 'node_53<=node_19': present in 497/500 = 99.4% of samples.
+Group 'node_53<=Campylobacterales_bacterium': present in 500/500 = 100% of samples.
+Group 'node_48<=node_71': present in 446/500 = 89.2% of samples.
+Group 'node_48<=node_7': present in 499/500 = 99.8% of samples.
+Group 'node_48<=Bacillus_methanolicus': present in 500/500 = 100% of samples.
+Group 'node_64<=node_124': present in 456/500 = 91.2% of samples.
+Group 'node_64<=node_38': present in 499/500 = 99.8% of samples.
+Group 'node_64<=node_37': present in 451/500 = 90.2% of samples.
+Group 'node_63<=node_107': present in 499/500 = 99.8% of samples.
+Group 'node_63<=node_35': present in 499/500 = 99.8% of samples.
+Group 'node_63<=node_26': present in 499/500 = 99.8% of samples.
+Group 'node_60<=node_77': present in 499/500 = 99.8% of samples.
+Group 'node_60<=node_30': present in 346/500 = 69.2% of samples.
+Group 'node_60<=Zhongshania_marina': present in 500/500 = 100% of samples.
+Group 'node_47<=node_72': present in 291/500 = 58.2% of samples.
+Group 'node_47<=node_6': present in 322/500 = 64.4% of samples.
+Group 'node_47<=Holdemanellis_Biformis': present in 500/500 = 100% of samples.
+Group 'node_74<=node_87': present in 328/500 = 65.6% of samples.
+Group 'node_74<=node_54': present in 496/500 = 99.2% of samples.
+Group 'node_74<=node_22': present in 498/500 = 99.6% of samples.
+Group 'node_80<=node_92': present in 464/500 = 92.8% of samples.
+Group 'node_80<=node_65': present in 440/500 = 88% of samples.
+Group 'node_80<=node_43': present in 444/500 = 88.8% of samples.
+Group 'node_69<=node_45': present in 499/500 = 99.8% of samples.
+Group 'node_69<=node_97': present in 371/500 = 74.2% of samples.
+Group 'node_69<=node_2': present in 499/500 = 99.8% of samples.
+Group 'node_81<=node_112': present in 494/500 = 98.8% of samples.
+Group 'node_81<=node_66': present in 499/500 = 99.8% of samples.
+Group 'node_81<=node_52': present in 479/500 = 95.8% of samples.
+Group 'node_79<=node_91': present in 499/500 = 99.8% of samples.
+Group 'node_79<=node_62': present in 494/500 = 98.8% of samples.
+Group 'node_79<=node_58': present in 498/500 = 99.6% of samples.
+Group 'node_75<=node_88': present in 470/500 = 94% of samples.
+Group 'node_75<=node_56': present in 384/500 = 76.8% of samples.
+Group 'node_75<=node_15': present in 499/500 = 99.8% of samples.
+Group 'node_83<=node_94': present in 499/500 = 99.8% of samples.
+Group 'node_83<=node_68': present in 482/500 = 96.4% of samples.
+Group 'node_83<=Larsenimonas_suaedae': present in 500/500 = 100% of samples.
+Group 'node_82<=node_93': present in 486/500 = 97.2% of samples.
+Group 'node_82<=node_67': present in 499/500 = 99.8% of samples.
+Group 'node_82<=Steroidobacteraceae_bacterium': present in 500/500 = 100% of samples.
+Group 'node_78<=node_90': present in 448/500 = 89.6% of samples.
+Group 'node_78<=node_61': present in 499/500 = 99.8% of samples.
+Group 'node_78<=Trichlorobacter_lovleyi': present in 500/500 = 100% of samples.
+Group 'node_76<=node_89': present in 499/500 = 99.8% of samples.
+Group 'node_76<=node_57': present in 499/500 = 99.8% of samples.
+Group 'node_76<=Kerstersia_gyiorum': present in 500/500 = 100% of samples.
+Group 'node_70<=node_84': present in 482/500 = 96.4% of samples.
+Group 'node_70<=node_46': present in 487/500 = 97.4% of samples.
+Group 'node_70<=Deinococcus_taklimakanensis': present in 500/500 = 100% of samples.
+Group 'node_73<=node_106': present in 499/500 = 99.8% of samples.
+Group 'node_73<=node_53': present in 341/500 = 68.2% of samples.
+Group 'node_73<=Chitinivorax_tropicu': present in 500/500 = 100% of samples.
+Group 'node_71<=node_85': present in 497/500 = 99.4% of samples.
+Group 'node_71<=node_48': present in 446/500 = 89.2% of samples.
+Group 'node_71<=Anoxybacteroides_voinovskiense': present in 500/500 = 100% of samples.
+Group 'node_77<=node_94': present in 499/500 = 99.8% of samples.
+Group 'node_77<=node_60': present in 499/500 = 99.8% of samples.
+Group 'node_77<=Litorivivens_sp.': present in 500/500 = 100% of samples.
+Group 'node_72<=node_86': present in 295/500 = 59% of samples.
+Group 'node_72<=node_50': present in 454/500 = 90.8% of samples.
+Group 'node_72<=node_47': present in 291/500 = 58.2% of samples.
+Group 'node_87<=node_104': present in 499/500 = 99.8% of samples.
+Group 'node_87<=node_74': present in 328/500 = 65.6% of samples.
+Group 'node_87<=Xylophilus_ampelinus': present in 500/500 = 100% of samples.
+Group 'node_92<=node_99': present in 499/500 = 99.8% of samples.
+Group 'node_92<=node_80': present in 464/500 = 92.8% of samples.
+Group 'node_92<=Thiopsedomonas_dentrificans': present in 500/500 = 100% of samples.
+Group 'node_91<=node_107': present in 495/500 = 99% of samples.
+Group 'node_91<=node_79': present in 499/500 = 99.8% of samples.
+Group 'node_91<=node_49': present in 499/500 = 99.8% of samples.
+Group 'node_88<=node_97': present in 499/500 = 99.8% of samples.
+Group 'node_88<=node_75': present in 470/500 = 94% of samples.
+Group 'node_88<=node_11': present in 499/500 = 99.8% of samples.
+Group 'node_93<=node_100': present in 459/500 = 91.8% of samples.
+Group 'node_93<=node_82': present in 486/500 = 97.2% of samples.
+Group 'node_93<=node_16': present in 498/500 = 99.6% of samples.
+Group 'node_90<=node_118': present in 497/500 = 99.4% of samples.
+Group 'node_90<=node_78': present in 448/500 = 89.6% of samples.
+Group 'node_90<=Nitrospirota_bacterium': present in 500/500 = 100% of samples.
+Group 'node_89<=node_98': present in 492/500 = 98.4% of samples.
+Group 'node_89<=node_76': present in 499/500 = 99.8% of samples.
+Group 'node_89<=Oxalobacter_vibrioformis': present in 500/500 = 100% of samples.
+Group 'node_84<=node_121': present in 499/500 = 99.8% of samples.
+Group 'node_84<=node_70': present in 482/500 = 96.4% of samples.
+Group 'node_84<=node_39': present in 357/500 = 71.4% of samples.
+Group 'node_85<=node_95': present in 499/500 = 99.8% of samples.
+Group 'node_85<=node_71': present in 497/500 = 99.4% of samples.
+Group 'node_85<=node_17': present in 499/500 = 99.8% of samples.
+Group 'node_94<=node_101': present in 493/500 = 98.6% of samples.
+Group 'node_94<=node_83': present in 499/500 = 99.8% of samples.
+Group 'node_94<=node_77': present in 499/500 = 99.8% of samples.
+Group 'node_86<=node_96': present in 273/500 = 54.6% of samples.
+Group 'node_86<=node_72': present in 295/500 = 59% of samples.
+Group 'node_86<=node_5': present in 499/500 = 99.8% of samples.
+Group 'node_99<=node_105': present in 451/500 = 90.2% of samples.
+Group 'node_99<=node_92': present in 499/500 = 99.8% of samples.
+Group 'node_99<=node_23': present in 496/500 = 99.2% of samples.
+Group 'node_97<=node_69': present in 371/500 = 74.2% of samples.
+Group 'node_97<=node_103': present in 499/500 = 99.8% of samples.
+Group 'node_97<=node_88': present in 499/500 = 99.8% of samples.
+Group 'node_100<=node_106': present in 311/500 = 62.2% of samples.
+Group 'node_100<=node_93': present in 459/500 = 91.8% of samples.
+Group 'node_100<=node_32': present in 499/500 = 99.8% of samples.
+Group 'node_98<=node_104': present in 486/500 = 97.2% of samples.
+Group 'node_98<=node_89': present in 492/500 = 98.4% of samples.
+Group 'node_98<=Robbsia_sp._KACC_23696': present in 500/500 = 100% of samples.
+Group 'node_95<=node_115': present in 485/500 = 97% of samples.
+Group 'node_95<=node_85': present in 499/500 = 99.8% of samples.
+Group 'node_95<=Koleobacter_methoxysyntrophicus': present in 500/500 = 100% of samples.
+Group 'node_101<=node_107': present in 446/500 = 89.2% of samples.
+Group 'node_101<=node_94': present in 493/500 = 98.6% of samples.
+Group 'node_101<=Balneatrix_alpica': present in 500/500 = 100% of samples.
+Group 'node_96<=node_102': present in 272/500 = 54.4% of samples.
+Group 'node_96<=node_86': present in 273/500 = 54.6% of samples.
+Group 'node_96<=Lactimicrobium_massiliense': present in 500/500 = 100% of samples.
+Group 'node_105<=node_110': present in 485/500 = 97% of samples.
+Group 'node_105<=node_99': present in 451/500 = 90.2% of samples.
+Group 'node_105<=node_36': present in 498/500 = 99.6% of samples.
+Group 'node_103<=node_97': present in 499/500 = 99.8% of samples.
+Group 'node_103<=node_109': present in 499/500 = 99.8% of samples.
+Group 'node_103<=Agitococcus_lubricus': present in 500/500 = 100% of samples.
+Group 'node_106<=node_111': present in 272/500 = 54.4% of samples.
+Group 'node_106<=node_100': present in 311/500 = 62.2% of samples.
+Group 'node_106<=node_73': present in 499/500 = 99.8% of samples.
+Group 'node_104<=node_111': present in 499/500 = 99.8% of samples.
+Group 'node_104<=node_98': present in 486/500 = 97.2% of samples.
+Group 'node_104<=node_87': present in 499/500 = 99.8% of samples.
+Group 'node_107<=node_119': present in 499/500 = 99.8% of samples.
+Group 'node_107<=node_101': present in 446/500 = 89.2% of samples.
+Group 'node_107<=node_91': present in 495/500 = 99% of samples.
+Group 'node_107<=node_63': present in 499/500 = 99.8% of samples.
+Group 'node_102<=node_108': present in 499/500 = 99.8% of samples.
+Group 'node_102<=node_96': present in 272/500 = 54.4% of samples.
+Group 'node_102<=node_12': present in 339/500 = 67.8% of samples.
+Group 'node_110<=node_116': present in 496/500 = 99.2% of samples.
+Group 'node_110<=node_105': present in 485/500 = 97% of samples.
+Group 'node_110<=node_3': present in 499/500 = 99.8% of samples.
+Group 'node_109<=node_103': present in 499/500 = 99.8% of samples.
+Group 'node_109<=node_113': present in 495/500 = 99% of samples.
+Group 'node_109<=node_10': present in 499/500 = 99.8% of samples.
+Group 'node_111<=node_114': present in 397/500 = 79.4% of samples.
+Group 'node_111<=node_106': present in 272/500 = 54.4% of samples.
+Group 'node_111<=node_104': present in 499/500 = 99.8% of samples.
+Group 'node_108<=node_112': present in 499/500 = 99.8% of samples.
+Group 'node_108<=node_102': present in 499/500 = 99.8% of samples.
+Group 'node_108<=node_31': present in 499/500 = 99.8% of samples.
+Group 'node_113<=node_109': present in 495/500 = 99% of samples.
+Group 'node_113<=node_116': present in 433/500 = 86.6% of samples.
+Group 'node_113<=Alloalcanivorax_venustensis': present in 500/500 = 100% of samples.
+Group 'node_114<=node_117': present in 456/500 = 91.2% of samples.
+Group 'node_114<=node_111': present in 397/500 = 79.4% of samples.
+Group 'node_114<=Paludibacterium_paludis': present in 500/500 = 100% of samples.
+Group 'node_112<=node_115': present in 499/500 = 99.8% of samples.
+Group 'node_112<=node_108': present in 499/500 = 99.8% of samples.
+Group 'node_112<=node_81': present in 494/500 = 98.8% of samples.
+Group 'node_116<=node_113': present in 433/500 = 86.6% of samples.
+Group 'node_116<=node_119': present in 405/500 = 81% of samples.
+Group 'node_116<=node_110': present in 496/500 = 99.2% of samples.
+Group 'node_117<=node_120': present in 499/500 = 99.8% of samples.
+Group 'node_117<=node_114': present in 456/500 = 91.2% of samples.
+Group 'node_117<=node_59': present in 498/500 = 99.6% of samples.
+Group 'node_115<=node_118': present in 495/500 = 99% of samples.
+Group 'node_115<=node_112': present in 499/500 = 99.8% of samples.
+Group 'node_115<=node_95': present in 485/500 = 97% of samples.
+Group 'node_119<=node_116': present in 405/500 = 81% of samples.
+Group 'node_119<=node_122': present in 392/500 = 78.4% of samples.
+Group 'node_119<=node_107': present in 499/500 = 99.8% of samples.
+Group 'node_120<=node_125': present in 250/500 = 50% of samples.
+Group 'node_120<=node_117': present in 499/500 = 99.8% of samples.
+Group 'node_120<=node_55': present in 499/500 = 99.8% of samples.
+Group 'node_118<=node_121': present in 270/500 = 54% of samples.
+Group 'node_118<=node_115': present in 495/500 = 99% of samples.
+Group 'node_118<=node_90': present in 497/500 = 99.4% of samples.
+Group 'node_122<=node_119': present in 392/500 = 78.4% of samples.
+Group 'node_122<=node_124': present in 398/500 = 79.6% of samples.
+Group 'node_122<=node_51': present in 499/500 = 99.8% of samples.
+Group 'node_121<=node_123': present in 499/500 = 99.8% of samples.
+Group 'node_121<=node_118': present in 270/500 = 54% of samples.
+Group 'node_121<=node_84': present in 499/500 = 99.8% of samples.
+Group 'node_124<=node_122': present in 398/500 = 79.6% of samples.
+Group 'node_124<=node_125': present in 402/500 = 80.4% of samples.
+Group 'node_124<=node_64': present in 456/500 = 91.2% of samples.
+Group 'node_124<=node_29': present in 499/500 = 99.8% of samples.
+Group 'node_123<=node_125': present in 499/500 = 99.8% of samples.
+Group 'node_123<=node_121': present in 499/500 = 99.8% of samples.
+Group 'node_123<=Mariprofundus_sp._EBB-1': present in 500/500 = 100% of samples.
+Group 'node_125<=node_124': present in 402/500 = 80.4% of samples.
+Group 'node_125<=node_123': present in 499/500 = 99.8% of samples.
+Group 'node_125<=node_120': present in 250/500 = 50% of samples.
+
+'alignment-draw' 'Results/P1.initial.fasta' '--color-scheme' 'AA+contrast' '--show-ruler' > 'Results/P1.initial.html'
+'alignment-draw' 'Results/P1.max.fasta' '--color-scheme' 'AA+contrast' '--show-ruler' > 'Results/P1.max.html'
+'alignment-draw' 'Results/P1.ancestors.fasta' '--color-scheme' 'AA+contrast' '--show-ruler' > 'Results/P1.ancestors.html'
+'alignments-diff' 'Results/P1.initial.fasta' 'Results/P1.max.fasta' > 'Results/P1.initial-diff.AU'
+'alignment-draw' 'Results/P1.initial.fasta' '--scale=identity' '--AU' 'Results/P1.initial-diff.AU' '--show-ruler' '--color-scheme=diff[1]+contrast' > 'Results/P1.initial-diff.html'
+'alignment-gild' 'Results/P1.initial.fasta' 'Results/MAP.tree' '--max-alignments=500' > 'Results/P1.initial-AU.prob'
+'alignment-draw' 'Results/P1.initial.fasta' '--color-scheme' 'AA+contrast+fade+fade+fade+fade' '--show-ruler' '--AU' 'Results/P1.initial-AU.prob' > 'Results/P1.initial-AU.html'
+'alignment-gild' 'Results/P1.max.fasta' 'Results/MAP.tree' '--max-alignments=500' > 'Results/P1.max-AU.prob'
+'alignment-draw' 'Results/P1.max.fasta' '--color-scheme' 'AA+contrast+fade+fade+fade+fade' '--show-ruler' '--AU' 'Results/P1.max-AU.prob' > 'Results/P1.max-AU.html'
+'alignment-info' 'Results/P1.initial.fasta'
+'alignment-info' 'Results/P1.initial.fasta'
+'alignment-info' 'Results/P1.max.fasta'
+'alignment-info' 'Results/P1.ancestors.fasta'

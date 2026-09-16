@@ -1,0 +1,29 @@
+Running on n24-64-384-fred.hpc.hutton.ac.uk
+Conda environment: iqtree_env
+/mnt/apps/users/rlouden/conda/envs/iqtree_env/bin/iqtree
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Jul  9 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    n24-64-384-fred.hpc.hutton.ac.uk (AVX512, FMA3, 377 GB RAM)
+Command: iqtree -rf HISG_Mode_21May.treefile Baliphy_21Maytree3jul
+Seed:    832664 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jul  3 17:24:05 2026
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading tree(s) file Baliphy_21Maytree3jul ...
+1 tree(s) loaded (0 rooted and 1 unrooted)
+Reading tree(s) file HISG_Mode_21May.treefile ...
+1 tree(s) loaded (0 rooted and 1 unrooted)
+Computing Robinson-Foulds distances between two sets of trees
+Robinson-Foulds distances printed to Baliphy_21Maytree3jul.rfdist
+Date and Time: Fri Jul  3 17:24:05 2026

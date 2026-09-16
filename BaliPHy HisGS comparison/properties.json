@@ -1,0 +1,13 @@
+{
+  "burnin": 7508,
+  "subsample": 1,
+  "until": null,
+  "prune": null,
+  "input_files": [
+    "/home/rlouden/phylogeny/HisGS_21May.txt"
+  ],
+  "alignment_file_names": [
+    "[PosixPath('HisGS_21May-1/C1.P1.fastas')]",
+    "[PosixPath('HisGS_21May-2/C1.P1.fastas')]"
+  ]
+}
